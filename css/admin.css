@@ -1,0 +1,95 @@
+body {
+	font-family:'Open Sans', sans-serif;
+	background-color: #98D2BF;
+}
+
+h2 {
+	padding-top: 30px;
+	color: #00BFB2;
+}
+
+.box {
+	background-color: white;
+	max-width: 800px;
+	margin: 0 auto;
+	height: 1500px;
+	display: block;
+	padding-left: 50px;
+}
+
+
+.savebutton {
+	background-color: #FF8A5B;
+	color: #fff;
+	border-radius: 4px;
+	border-style: none;
+	padding: 10px 45px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	display: block;
+	margin:  0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+	transition: all .3s ease-in-out;
+}
+
+.savebutton:hover {
+	transform: scale(1.05);
+}
+
+.addbutton {
+	background-color: #8FC93A;
+	color: #fff;
+	border-radius: 4px;
+	border-style: none;
+	padding: 10px 45px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 26px;
+
+}
+
+input {
+	width: 90%;
+	border: 2px solid #e7e7e7;
+	border-radius: 2px;
+	padding: 10px 5px; 
+	margin-bottom: 10px 0;
+	display: block;
+}
+
+textarea {
+	display: block;
+	width: 90%;
+	height: 150px;
+	margin: 10px 0px;
+	border: 2px solid #e7e7e7;
+}
+
+label {
+	display: block;
+	padding: 5px;
+}
+
+::-webkit-input-placeholder {
+	font-size: 15px;
+	padding: 5px;
+}
+
+select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.table-width {
+	max-width: 800px;
+	margin-right: 56px;
+    padding-right: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 1.5em;
+}
