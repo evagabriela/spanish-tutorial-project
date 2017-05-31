@@ -40,7 +40,7 @@ nav {
 
 .header-background{
    background:
-   linear-gradient(to bottom right, rgba(255, 118, 118, .5), rgba(214, 87, 128, .6), rgba(169, 109, 163, .7)),
+   linear-gradient(to bottom right, rgba(254, 193, 76, .7), rgba(214, 87, 128, .6), rgba(169, 109, 163, .7)),
    url("../images/working-women.jpg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -53,7 +53,7 @@ nav {
 	padding-top: 104px;
 	padding-bottom: 0;
 	color: #fff;
-	font-size: 20px;
+	font-size: 25px;
 	margin: 0 auto;
 	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 	font-family:'Playfair Display', serif;
@@ -133,18 +133,29 @@ a.btn:hover {
 }
 
 .color1 {
-	border-right: 7px solid #e0568b;
+	border-top: 7px solid #e0568b;
 
 }
 
 .color2 {
-	border-right: 7px solid #b656e0;
+	border-top: 7px solid #b656e0;
 }
 
 .color3 {
-	border-right: 7px solid #A96DA3;
+	border-top: 7px solid #DCED31;
 }
 
+.color4 {
+	border-top: 7px solid #EF2D56;
+}
+
+.color5 {
+	border-top: 7px solid #ED7D3A;
+}
+
+.color6 {
+	border-top: 7px solid #0CCE6B;
+}
 
 h4 {
 	color: #A96DA3;
