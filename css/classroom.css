@@ -1,24 +1,40 @@
-* {
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-	margin: 0;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-nav {
-	/* background-color: #20a1b1; */
-	background: linear-gradient(to bottom right, rgba(254, 193, 76, .7), rgba(214, 87, 128, .6), rgba(169, 109, 163, .7));
+html, body {
+	height: 100%;
+}
+
+body {
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2em;
+}
+
+p {
+	font-size: 16.5px;
+	line-height: 1.5;
+}
+
+.nav-fixed {
+	background-color: #e0568b;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
 	height: 50px;
-}
-
-h1 {
-	text-align: center;
 }
 
 h3 {
@@ -49,106 +65,71 @@ h3 {
 
 .lesson {
 	position: absolute;
-	top: 110px;
+	top: 130px;
 	left: 300px;
 	max-width: 60em;
 	padding-left: 70px;
 	transition: all .4s ease-in-out;
 }
 
-h2 {
-	margin-top: 50px;
+nav h2 {
+	margin-top: 10px;
 	padding: 25px;
-	color: #fff;
+	color: #e0568b;
 }
 
-textarea {
-	height: 300px;
-	width: 800px;
+li {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  list-style: none;
+  transition: all 300ms ease-in-out;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-#result {
-	border: 2px solid red;
-	display: inline-block;
+li:hover {
+  background-color: #FBC2B5;
 }
 
-.box1 {
-	transform: translateX(-295px);
+nav li:first-child {
+  margin-top: 2em;
 }
 
-.container{
-  position: absolute;
-	top: 50px;
-	bottom: 0;
-	width: 295px;
-	background: #FAFAFA;
-	border-right: 1px solid #CACECF;
-	transition: all .4s ease-in-out;
-}
-
-.head {
-  margin-bottom:0px;
-}
-
-a {
+nav a {
 	text-decoration: none;
 }
 
 .close-button {
 	padding-left: 260px;
-	padding-top: 20px;
+	padding-top: 45px;
 }
 
-
-.top-line {
-  margin-top: 50px;
-  padding-left: 20px;		
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  text-transform: capitalize;
-  color: #000;
+nav {
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px 0;
+  border-right: 1px solid rgba(0,0,0,0.2);
 }
 
-.spacer {
-  border-bottom: 1px solid rgb(229, 229, 229);
+.white-space {
+	height: 16px;
 }
 
-.event-list {
-  display: block;
-  border-right: 1px solid rgb(229, 229, 229);
+.lesson-titulos, .lesson-images, .lesson-enlaces, .lesson-list, .lesson-negritas, .lesson-color, .lesson-multipleChanges {
+	display: none;
 }
 
-.event {
-  text-decoration: none;
+.noShow {
+	display: none;
 }
 
-.event-container {
-  color: #131313;
-  transition: all 0.2s ease;
-  background: #FAFAFA;
-  border-left: #20a1b1 4px solid;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.event-container:hover {
-  border-left-width: 11px;
-  background: #ECEFF1;
-}
-
-.detail-container {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 3px;
-}
-
-.title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #151515;
-  padding-left: 22px;
+.show {
+	display: block;
 }
 
 .move {
@@ -156,6 +137,27 @@ a {
 	max-width: 100em;
 }
 
+.hide {
+	display: none;
+}
 
+.show {
+	display: block;
+}
 
+.background-purple {
+	background-color: #b656e0;
+}
+
+.color-purple {
+	color: #b656e0;
+}
+
+.background-yellow {
+	background-color: #DCED31;
+}
+
+.color-yellow {
+	color: #DCED31;
+}
 

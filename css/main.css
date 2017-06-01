@@ -164,6 +164,13 @@ h4 {
 	padding-top: 20px;
 }
 
+h5 {
+	font-size: 17px;
+	text-transform: uppercase;
+	padding-left: 21px;
+    padding-top: 20px;
+}
+
 
 .text-center {
 	text-align: left;
@@ -178,12 +185,13 @@ h4 {
 	height: 50px;
 }
 
-h5 {
+h6 {
 	display: inline-block;
 	font-size: 14px;
 	text-transform: uppercase;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin: 0 auto;
 	margin-top: 5px;
 }
 
