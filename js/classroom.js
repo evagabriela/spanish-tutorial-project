@@ -59,3 +59,20 @@ $(".multipleChangesLink").on("click", function() {
 	$(".lesson-multipleChanges").addClass("show");
 });
 
+$(".classLink").on("click", function() {
+	$(".lesson-divSpan").addClass("noShow");
+	$(".lesson-classes").addClass("show");
+});
+
+$(".idLink").on("click", function() {
+	$(".lesson-divSpan").addClass("noShow");
+	$(".lesson-classes").removeClass("show");
+	$(".lesson-identificadores").addClass("show");
+});
+
+$(".divsLink").on("click", function() {
+	$(".lesson-divSpan").removeClass("noShow");
+	$(".lesson-classes").removeClass("show");
+	$(".lesson-identificadores").removeClass("show");
+});
+

@@ -120,7 +120,7 @@ nav {
 	height: 16px;
 }
 
-.lesson-titulos, .lesson-images, .lesson-enlaces, .lesson-list, .lesson-negritas, .lesson-color, .lesson-multipleChanges {
+.lesson-titulos, .lesson-images, .lesson-enlaces, .lesson-list, .lesson-negritas, .lesson-color, .lesson-multipleChanges, .lesson-classes, .lesson-identificadores {
 	display: none;
 }
 
