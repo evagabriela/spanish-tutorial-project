@@ -76,3 +76,18 @@ $(".divsLink").on("click", function() {
 	$(".lesson-identificadores").removeClass("show");
 });
 
+$(".universalLink").on("click", function() {
+	$(".lesson-divSpan").addClass("noShow");
+	$(".lesson-classes").removeClass("show");
+	$(".lesson-identificadores").removeClass("show");
+	$(".lesson-universal").addClass("show");
+});
+
+$(".boxLink").on("click", function() {
+	$(".lesson-divSpan").addClass("noShow");
+	$(".lesson-classes").removeClass("show");
+	$(".lesson-identificadores").removeClass("show");
+	$(".lesson-universal").removeClass("show");
+	$(".lesson-box").addClass("show");
+});
+

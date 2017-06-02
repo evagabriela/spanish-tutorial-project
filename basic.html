@@ -77,7 +77,7 @@
      </div>
 
      <div class="lesson-enlaces">
-       <p>Los enlaces o links se utilizan para “enlazar” ciertas páginas al sitio web. Por ejemplo, si el contenido de una página web es acerca del cambio climático, y quieres que los usuarios de la página visiten otras páginas para conocer más acerca del cambio climático, entonces necesitarás links. Los links están representados con la etiqueta <mark>&lta></mark>. La "a" es la inicial de la palabra en inglés "anchor".</p> 
+       <p>Los enlaces o links se utilizan para “enlazar” ciertas páginas al sitio web. Por ejemplo, si el contenido de una página web es acerca del cambio climático, y quieres que los usuarios de la página visiten otras páginas para conocer más acerca del cambio climático, entonces necesitarás links. Los links están representados con la etiqueta <mark>&lta> &lt/a></mark>. La "a" es la inicial de la palabra en inglés "anchor".</p> 
       <div class="white-space"></div>
        <p>Al igual que las imágenes, los links también necesitan un atributo que indique dónde se encuentra el enlace. Este atributo se llama <mark>href</mark>, versión corta del inglés "Hypertext reference" que significa hypertexto de referencia. Un link se representa de la siguiente manera:</p>
       <div class="white-space"></div>
@@ -98,6 +98,52 @@
     &lt/ol>
     </p>
       <div class="white-space"></div>
+
+
+<textarea name="my-xml-editor" data-editor="html">
+    
+    </textarea>
+    <div id="resultContainer">
+           <iframe id="result">
+           <h1>Hola</h1>
+           <h2>Que tal</h2>
+           </iframe>
+    </div>
+
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+    <script>
+    // Hook up ACE editor to all textareas with data-editor attribute
+    $(function () {
+        $('textarea[data-editor]').each(function () {
+            var textarea = $(this);
+            var mode = textarea.data('editor');
+            var editDiv = $('<div>', {
+                position: 'absolute',
+                width: textarea.width(),
+                height: textarea.height(),
+                'class': textarea.attr('class')
+            }).insertBefore(textarea);
+            textarea.css('display', 'none');
+            var editor = ace.edit(editDiv[0]);
+            editor.renderer.setShowGutter(true);
+            editor.getSession().setValue(textarea.val());
+            editor.getSession().setMode("ace/mode/" + mode);
+            
+            // copy back to textarea on form submit...
+            textarea.closest('form').submit(function () {
+                textarea.val(editor.getSession().getValue());
+            })
+
+            editor.on('change', function() {
+              $('#result').contents().find('html').html(editor.getSession().getValue());
+              // val();
+            });
+        });
+    });
+</script>
+
+
       <p>Las listas desordenadas representadas por <mark>&ltul> &lt/ul></mark>, donde ul es la versión corta del inglés "unordered list", crean listas que empiezan con puntos</p>
       <div class="white-space"></div>
       <p>Ejemplo</p> 

@@ -20,6 +20,7 @@
       <li class="divsLink">Divs y Spans</li>
       <li class="classLink">Clases</li>
       <li class="idLink">Identificadores</li>
+      <li class="universalLink">Selector Universal</li>
       <li class="boxLink">Modelo de la caja</li>
     </ul>
   </nav>
@@ -152,6 +153,65 @@
       font-style: Open Sans;<br>
     }<br>
       </p>
+     </div>
+
+     <div class="lesson-universal">
+       <p>
+         Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces recurrimos a CSS:
+       </p>
+       <div class="white-space"></div>
+       <p>
+         * { <br>
+         border: 1px solid red; <br>
+          } 
+       </p>
+        <div class="white-space"></div>
+        <p>
+          Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS. 
+        </p>
+     </div>
+
+     <div class="lesson-box">
+       <p>
+         El modelo de la caja está representado por el siguiente gráfico:
+       </p>
+       <div class="white-space"></div>
+       <p>
+         Cada elemento está compuesto por cuatro partes: <mark>contenido, padding, borde, margen</mark>. Lo que se encuentra en el medio es el contenido, osea el texto o la imágen. Entre el contenido y el borde, se encuentra el espacio llamado padding. Por último, el margen es el espacio que rodea a todo el elemento y está ubicado después del borde. El margen es el espacio que separa al elemento de otro elemento.
+       </p>
+       <div class="white-space"></div>
+       <p>
+         Gracias a CSS podemos modificar el borde, padding y margen. Por ejemplo, podemos aumentar el ancho del borde, o el espacio entre cada elemento.
+       </p>
+       <div class="white-space"></div>
+       <p>
+         * { <br>
+border: 4px double red;<br>
+margin: 10px;<br>
+}
+       </p>
+       <div class="white-space"></div>
+       <p>
+         Si no queremos aumentar el margen de los cuatro lados al mismo tiempo, entonces podemos especificar sólo el lado que queramos. Por ejemplo, margin-top se refiere al margen de arriba de la caja, margin-right, indica el margen derecho, margin-bottom es el margen ubicado abajo de la caja, y por último, margin-left, a la izquierda de la caja. 
+       </p>
+       <div class="white-space"></div>
+       <p>
+         * { <br>
+border: 2px dashed blue; <br>
+margin-right: 15px; <br>
+}
+       </p>
+       <div class="white-space"></div>
+       <p>
+         Si necesitas que cada lado de la caja tenga un margen diferente, esto lo podés definir en una sóla línea de código. <br>
+          * { <br>
+        margin: 10px 15px 20px 5px<br>
+        }
+       </p>
+       <div class="white-space"></div>
+       <p>
+         Ten en cuenta que la primera medida (10px) se refiere al margin-top de la caja, y luego avanzás de acuerdo al sentido de las manecillas del reloj. Es decir, margin-top, margin-right, margin-bottom y margin-left. 
+       </p>
      </div>
   </div>
 
