@@ -8,6 +8,7 @@ $(".titlesLink").on("click", function() {
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".imageLink").on("click", function() {
@@ -19,6 +20,7 @@ $(".imageLink").on("click", function() {
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".enlaceLink").on("click", function() {
@@ -30,6 +32,7 @@ $(".enlaceLink").on("click", function() {
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".listLink").on("click", function() {
@@ -41,6 +44,7 @@ $(".listLink").on("click", function() {
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".boldLink").on("click", function() {
@@ -52,6 +56,7 @@ $(".boldLink").on("click", function() {
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".introLink").on("click", function() {
@@ -63,6 +68,7 @@ $(".introLink").on("click", function() {
 	$(".lesson-intro").removeClass("noShow");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".colorLink").on("click", function() {
@@ -74,6 +80,7 @@ $(".colorLink").on("click", function() {
 	$(".lesson-negritas").removeClass("show");
 	$(".lesson-intro").addClass("noShow");
 	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-editor").removeClass("show");
 });
 
 
@@ -86,6 +93,7 @@ $(".multipleChangesLink").on("click", function() {
 	$(".lesson-negritas").removeClass("show");
 	$(".lesson-color").removeClass("show");
 	$(".lesson-intro").addClass("noShow");
+	$(".lesson-editor").removeClass("show");
 });
 
 $(".classLink").on("click", function() {
@@ -127,4 +135,18 @@ $(".boxLink").on("click", function() {
 	$(".lesson-universal").removeClass("show");
 	$(".lesson-box").addClass("show");
 });
+
+$(".ejercicioLink").on("click", function() {
+	$(".lesson-multipleChanges").removeClass("show");
+	$(".lesson-titulos").removeClass("show");
+	$(".lesson-images").removeClass("show");
+	$(".lesson-enlaces").removeClass("show");
+	$(".lesson-list").removeClass("show");
+	$(".lesson-negritas").removeClass("show");
+	$(".lesson-color").removeClass("show");
+	$(".lesson-intro").addClass("noShow");
+	$(".lesson-editor").addClass("show");
+});
+
+
 
