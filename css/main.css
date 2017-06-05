@@ -232,7 +232,7 @@ textarea {
 	padding-bottom: 30px; 
 	background: linear-gradient(rgba(214, 87, 128, .4), rgba(169, 109, 163, .5)), 
 	url("../images/woman-cellphone.jpg");
-	height: 650px;
+	height: 740px;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -242,10 +242,10 @@ textarea {
 	background-color: #fafafa;
 	max-width: 700px;
 	margin: 0 auto;
-	margin-top: 120px;
+	margin-top: 74px;
 	padding: 30px;
-	height: 650px;
-	padding-top: 40px;
+	height: 600px;
+	padding-top: 15px;
 }
 
 .send {
