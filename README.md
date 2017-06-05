@@ -1,3 +1,3 @@
 # spanish-tutorial-project
 
-[WIP]
+[WIP] Coding tutorials in Spanish
