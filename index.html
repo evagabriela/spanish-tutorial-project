@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Aprendé a programar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="https://use.fontawesome.com/442a884b4a.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aprendé a programar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://use.fontawesome.com/442a884b4a.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
 
 	<!--  First section - HOME --> 
-	<header>
-		<div class="header-background">
-			<nav>
-				<div class="to-left">
-					<a href="#index">WARMI</a>
-				</div>
-				<div class="floating">
-					<a href="#goToCourses">Cursos</a>
-					<a href="#">Contacto</a>
-				</div>
-			</nav>
+		<header>
+			<div class="header-background">
+				<nav>
+					<div class="to-left">
+						<a href="#index">WARMI</a>
+					</div>
+					<div class="floating">
+						<a href="#goToCourses">Cursos</a>
+						<a href="#">Contacto</a>
+					</div>
+				</nav>
 
-			<div class="header-titles">
-				<h1>Adquirí habilidades tecnológicas</h1>
+				<div class="header-titles">
+					<h1>Aprendé habilidades digitales</h1>
+				</div>
+				<div class="subheader">
+					<h2>Programá desde lo más básico <br> hasta poder construir tu propia página web</h2>
+				</div>
+				<a class="btn" href="#goToCourses">Empezar</a>
 			</div>
-			<div class="subheader">
-				<h2>Aprendé a programar desde lo más básico <br> hasta poder construir tu propia página web</h2>
-			</div>
-			<a class="btn" href="#goToCourses">Empezar</a>
 		</header>
 
-		<!--  Second section - Courses --> 
+			<!--  Second section - Courses --> 
 		<section class="courses text-center" id="goToCourses"> 
 			<article class="courses-box">
 				<div class="card color1">
-					<a href="basic.html"><h4>HTML & CSS</h4></a>
+					<a href="pages/classroom1.html"><h4>HTML & CSS</h4></a>
 					<h5>Nivel básico</h5>
 				</div>
 			</article>
@@ -46,7 +47,7 @@
 
 			<article class="courses-box">
 				<div class="card color2"> 
-					<a href="html/intermediate.html"><h4>HTML & CSS</h4></a>
+					<a href="pages/classroom2.html"><h4>HTML & CSS</h4></a>
 					<h5>Nivel intermedio</h5>
 				</div>
 			</article>
@@ -75,35 +76,25 @@
 				</div>
 			</article>
 
-			<article class="courses-box">
-				<div class="card color6">
-					<h4>JavaScript</h4>
-					<h5>Nivel avanzado - Próximamente</h5>
-				</div>
-			</article> 
+				<article class="courses-box">
+					<div class="card color6">
+						<h4>JavaScript</h4>
+						<h5>Nivel avanzado - Próximamente</h5>
+					</div>
+				</article> 
 		</section>
 
-		<!-- Last section - Footer  -->
-		<div class="contact">
-		<div class="white-spacer"></div>
-		<form action="submit">
-			<div class="form-block">
-			<h2>Contactanos</h2>
-			<p>Si te interesa colaborar con nosotras, o tenés alguna sugerencia acerca de cómo mejorar las clases, entonces no dudes en dejarnos un mensaje!</p>
-			<div class="white-spacer"></div>
-			<label for="userName">Nombre y apellido</label>
-			<input type="text" name="userName" id="userName">
-			<label for="email">Correo electrónico</label>
-			<input type="email" name="email" id="email">
-			<label for="message">Mensaje</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<input type="submit" value="Enviar" class="send">
+			<!-- Contact section  -->
+		<div class="main-contact">
+			<div class="contactUs">
+				<span class="contact-title"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><h2>Contactanos</h2></span>
+				<p>Si te interesa colaborar con nosotras, o tenés alguna sugerencia acerca de cómo mejorar las clases, entonces no dudes en dejarnos un mensaje!</p>
+				<div class="white-spacer"></div>
+				<a href="mailto:someone@example.com?Subject=Hola%20Eku" target="_top">Enviar email</a>
 			</div>
-		</form>
-			
 		</div>
 
-		<!-- Last section - Footer  -->
+			<!-- Last section - Footer  -->
 		<footer>
 			<div class="about text-center">
 				<h6>@codeInc</h6>  
