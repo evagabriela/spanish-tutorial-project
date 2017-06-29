@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	color: #7d97ad;
+	font-family: 'Gentium Basic', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+	color: #fff;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.to-left {
+	float: left;
+}
+
+.floating {
+  float: right;
+}
+
+nav a {
+	padding: 0 20px;
+}
+
+nav {
+	padding: 20px 0;
+}
+
+.brand {
+	font-size: 30px;
+	font-family: 'Palanquin Dark', sans-serif;
+	z-index: 2000;
+	color: #fff;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(to bottom right, #c384c5, #c384c5);
+	border-radius: 50%;
+	margin-top: -120px;
+	margin-left: -60px;
+}
+
+
+.header-background{
+   background: linear-gradient(to bottom right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+   url("../images/womentech.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+   background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   letter-spacing: 1.5px;
+}
+
+.header-titles {
+	padding-top: 140px;
+	padding-bottom: 0;
+	color: #fff;
+	font-size: 25px;
+	margin: 0 auto;
+	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+	font-family:'Playfair Display', serif;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.subheader {
+	color: #fff;
+	font-size: 20px;
+	font-family:'Playfair Display', serif;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+a.btn {
+    background: linear-gradient(to bottom right, #c384c5, #c384c5);
+	color: #fff;
+	margin-top: 30px;
+	float: left;
+	margin-left: 525px;
+	padding: 12px 135px;
+	font-size: 16px;
+	border: 3px solid inherit;
+	border-radius: 25px;
+	letter-spacing: 1.5px;
+	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+	transition: all .2s ease-in-out;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+
+/* a.btn:hover {
+	background: #63b2c6;
+} */
+
+/*Courses*/ 
+
+.courses-titles {
+	color: rgba(0, 191, 178, 0.8);
+	margin-top: 100px;
+}
+
+.courses {
+	display: flex;
+	justify-content: space-around;
+	margin: 60px;
+	margin-top: 80px;
+	height: auto;
+	padding-bottom: 62px;
+}
+
+.space {
+	margin-top: 140px;
+}
+
+.courses-box {
+	width: 27%;
+}
+
+.card {
+	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+	height: 200px;
+	border-radius: 0.375rem;
+	transition: all .3s ease-in-out;
+	color: #7d97ad;
+	background-color: #fff;
+}
+
+
+.card:hover {
+	box-shadow: 10px 16px 20px 0px rgba(46,61,73,0.15);
+	transform: scale(1.03);
+}
+
+.color1 {
+	border-top: 7px solid #e0568b;
+
+}
+
+.color2 {
+	border-top: 7px solid #b656e0;
+}
+
+.color3 {
+	border-top: 7px solid #DCED31;
+}
+
+.color4 {
+	border-top: 7px solid #EF2D56;
+}
+
+.color5 {
+	border-top: 7px solid #ED7D3A;
+}
+
+.color6 {
+	border-top: 7px solid #0CCE6B;
+}
+
+h4 {
+	color: #A96DA3;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+h5 {
+	font-size: 17px;
+	text-transform: uppercase;
+	padding-left: 21px;
+    padding-top: 20px;
+}
+
+
+.text-center {
+	text-align: left;
+}
+
+
+/* CONTACT */
+.main-contact {
+	padding-top: 125px; 
+	background: linear-gradient(to bottom right, #c384c5, #c384c5);
+	height: 400px;
+}
+
+.contactUs {
+	background-color: #fff;
+	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+	height: 300px;
+	width: 950px;
+	color: #525c65;
+	margin: 50px auto;
+	margin-top: -68px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 6px;
+	font-size: 18px;
+}
+
+.contactUs a {
+	color: #fff;
+	background: linear-gradient(to bottom right, #c384c5, #c384c5);
+	border-radius: 4px;
+	padding: 8px;
+	padding-left: 35px;
+	padding-right: 35px;
+	box-shadow: 10px 15px 20px 0px rgba(46,61,73,0.15);
+	font-size: 20px;
+}
+
+
+
+.contact-title {
+	color: #c384c5;
+	font-size: 25px;
+}
+
+
+/*FOOTER*/
+.about {
+	margin-top: 0px;
+	background-color: #1b1b1b;
+	overflow: hidden;
+	height: 50px;
+}
+
+h6 {
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-left: 660px;
+}
+
+.white-spacer {
+	height: 15px;
+}
+
+
+
+
+
