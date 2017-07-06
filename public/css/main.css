@@ -57,7 +57,7 @@ nav {
 
 .header-background{
    background: linear-gradient(to bottom right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-   url("../images/womentech.jpg");
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center bottom;
