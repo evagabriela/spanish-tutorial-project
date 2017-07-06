@@ -21,13 +21,12 @@
 			<div id="sidebar-container">
 				<ul class="sidebar-nav">
 					<h4>Intro a la Programación</h4>
-					<li class="programarLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>&nbsp;Qué es programar?</li>
+					<li class="programarLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Qué es programar?</li>
 				    <li class="variablesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Variables</li>
 				    <li class="condicionalesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Condicionales</li>
 				    <li class="loopsLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Loops</li>
 				    <li class="funcionesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Funciones</li>
             <li class="test3Link"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
-				    <li class="logro"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Felicidades!</li>
             
 				</ul>
 			</div>
@@ -39,82 +38,91 @@
 					<div class="col-lg-12">
 					
 						<div class="lesson-programar">
-              <div class="highlight">
-                <p>Programar es escribir una serie de instrucciones que la computadora pueda entender y ejecutar.</p>
-              </div>
-      					<div class="white-space"></div>
+                <div class="dibus">
+                  <i class="fa fa-birthday-cake fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
+                </div>
                 <div class="white-space"></div>
-      					<p><i class="fa fa-birthday-cake fa-4x" aria-hidden="true"></i>Imagina que tienes que preparar una torta de cumpleaños</p>
+      					<p>¿Seguiste alguna vez instrucciones para hornear un pastel o cocinar algún otro plato? Seguramente tuviste que seguir las instrucciones -- en un cierto orden -- para que el pastel te salga igual a la receta.</p> 
+                <div class="white-space"></div>
+                <p>¿Ahora, cómo le explicarías a tu amigo que nunca horneó un pastel los pasos para hacerlo?</p>
+                <div class="white-space"></div>
+                <p>Piensa por un momento en la respuesta <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></p>
+                <div class="white-space"></div>
+                <p>Seguro escribirías la secuencia de pasos a seguir y detallarías cada paso con el tiempo y los ingredientes necesarios para hacer el pastel de manera que tu amigo entienda y pueda prepararlo. Lo mismo ocurre al programar.</p>
      						<div class="white-space"></div>
+                <div class="white-space"></div>
+                <div class="highlight">
+                <p>Programar es escribir una serie de instrucciones que la computadora pueda entender y ejecutar.</p>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+              </div>
+            </div>
      					
 
     					<div class="lesson-variables">
-                <div class="highlight">
-                  <p>Empecemos por la estructura del sitio web. HTML trabaja con etiquetas. Generalmente, las etiquetas vienen de a dos: una etiqueta de inicio < > y una etiqueta de cierre &lt/&gt. Entre las etiquetas se coloca el texto u otro contenido.<br> Ejemplo: &lth1&gt Hola! Estoy dentro de etiquetas &lt/h1&gt</p>
-                </div>
       						<div class="white-space"></div>
-      						<h4>Cómo crear títulos?</h4> 
+                  <div class="dibus">
+                    <i class="fa fa-address-book-o fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
+                  </div>
+                  <div class="white-space"></div> 
+      						<p>¿Te acordás cómo guardaste los números de teléfono de tus amigos en tu celular, o en alguna agenda telefónica?</p>
       						<div class="white-space"></div>
-      						<p>Para empezar a construir un sitio web necesitamos un título, unos párrafos, y también podemos agregar una imágen y unos links. HTML te permite escribir títulos con los siguientes elementos: <mark>h1, h2, h3, h4, h5, h6</mark>. La "h" se refiere a "heading" en inglés, osea título en español. Los números que acompañan la "h" indican el tamaño del título, siendo h1, el título principal o el más grande, seguido por h2, que sería el subtítulo, y luego los títulos más pequeños que se utilizan para dividir secciones.</p>
-      						<div class="white-space"></div>
-                
+                  <p>Generalmente guardamos los números utilizando dos tipos de datos: el nombre de la persona y el número de teléfono que le pertenece a esa persona</p> 
                   <div class="white-space"></div>
-      						<h4>Cómo crear párrafos?</h4>
-      						<div class="white-space"></div>
-      						<p>Para escribir párrafos se utilizan estas etiquetas <mark>&ltp> &lt/p></mark> con el contenido del párrafo adentro. De más está decir que la "p" corresponde a la inicial de la palabra párrafo.</p>
-      						<div class="white-space"></div>
+                  <p>Ejemplo:<br>Nombre: Carolina<br>Teléfono: 345-xxx-xxx</p>
+                  <div class="white-space"></div>
+                  <p>Gracias a este método no tenemos que acordarnos de todos los números de teléfono de nuestros amigos. Si queremos llamarles o escribirles sólo tenemos que buscar su nombre en el directorio teléfonico donde están guardados los números.</p> 
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>De la misma manera, al programar es necesario guardar cierta información en algún lugar de manera que podamos utilizarla luego en nuestro programa. Para eso utilizamos variables.</p>
+                  </div>
+                  <div class="white-space"></div>
+                  <div class="dibus">
+                    <i class="fa fa-archive fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
+                  </div>
+                  <div class="white-space"></div>
+                  <p>Las variables son como cajas o contenedores en donde guardamos información para utilizarlas luego.</p>
+                  <div class="white-space"></div>
+                  <p>Para crear una variable se utiliza la palabra <mark>var</mark> seguido del nombre y el valor que se le quiere asignar a la variable.</p>
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>Ejemplo:<br>var Carolina = 345xxxxxx</p>
+                  </div>
+                  <div class="white-space"></div>
+                  <p>En el ejemplo guardamos el número de teléfono de Carolina en una variable.</p>
+                  <div class="white-space"></div>
+                  <p>Podemos guardar distintos tipos de datos en una variable, como por ejemplo números y cadenas. Las cadenas son una lista de carácteres rodeada de comillas. Por ejemplo: "Lisa", "Dr. José", "123".</p>
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>var dirección = "A la vuelta de la esquina"</p>
+                    <div class="white-space"></div>
+                    <div class="white-space"></div>
+                  </div>
                   
      					</div>
 
 
      					<div class="lesson-condicionales">
-       						<p>Para acompañar al contenido escrito de la página, podemos usar distintas imágenes. Para agregar una imágen utilizamos el elemento <mark>img</mark>, pero a diferencia de los títulos y párrafos, img no requiere una etiqueta de cierre <mark>&lt/&gt</mark>.</p> 
-                  <div class="white-space"></div>
-                  <p>El elemento img no funciona por si solo; necesita apuntar a un URL específico o una dirección determina donde se encuentra la imágen que se quiere utilizar. Esto se hace a través del atributo <mark>src</mark>  que es la versión corta del inglés "source" que significa fuente, es decir el lugar donde se encontrará la imágen.</p>
-                  <div class="white-space"></div> 
-                  <div class="highlight">
-                  <p>Ejemplo: &ltimg src = “https://www.tuimagen.com/tu-imagen.jpg">.</p>
-                  </div>
-      						<div class="white-space"></div>
-      						<p>Sin embargo, todavía falta algo. Todas las etiquetas de imágenes necesitan incorporar un atributo llamado <mark>alt</mark>.  Este atributo contiene el texto que se mostrará en el caso de que la imágen no se cargue debidamente y no pueda mostrarse en la página. Además, alt sirve para hacer más accesible la página web.</p>
-                  <div class="white-space"></div>
-                  <div class="highlight">
-                    <p>La forma correcta de colocar una imágen es la siguiente:<br>&ltimg src = “https://www.tuimagen.com/tu-imagen.jpg" alt=“Descripción de la imágen”></p>
-                  </div> 
-      						<div class="white-space"></div>
-      						<p>Algunas imágenes necesitarán unos retoques en el tamaño. Para especificar el tamaño de la imágen se utiliza <mark>width</mark> que significa "ancho" en español.</p>
-                  <div class="white-space"></div>
+       					
+              </div>
                   
 
      					
      					<div class="lesson-loops">
-       						<p>Los enlaces o links se utilizan para “enlazar” ciertas páginas al sitio web. Por ejemplo, si el contenido de una página web es acerca del cambio climático, y quieres que los usuarios de la página visiten otras páginas para conocer más acerca del cambio climático, entonces necesitarás links. Los links están representados con la etiqueta <mark>&lta> &lt/a></mark>. La "a" es la inicial de la palabra en inglés "anchor".</p> 
-      						<div class="white-space"></div>
-       						<p>Al igual que las imágenes, los links también necesitan un atributo que indique dónde se encuentra el enlace. Este atributo se llama <mark>href</mark>, versión corta del inglés "Hypertext reference" que significa hypertexto de referencia. Otro atributo importante es <mark>target</mark>, al cual se le agrega el valor <mark>"_blank"</mark>. Gracias a este atributo, cada vez que el usuario hace click en el link, la nueva página se abre en una nueva pestaña. 
-							<div class="white-space"></div>
-       						<p>Finalmente, entre la etiqueta de inicio y la etiqueta de cierre se coloca el texto sobre el cual se deberá hacer click para acceder al link. Un link se representa de la siguiente manera:</p>
-      						<div class="white-space"></div>
+       				
+              </div>
                  
 
 
      					<div class="lesson-funciones">
-     						<p>HTML nos permite crear dos tipos de listas: <mark>ordenadas y no ordenadas</mark>. Las listas ordenadas están numeradas. Se representan con la etiqueta <mark>&ltol> &lt/ol></mark> versión corta del inglés "ordered list". Dentro de estas etiquetas se colocan otras etiquetas para enumerar la lista, estas son <mark>&ltli> &lt/li></mark>. Las listas desordenadas representadas por <mark>&ltul> &lt/ul></mark>, donde ul es la versión corta del inglés "unordered list", crean listas que empiezan con puntos.</p>
-                <div class="white-space"></div>
+     					
+              </div>
  
 
-                      <div class="lesson-test">
+              <div class="lesson-test">
                 <div class="typeform-widget" data-url="https://cdp2.typeform.com/to/zNG8GO" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 1000px; height: 600px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/?utm_campaign=zNG8GO&amp;utm_source=typeform.com-8944533-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
               </div>
                  
-
-     					<div class="lesson-editor">
-     						<div class="completion">
-     							<h2>Lo lograste, ¡Felicidades!</h2>
-     							<div class="white-space"></div>
-     							<i class="fa fa-star-o fa-4x" aria-hidden="true" style="color:yellow"></i><i class="fa fa-trophy fa-4x" aria-hidden="true" style="color:#77BFA3"></i><i class="fa fa-star-o fa-4x" aria-hidden="true" style="color:yellow"></i> 
-     							<div class="white-space"></div>
-     						</div>
-     					</div>
 
 					</div>
 				</div>

@@ -30,6 +30,8 @@ p {
 #sidebar-container {
 	overflow: scroll;
 	background-color: #c384c5;
+	background-color: #3BCEAC;
+	background-color: #69D1C5;
 	color: #fff;
 	display: block;
 	position: fixed;
@@ -53,14 +55,13 @@ li {
 
 .page-content-container {
 	position: absolute;
-	top: 120px;
+	top: 70px;
 	left: 354px;
-	max-width: 66em;
+	max-width: 70em;
 	text-align: justify;
     text-justify: auto;
 	transition: all .4s ease-in-out;
 	background-color: #fff;
-    overflow: scroll;
 }
 
 /* sidebar - styling  */
@@ -105,7 +106,8 @@ li {
 
 .lesson-titulos, .lesson-images, .lesson-enlaces, .lesson-list, .lesson-negritas, .lesson-color, .lesson-multipleChanges, .lesson-classes, .lesson-identificadores, .lesson-universal,
  .lesson-box, .lesson-editor, .lesson-ejercicioDivs, .lesson-ejercicioClass, .lesson-ejercicioId, .lesson-ejerciciobox, .lesson-ejercicioTitles,
- .lesson-ejercicioImage, .lesson-ejercicioLink, .lesson-ejercicioList, .lesson-ejercicioColor, .lesson-ejercicioMultiple, .lesson-test, .test2 {
+ .lesson-ejercicioImage, .lesson-ejercicioLink, .lesson-ejercicioList, .lesson-ejercicioColor, .lesson-ejercicioMultiple, .lesson-test, .test2,
+ .lesson-variables {
 	display: none;
 }
 
@@ -140,7 +142,7 @@ li {
 
 pre {
 	font-style:'Source Code Pro', monospace;
-	width: 900px;
+	width: 950px;
 	tab-size: 2;
 	/* margin-left: 100px; */
 	background-color: transparent;
@@ -149,9 +151,19 @@ pre {
 
 .highlight p {
 	background-color: #69D1C5;
+	background-color: #E0ACD5;
+	background-color: #c384c5;
+	background-color: #ECB0E1;
+	background-color: #c384c5;
 	color: #fff;
 	padding: 30px;
 }
+
+.dibus {
+	margin-left: 400px;
+}
+
+
 
 
 

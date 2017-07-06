@@ -445,6 +445,18 @@ $(".test2Link").on("click", function() {
 	$(".lesson-test").removeClass("show");
 });
 
+//Intro a la programacion
+
+$(".variablesLink").on("click", function() {
+	$(".lesson-programar").addClass("noShow");
+	$(".lesson-variables").addClass("show");
+});
+
+$(".programarLink").on("click", function() {
+	$(".lesson-variables").removeClass("show");
+	$(".lesson-programar").removeClass("noShow");
+});
+
 
 
 
