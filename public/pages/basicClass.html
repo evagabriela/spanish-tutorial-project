@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		
+   		<title>Classroom</title>
+
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   		<script src="https://use.fontawesome.com/442a884b4a.js"></script>
+   		<link rel="stylesheet" href="../css/class.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
+	</head>
+	<body>
+	
+			<!-- sidebar -->
+			<div id="sidebar-container">
+				<ul class="sidebar-nav">
+					<h4>HTML & CSS básico</h4>
+					<li class="introLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>&nbsp;Introducción</li>
+				    <li class="titlesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Titulos y párrafos</li>
+				    <li class="ejercicioTitlesLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+				    <li class="imageLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Imágenes</li>
+				    <li class="ejercicioImageLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+				    <li class="enlaceLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Enlaces</li>
+				    <li class="ejercicioLinkLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+				    <li class="listLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Listas</li>
+				    <li class="ejercicioListLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+				    <li class="colorLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;CSS básico</li>
+				    <li class="ejercicioColorLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+				    <li class="multipleChangesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Múltiples cambios</li>
+				    <li class="ejercicioMultipleLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Practiquemos!</li>
+            <li class="testLink"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
+				    <li class="ejercicioLink"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Felicidades!</li>
+            
+				</ul>
+			</div>
+		
+			<!-- page-content -->
+		<div class="page-content-container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+					
+						<div class="lesson-intro">
+                <div class="dibus">
+                  <i class="fa fa-laptop fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
+                </div>
+                <div class="white-space"></div>
+		  					<p>Una página web está compuesta por dos partes: el front-end y el back-end. El front-end se refiere a la parte visible de la página web. Es decir, la información, fotos, imágenes, links, formularios, y otros elementos visibles con los cuales uno interactúa al abrir una página web como Facebook o Twitter. Por otro lado, el back-end no es visible para el usuario. A grandes rasgos, el back-end es la parte que interactúa con servidores y base de datos que envían información al front-end cuando este lo necesita.</p>
+      					<div class="white-space"></div>
+                <div class="highlight">
+                  <p>En este curso nos enfocaremos en el front-end. Es decir, aprenderemos sobre las tres tecnologías que se necesitan para construirlo: HTML, CSS y JavaScript. Para que tengas una mejor idea, imagina que vas a construir una casa. Para empezar, necesitarás construir la estructura de la casa, osea, los cimientos, paredes, techo. Luego tendrás que agregarle más estilo a la casa. Puedes pintar las paredes de amarillo, blanco, o gris. También tienes que elegir los colores del piso, los cuadros, el tamaño de las mesas, y todos los demás detalles que hacen que tu casa tenga un estilo único. Por último, deberás atender los detalles más funcionales. Por ejemplo, cómo va a funcionar el portón eléctrico, la ducha de la bañera, o el encendido de las luces del jardín.</p>
+                </div>
+     						<div class="white-space"></div>
+                <div class="dibus">
+                  <i class="fa fa-home fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
+                </div>
+     						<p>Para la construcción del front-end de una página web necesitamos enfocarnos en los mismos procedimientos que el ejemplo de la casa. Primero, la estructura o el esqueleto del sitio web. Para eso se utiliza HTML. Luego, para darle estilo al sitio se utiliza CSS, con el cual puedes poner colores, bordes o cambiar el tamaño de las letras, entre otras cosas. Finalmente, JavaScript te da la posibilidad de agregar interacciones a la página como por ejemplo, que aparezca una nueva ventana cada vez que el usuario hace click en algún botón.</p>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+                <button>Siguiente</button>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+	  				</div>	
+
+    					<div class="lesson-titulos">
+                <div class="highlight">
+                  <p>Empecemos por la estructura del sitio web. HTML trabaja con etiquetas. Generalmente, las etiquetas vienen de a dos: una etiqueta de inicio < > y una etiqueta de cierre &lt/&gt. Entre las etiquetas se coloca el texto u otro contenido.<br> Ejemplo: &lth1&gt Hola! Estoy dentro de etiquetas &lt/h1&gt</p>
+                </div>
+      						<div class="white-space"></div>
+      						<h4>Cómo crear títulos?</h4> 
+      						<div class="white-space"></div>
+      						<p>Para empezar a construir un sitio web necesitamos un título, unos párrafos, y también podemos agregar una imagen y unos links. HTML te permite escribir títulos con los siguientes elementos: <mark>h1, h2, h3, h4, h5, h6</mark>. La "h" se refiere a "heading" en inglés, osea título en español. Los números que acompañan la "h" indican el tamaño del título, siendo h1, el título principal o el más grande, seguido por h2, que sería el subtítulo, y luego los títulos más pequeños que se utilizan para dividir secciones.</p>
+      						<div class="white-space"></div>
+                  <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &lth1&gtSoy el título principal&lt/h1&gt
+    &lth2&gtSoy un subtítulo&lt/h2&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+
+                  <div class="white-space"></div>
+      						<h4>Cómo crear párrafos?</h4>
+      						<div class="white-space"></div>
+      						<p>Para escribir párrafos se utilizan estas etiquetas <mark>&ltp> &lt/p></mark> con el contenido del párrafo adentro. De más está decir que la "p" corresponde a la inicial de la palabra párrafo.</p>
+      						<div class="white-space"></div>
+                  <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &ltp&gtSoy un párrafo!&lt/p&gt
+    &ltp&gtPuedes agregar cuantos párrafos quieras!&lt/p&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+
+              <div class="white-space"></div>
+              <div class="white-space"></div>
+     				</div>
+
+     					<div class="lesson-ejercicioTitles">
+                  <p>En el editor de abajo podrás ver la diferencia de tamaños entre cada título. Escribe otros títulos debajo de los ya existentes utilizando h4, h5 y h6.</p>
+                  <div class="white-space"></div>
+                  <p>Luego escribe uno o dos párrafos en el editor. Puedes escribir tus párrafos debajo de los títulos. No te olvides de utilizar las etiquetas correspondientes.</p> 
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p> Recuerda hacer click en "Result" para examinar cómo se ve el resultado en la web.</p>
+                  </div>
+                  <div class="white-space"></div>
+     						  <p data-height="362" data-theme-id="30285" data-slug-hash="pwLEbP" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Títulos" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/pwLEbP/">Títulos</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+      						<div class="white-space"></div>
+                  <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-images">
+       						<p>Para acompañar al contenido escrito de la página, podemos usar distintas imágenes. Para agregar una imagen utilizamos el elemento <mark>img</mark>, pero a diferencia de los títulos y párrafos, img no requiere una etiqueta de cierre <mark>&lt/&gt</mark>.</p> 
+                  <div class="white-space"></div>
+                  <p>El elemento img no funciona por si solo; necesita apuntar a un URL específico o una dirección determina donde se encuentra la imagen que se quiere utilizar. Esto se hace a través del atributo <mark>src</mark>  que es la versión corta del inglés "source" que significa fuente, es decir el lugar donde se encontrará la imágen.</p>
+                  <div class="white-space"></div> 
+                  <div class="highlight">
+                  <p>Ejemplo: &ltimg src = “https://www.tuimagen.com/tu-imagen.jpg">.</p>
+                  </div>
+      						<div class="white-space"></div>
+      						<p>Sin embargo, todavía falta algo. Todas las etiquetas de imágenes necesitan incorporar un atributo llamado <mark>alt</mark>.  Este atributo contiene el texto que se mostrará en el caso de que la imagen no se cargue debidamente y no pueda mostrarse en la página. Además, alt sirve para hacer más accesible la página web.</p>
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>La forma correcta de colocar una imagen es la siguiente:<br>&ltimg src = “https://www.tuimagen.com/tu-imagen.jpg" alt=“Descripción de la imágen”></p>
+                  </div> 
+      						<div class="white-space"></div>
+      						<p>Algunas imágenes necesitarán unos retoques en el tamaño. Para especificar el tamaño de la imagen se utiliza <mark>width</mark> que significa "ancho" en español. En el ejemplo de abajo le asignamos el valor de 200 pixeles al ancho de la imágen.</p>
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>
+                      Info: <br> Pixeles (px) es una unidad de medida que se utiliza para especificar el ancho, la altura, el tamaño del borde, o incluso el tamaño de letra entre otros. No está permitido que exista algún espacio entre el valor de la medida y la unidad de medida. <br>Ejemplo:<br>width=20 px <i class="fa fa-times" aria-hidden="true" style="color:red"></i> <br> width=20px <i class="fa fa-check" aria-hidden="true" style="color: green"></i>
+                    </p>
+                  </div>
+                  <div class="white-space"></div>
+                  <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &ltimg src="https://www.tuimagen.com/tu-imagen.jpg" alt="Descripción de la imágen" width=200px&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+              <div class="white-space"></div>
+              <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-ejercicioImage">
+     						<p>Te acordas que el elemento img necesita apuntar a alguna dirección específica donde se encuentra la imagen?</p>
+                <div class="white-space"></div>
+                <p>En el ejemplo del editor copia y pega la siguiente dirección al elemento img: "https://eku.academy/images/harrypotter.png" En esta dirección se encuentra la imagen de Harry Potter.</p>
+                <div class="white-space"></div>
+                <div class="highlight">
+                  <p>Recuerda colocar la dirección dentro del atributo <mark>src</mark>, rodeada de comillas. Luego haz click en "Result".</p>
+                </div>
+                <div class="white-space"></div>
+                <p>Como puedes ver, la imagen tiene un ancho de 300 pixeles (fijate en la etiqueta de imagen, después del atributo <mark>alt</mark>). Puedes modificar el ancho de la imagen. Prueba cambiando el número de pixeles a 200.</p>
+      					<div class="white-space"></div>
+      					<p>Agregá una segunda imagen debajo de la primera. Copia y pega dentro del nuevo elemento img, la siguiente dirección donde se encuentra la imagen de Hermione Granger: "https://eku.academy/images/hermione.png".</p>
+                <div class="white-space"></div>
+                <p>Si la imagen es muy grande, puedes modificarla agregando "width" y el número de pixeles que prefieras.</p>
+                  <div class="white-space"></div>
+                       						<div class="white-space"></div>
+                  <div class="white-space"></div>
+      						<p data-height="362" data-theme-id="30285" data-slug-hash="jwzeYp" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="jwzeYp" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/jwzeYp/">jwzeYp</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-enlaces">
+       						<p>Los enlaces o links se utilizan para “enlazar” ciertas páginas al sitio web. Por ejemplo, si el contenido de una página web es acerca del cambio climático, y quieres que los usuarios de la página visiten otras páginas para conocer más acerca del cambio climático, entonces necesitarás links. Los links están representados con la etiqueta <mark>&lta> &lt/a></mark>. La "a" es la inicial de la palabra en inglés "anchor".</p> 
+      						<div class="white-space"></div>
+       						<p>Al igual que las imágenes, los links también necesitan un atributo que indique dónde se encuentra el enlace. Este atributo se llama <mark>href</mark>, versión corta del inglés "Hypertext reference" que significa hypertexto de referencia. Otro atributo importante es <mark>target</mark>, al cual se le agrega el valor <mark>"_blank"</mark>. Gracias a este atributo, cada vez que el usuario hace click en el link, la nueva página se abre en una nueva pestaña. 
+							<div class="white-space"></div>
+       						<p>Finalmente, entre la etiqueta de inicio y la etiqueta de cierre se coloca el texto sobre el cual se deberá hacer click para acceder al link. Un link se representa de la siguiente manera:</p>
+      						<div class="white-space"></div>
+                        <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &lta href= “https://www.google.com/” target="_blank">Haz click aquí! Soy un link apuntando a Google&lt/a&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+
+                 
+              <div class="white-space"></div>
+              <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-ejercicioLink">
+     						<p>El editor contiene un link de información acerca del cambio climático cuyo resultado podrás ver en la pantalla de "Result". Haz click en el link y luego crea tu propio link. No te olvides de agregar el atributo <mark>target="_blank"</mark> antes del final de la etiqueta de apertura</p>
+      						<div class="white-space"></div>
+      						<p data-height="363" data-theme-id="30285" data-slug-hash="YQaVXw" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Links" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/YQaVXw/">Links</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-list">
+     						<p>HTML nos permite crear dos tipos de listas: <mark>ordenadas y no ordenadas</mark>. Las listas ordenadas están numeradas. Se representan con la etiqueta <mark>&ltol> &lt/ol></mark> versión corta del inglés "ordered list". Dentro de estas etiquetas se colocan otras etiquetas para enumerar la lista, estas son <mark>&ltli> &lt/li></mark>. Las listas desordenadas representadas por <mark>&ltul> &lt/ul></mark>, donde ul es la versión corta del inglés "unordered list", crean listas que empiezan con puntos.</p>
+                <div class="white-space"></div>
+                <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &ltol&gt
+      &ltli&gtSoy una lista ordenada&ltli&gt
+      &ltli&gtEstoy numerada&ltli&gt
+      &ltli&gtAquí importan las prioridades&ltli&gt
+    &lt/ol&gt
+
+    &ltul&gt
+      &ltli&gtSoy una lista desordenada&ltli&gt
+      &ltli&gtNo estoy numerada&ltli&gt
+      &ltli&gtTengo puntos&ltli&gt
+    &lt/ul&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+              <div class="white-space"></div>
+              <div class="white-space"></div>
+     					</div>
+
+     					<div class="lesson-ejercicioList">
+     						<p>En el editor se encuentran los dos tipos de listas. Agregá dos puntos más a cada una de las listas. Luego, haz click en "Result" para ver el resultado.</p>
+      						<div class="white-space"></div>
+    						<p data-height="361" data-theme-id="30285" data-slug-hash="JJLNdg" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Links" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/JJLNdg/">Links</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <div class="white-space"></div>
+                <div class="white-space"></div> 
+     					</div>
+
+     					<div class="lesson-color">
+                <div class="highlight">
+                  <p>Ya tenemos una idea de cómo estructurar una página web, con títulos, párrafos, imágenes, links y listas. Ahora es tiempo de agregarle un poco de estilo a la página, es decir, es tiempo de CSS.</p>
+                </div>
+       						<div class="white-space"></div>
+       						<p>Para empezar podemos cambiar el color del titulo principal. Para eso, se debe seleccionar el elemento que queremos cambiar, en este caso <mark>h1</mark>. Para cambiar estilos, CSS no requiere utilizar estos signos <mark>&lt > &lt / ></mark>. Sin embargo, CSS si requiere otros símbolos como las llaves <mark>{ }</mark>.<p>En el siguiente ejemplo, seleccionamos el elemento que queríamos cambiar, <mark>h1</mark>, y luego le agregamos el estilo, es decir el <mark>color</mark>, y le asignamos el color rojo (red). Nunca te olvides de agregar un punto y coma al final de cada estilo. Los estilos van siempre dentro de llaves.</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+h1 {
+  color: red;
+}
+                  </code></pre>
+       						<div class="white-space"></div>
+                  <p>También podemos modificar el color del fondo osea el "background" en inglés. Para eso, seleccionamos un elemento, por ejemplo la p, y le cambiamos el estilo dentro de las llaves. En el ejemplo de abajo cambiamos el color del background a azul (blue).</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+p {
+  background-color: blue;
+}
+                  </code></pre>
+                  <div class="white-space"></div>
+                  <p>
+                    Escribir el nombre de los colores que queremos cambiar está bien para empezar pero no es una buena práctica en CSS. Existen otras formas mejores de asignar colores, como por ejemplo, <mark>HEX, rgb y rgba</mark>. En esta lección vamos a trabajar con HEX. Pero si te interesa puedes leer más acerca de rgb y rgba en la web.
+                  </p>
+                   <div class="white-space"></div>
+                   <div class="highlight">
+                     <p>
+                     HEX o Hexadecimal es un sistema que asigna una combinación de números y letras a los colores. <br>Ejemplo: <br>#8CFBDE <br> 
+                  </p>
+                   </div>
+                  <div class="white-space"></div>
+                  <p>
+                      El color especificado en el ejemplo es agua marina. Si copias y pegas este código en Google verás exactamente el color del que estamos hablando y también verás una gama de colores que puedes utilizar para asignar colores en los siguientes ejercicios.<br>  
+                   </p>
+                   <div class="white-space"></div>
+                   <p>
+                     Pero, ¿que significan estos números y letras? Los primeros dos valores representan la intensidad del color <span style="color:red">rojo</span>. Los siguientes dos valores representan la intensidad del color <span style="color:green">verde</span>, y los últimos dos valores representan la intensidad del color <span style="color:blue">azul</span>. Por ejemplo, #0000FF representa el color azul, ya que vemos que el rojo y el verde son 0, osea no se encuentran esos colores en el ejemplo, pero el color azul es FF que representa el mayor valor de un color. ¿Puedes pensar cómo se representaría el color rojo? ¿y el verde?  
+                   </p>
+                    <div class="white-space"></div>
+                   <div class="highlight">
+                     <p>
+                     Recuerda: HEX siempre empieza con un simbolo numeral (#) y luego le siguen los números y letras. 
+                   </p>
+                   </div>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+                    
+                    <div class="lesson-ejercicioColor">
+                      <div class="highlight">
+                         <p><em>Observación:</em> Hasta ahora hemos trabajado con un solo panel: HTML. Sin embargo, los estilos se agregan en otro archivo, diferente al archivo donde se encuentra el contenido HTML. Es por eso, que nuestro editor nos muestra un panel diferente para CSS. En el caso de que no veas este panel, puedes hacer click en la pestaña que dice CSS.</p>
+                      </div>
+                      <div class="white-space"></div>
+                      <p> Cambia el color de la h1 por el color "blue" en el panel de CSS. También modifica el color del background del párrafo con el color "yellow". Haz click en "Result" para ver los cambios.
+                    <p>
+                    <div class="white-space"></div>
+                    <p>
+                    Ahora intenta utilizar HEX para asignar colores. Reemplazá el nombre del color que acabas de poner por el valor HEX (puede ser cualquier otro color). Puedes usar esta herramienta para descubrir colores: <a href="https://coolors.co/8b94a3-8cfbde-0fff95-06ba63-103900" target="_blank">Coolors</a>
+                    </p>
+                    <div class="white-space"></div>
+                    <p data-height="361" data-theme-id="30285" data-slug-hash="MoVmyP" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Color" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoVmyP/">Color</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    <div class="white-space"></div>
+                    <div class="white-space"></div>
+                    </div>
+          				
+
+     					<div class="lesson-multipleChanges">
+     						<p>
+       						Podemos cambiar varios estilos a la vez, colocando todos estos estilos dentro de la misma llave. Por ejemplo, para cambiar el tamaño y tipo de letra del texto, podemos utilizar los estilos <mark>font-size y font-family</mark>.</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+p {
+  font-size: 20px;
+  font-family: Monospace;
+}
+                  </code></pre> 
+                  <div class="white-space"></div>
+                  <h4>¡El cielo es el límite!</h4>
+                <p>También podemos agregar bordes a nuestros elementos en HTML. Por ejemplo, si queremos agregar un borde a la imágen, entonces seleccionamos img  y agregamos los estilos que queramos dentro de las llaves { }. Los bordes tienen tres atributos: color, ancho y estilo.</p>
+                <div class="white-space"></div>
+                 <pre><code>
+img {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+}
+                  </code></pre>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+                </div>  
+
+                      <div class="lesson-ejercicioMultiple">
+                        <p>Utilicemos nuestro mismo ejemplo de la clase anterior y agreguemos más estilos.</p>
+                        <div class="white-space"></div>
+                        <p>Prueba cambiar el color y tamaño del borde. Cambiá el border-style en vez de "solid", que sea "dashed", y luego cambiá otra vez a "double".</p>
+                        <div class="white-space"></div>
+                        <p data-height="361" data-theme-id="30285" data-slug-hash="MoVmyP" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Color" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoVmyP/">Color</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                        <div class="white-space"></div>
+                        <div class="white-space"></div>
+                      </div>
+
+                      <div class="lesson-test">
+                <div class="typeform-widget" data-url="https://cdp2.typeform.com/to/zNG8GO" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 1000px; height: 600px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/?utm_campaign=zNG8GO&amp;utm_source=typeform.com-8944533-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+              </div>
+                 
+
+     					<div class="lesson-editor">
+     						<div class="completion">
+     							<h2>Lo lograste, ¡Felicidades!</h2>
+     							<div class="white-space"></div>
+     							<i class="fa fa-star-o fa-4x" aria-hidden="true" style="color:yellow"></i><i class="fa fa-trophy fa-4x" aria-hidden="true" style="color:#77BFA3"></i><i class="fa fa-star-o fa-4x" aria-hidden="true" style="color:yellow"></i> 
+     							<div class="white-space"></div>
+     						</div>
+     						<div class="white-space"></div>
+     						<div class="white-space"></div>
+     						<p>Ahora sabés lo básico para construir un sitio web! Es tu turno de construir tu propia página! Aplicá todo lo que aprendiste utilizando el editor. Puedes agregar títulos, párrafos, imágenes, links y estilos.</p>
+     						<div class="white-space"></div>
+     						<p data-height="478" data-theme-id="30285" data-slug-hash="RgMgNQ" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Sitio web" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/RgMgNQ/">Sitio web</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <div class="white-space"></div>
+                <div class="white-space"></div> 
+     					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+		<script src="../js/vendor/jquery-1.12.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="../js/classroom.js"></script>
+   
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101994624-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>
