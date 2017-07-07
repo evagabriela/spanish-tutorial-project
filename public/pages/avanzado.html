@@ -1,81 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Classroom</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/class.css">
-	<script src="https://use.fontawesome.com/442a884b4a.js"></script>
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <title>Classroom</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://use.fontawesome.com/442a884b4a.js"></script>
+      <link rel="stylesheet" href="../css/class.css">
+      <link rel="stylesheet" href="../css/classroom.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
+  </head>
 <body>
 
-	<div class="nav-fixed background-yellow">
-		<h3>CodeInc</h3>
-	</div>
-  
-  <nav class="sidebar">
-    <a href="#"><i class="fa fa-times close-button" aria-hidden="true"></i></a>
-    <h2 class="color-yellow">HTML &amp CSS Avanzado</h2>
-    <ul>
-      <li class="#">Pseudoclases</li>
-      <li class="#">Keyframes</li>
-      <li class="#">Animaciones</li>
-      <li class="#">Media Queries</li>
+  <!-- sidebar -->
+  <div id="sidebar-container">
+    <ul class="sidebar-nav">
+      <h4>HTML & CSS Avanzado</h4>
+        <li class="divsLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Pseudoclases</li>
+        <li class="ejercicioDivsLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+        <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Keyframes</li>
+        <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+        <li class="idLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
+        <li class="ejercicioIdLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+        <li class="universalLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Media Queries</li>
+        <li class="ejercicioboxLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+        <li class="test2Link"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
     </ul>
-  </nav>
-
-	<div class="hamburger">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</div>
-
-	<div class="lesson">
-
-    <div class="lesson-titulos">
-      <p>Empecemos por la estructura del sitio web. HTML trabaja con etiquetas. Generalmente, las etiquetas vienen de a dos: una etiqueta de inicio <mark>< ></mark> y una etiqueta de cierre <mark>&lt/&gt</mark>. Entre las etiquetas se coloca el texto u otro contenido. Ejemplo: <mark>&lth1&gt Hola! Estoy dentro de etiquetas &lt/h1&gt</mark></p>
-      <div class="white-space"></div>
-      <h4>Cómo crear títulos?</h4> 
-      <div class="white-space"></div>
-      <p>Para empezar a construir un sitio web necesitamos un título, unos párrafos, y también podemos agregar una imágen y unos links. HTML te permite escribir títulos con los siguientes elementos: <mark>h1, h2, h3, h4, h5, h6</mark>. La h se refiere a heading en inglés, osea título. Los números que acompañan la h indican el tamaño del título, siendo h1, el título principal o el más grande, seguido por h2, que sería el subtítulo, y luego los títulos más pequeños que se utilizan para dividir secciones.</p>
-      <div class="white-space"></div>
-      <p>Ejemplos:
-      <div class="white-space"></div>
-      <p>&lth1&gt Soy el título principal &lt/h1&gt</p>
-      <p>&lth2&gt Yo soy un subtítulo &lt/h2&gt</p>
-      <p>&lth3&gt Esta es una sección &lt/h3&gt</p>
-      <div class="white-space"></div>
-      <h4>Cómo crear párrafos?</h4>
-      <div class="white-space"></div>
-      <p>Luego de los títulos, necesitaremos unos párrafos. Para eso se utilizan estas etiquetas <mark>&ltp> &lt/p></mark> con el contenido del párrafo adentro. De más está decir que la "p" es la inicial de la palabra párrafo.</p>
-      <div class="white-space"></div>
-      <p>Ejemplo:</p> 
-      <div class="white-space"></div>
-      &ltp>Hola, soy un párrafo. Nunca te olvides de que generalmente al final del contenido siempre tiene que haber una etiqueta de cierre.&lt/p>
-     </div>
-
-     <div class="lesson-images">
-       <p>Para acompañar al contenido escrito de la página, podemos usar distintas imágenes. Para agregar una imágen utilizamos el elemento <mark>img</mark>, pero a diferencia de los títulos y párrafos, img no requiere una etiqueta de cierre. El elemento img necesita apuntar a un URL específico o una dirección determina donde se encuentra la imágen que se quiere utilizar. Esto se hace a través del atributo <mark>scr</mark>  que es la versión corta del inglés source que significa fuente, es decir el lugar donde se encontrará la imágen.</p>
-      <div class="white-space"></div>
-      <p>&ltimg src = “https://www.tuimagen.com/tu-imagen.jpg"></p>
-      <div class="white-space"></div>
-      <p>Sin embargo, todavía falta algo. Todas las etiquetas de imágenes necesitan incorporar un atributo llamado <mark>alt</mark>.  Este atributo contiene el texto que se mostrará en el caso de que la imágen no se cargue debidamente y no pueda mostrarse en la página. Además, alt sirve para hacer más accesible la página web. La forma correcta de colocar una imágen es la siguiente:</p>
-      <div class="white-space"></div>
-      <p>&ltimg src = “https://www.tuimagen.com/tu-imagen.jpg" alt=“Descripción de la imágen”></p>
-     </div>
-
-     <div class="lesson-enlaces">
-       <p>Los enlaces o links se utilizan para “enlazar” ciertas páginas al sitio web. Por ejemplo, si el contenido de una página web es acerca del cambio climático, y quieres que los usuarios de la página visiten otras páginas para conocer más acerca del cambio climático, entonces necesitarás links. Los links están representados con la etiqueta <mark>&lta></mark>. La "a" es la inicial de la palabra en inglés "anchor".</p> 
-      <div class="white-space"></div>
-       <p>Al igual que las imágenes, los links también necesitan un atributo que indique dónde se encuentra el enlace. Este atributo se llama <mark>href</mark>, versión corta del inglés "Hypertext reference" que significa hypertexto de referencia. Un link se representa de la siguiente manera:</p>
-      <div class="white-space"></div>
-       <p>&lta href= “https://www.google.com/”><span style="background-color:#FFA8A9">Haz click aquí! Soy un link apuntando a la página de Google</span>&lt/a></p>
-      <div class="white-space"></div>
-      <p>Entre la etiqueta de inicio y la etiqueta de cierre se coloca el texto sobre el cual se deberá hacer click para acceder al link.</p> 
-     </div>
   </div>
 
-	<script src="js/vendor/jquery-1.12.0.min.js"></script>
-	<script src="js/classroom.js"></script>
+    <!-- page-content -->
+    <div class="page-content-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+          
+            <div class="lesson-divSpan">
+                <div class="highlight">
+                  <p>En la lección anterior vimos los elementos basicos nos ayudan a estructurar mejor el sitio web. En esta lección, aprenderemos como </p>
+                  <p>Hasta ahora vimos acerca de los elementos y estilos básicos para construir una página web. En esta lección, aprenderemos sobre las etiquetas "divs y spans", las cuales nos ayudan a estructurar mejor el sitio web.</p>
+                </div>
+                <div class="white-space"></div>
+                <p>Las etiquetas <mark>&ltdiv> &lt/div></mark> nos permiten dividir la página en secciones. Funcionan como contenedores o bloques a los cuales se les puede agregar estilos diferentes. El mismo nombre de <mark>div</mark> es la versión corta de la palabra división.</p>
+                <div class="white-space"></div>
+                <p>Por ejemplo, si querés construir el sitio web de una tienda de vestimenta femenina, podes dividir la página en varias secciones gracias a &ltdiv>&lt/div>, una de ellas puede tener fotos de las prendas, otra sección puede tener alguna descripción de la tienda, y en la última sección se pueden encontrar los números de contacto telefónicos de la tienda. Cada sección puede tener colores y otros estilos diferentes que los identifiquen.</p>
+                <div class="white-space"></div>
+                <p>Por otro lado, las etiquetas <mark>&ltspan> &lt/span></mark> te permiten cambiar el estilo de las partes más pequeñas del sitio web, como por ejemplo una palabra específica. Lo único que tienes que hacer es rodear el texto que necesitas cambiar con las etiquetas de span para luego agregar o modificar el estilo con CSS.</p>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+            <div class="lesson-ejercicioDivs">
+                <p>En el editor tenemos un ejemplo de div y span con diferentes estilos. Juega con los estilos para ver como cambian.</p>
+                <div class="white-space"></div>
+                <p data-height="375" data-theme-id="30285" data-slug-hash="dRmRZd" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="divs y span" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRmRZd/">divs y span</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>  
+
+            <div class="lesson-classes">
+                  <p>Existen dos tipos de selectores que son muy útiles para agregar estilos en CSS: <mark>las clases (class) y los identificadores (id)</mark>. Las clases sirven para seleccionar elementos que deberían tener el mismo estilo. Por ejemplo, imagina que tenemos tres secciones separadas por divs y queremos que dos de ellas tengan el mismo color verde, y una de ellas tenga un color diferente, por ejemplo, amarillo. Si utilizamos el elemento div para cambiar el estilo en CSS, todas las secciones representadas por div van a tener el mismo color. El cambio les afectará a todas las secciones por igual. Sin embargo, si discriminamos a las secciones, en este caso por color, agregando el selector <mark>class</mark> a las etiquetas div, entonces va a ser mucho más fácil hacer cambios en CSS.</p> 
+                  <div class="white-space"></div>
+                  <p>En HTML,<mark>class</mark> siempre va seguido del signo <mark>=</mark> y un nombre descriptivo entre comillas.</p> 
+                  <div class="white-space"></div>
+                 <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &ltdiv class="rosado"&gtSoy un div!&lt/div&gt
+    &ltdiv class="negro"&gtSoy otro div!&lt/div&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+                 <div class="white-space"></div>
+                 <p>En CSS agregamos los estilos utilizando las clases. Para eso, debemos poner un punto (.) antes del nombre de la clase, y luego seguir con el procedimiento normal, es decir, definir los estilos dentro de las llaves.</p>
+                 <div class="white-space"></div>
+                 <pre><code>
+.rosado {
+  background-color: pink;
+}
+
+.negro {
+  background-color: black;
+}
+                  </code></pre>
+                  <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+            <div class="lesson-ejercicioClass">
+                 <p>Ahora, practiquemos un poco. En el panel de HTML tenemos tres secciones diferentes separados por divs. Dos de ellas tienen la clase "verde". Agrega una clase llamada "amarillo" a la sección del medio. Luego, en el panel de CSS agregá el nombre de la clase que acabas de poner en el HTML y los estilos, por ejemplo, background-color: "yellow". Por último, haz click en "Result" para ver el resultado.</p>
+                  <div class="white-space"></div>
+                 <p data-height="362" data-theme-id="30285" data-slug-hash="WOzOMe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Class" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/WOzOMe/">Class</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                 <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+            <div class="lesson-identificadores">
+                <p>Al igual que las clases, los identificadores sirven para agregar estilos a los elementos. Sin embargo, a diferencia de las clases, el mismo identificador se puede utilizar una sola vez en toda la página. Para asignar un identificador a un elemento HTML lo hacemos utilizando la palabra <mark>id</mark> seguida del signo <mark>=</mark> y un nombre entre comillas.</p>
+                <div class="white-space"></div>
+                  <pre><code>&lt!DOCTYPE html&gt
+&lthtml&gt
+  &ltbody&gt
+    
+    &ltdiv id="unico"&gtSoy un div especial!&lt/div&gt
+    
+  &lt/body&gt
+&lt/html&gt</code></pre>
+
+                <div class="white-space"></div>
+                <p>CSS reconoce a los identificadores con el signo <mark>#</mark>. Luego del signo numeral se coloca el nombre del identificador, seguido por las llaves y respectivos estilos.</p>
+                <div class="white-space"></div>
+                <pre><code>
+#unico {
+  border-color: pink;
+  border-width: 2px;
+  border-style: dashed;
+  font-size: 15px;
+}
+                  </code></pre>
+                  <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+             <div class="lesson-ejercicioId">
+                 <p>En el panel CSS del editor, agrega estilos al id "row2". Haz click en "Result" para el ver el resultado final.</p>
+                  <div class="white-space"></div>
+                 <p data-height="364" data-theme-id="30285" data-slug-hash="yXKXKe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Id" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/yXKXKe/">Id</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                 <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+            <div class="lesson-universal">
+                <p>Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces recurrimos a CSS:</p> 
+                <div class="white-space"></div>
+                <a class="jsbin-embed" href="http://jsbin.com/velagetinu/edit?html&height=400px&width=975px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.2"></script>
+                <div class="white-space"></div>
+                <p>Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS.</p>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+            <div class="lesson-box">
+                <p>El modelo de la caja está representado por el siguiente gráfico:</p>
+                <div class="white-space"></div>
+                <img src="../images/modeloCaja2.png" alt="Modelo de la caja">
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+                <p>Cada elemento en HTML está compuesto por cuatro partes: <mark>contenido, padding, borde, margen</mark>. Lo que se encuentra en el medio es el contenido, osea el texto o la imágen. Entre el contenido y el borde, se encuentra el espacio llamado padding. Por último, el margen es el espacio que rodea a todo el elemento y está ubicado después del borde. El margen es el espacio que separa al elemento de otro elemento.</p>
+                <div class="white-space"></div>
+                <p>Gracias a CSS podemos modificar el borde, padding y margen. Por ejemplo, podemos aumentar el ancho del borde, el espacio entre cada elemento, o el espacio entre el borde y el contenido. El ejemplo de abajo nos muestra como modificar los cuatro lados de la caja</p>
+                <div class="white-space"></div>
+                <pre><code>
+#unico {
+  margin: 15px;
+  padding: 20px;
+}
+                  </code></pre>
+                  <div class="white-space"></div>
+                <p>Si no quieres aumentar el margen o padding de los cuatro lados al mismo tiempo, entonces podemos especificar sólo el lado que queramos. Por ejemplo, margin-top se refiere al margen de arriba de la caja, margin-right, indica el margen derecho, margin-bottom es el margen ubicado abajo de la caja, y por último, margin-left, a la izquierda de la caja. Lo mismo se aplica al padding.</p>
+                <div class="white-space"></div>
+                <pre><code>
+#unico {
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+                  </code></pre>
+                <div class="white-space"></div>
+                <p>Por ultimo, si necesitas que cada lado de la caja tenga un margen o padding diferente, esto lo podés definir en una sóla línea de código como en el ejemplo de abajo. Ten en cuenta que la primera medida (10px) se refiere al padding-top de la caja, y luego avanzás de acuerdo al sentido de las manecillas del reloj. Es decir, padding-top, padding-right, padding-bottom y padding-left.</p>
+                <pre><code>
+div {
+  padding: 10px 15px 20px 5px;
+  margin: 5px 12px 30px 5px;
+}
+                  </code></pre>
+            </div>
+
+            <div class="lesson-ejerciciobox">
+                <p>En el editor, agrega márgen y padding al div. Ejemplo: <mark>margin: 10px; padding: 20px</mark>. Te diste cuenta del cambio? Puedes aumentar el número de pixeles para seguir probando.</p>
+                <div class="white-space"></div>
+                <p data-height="362" data-theme-id="30285" data-slug-hash="MoVoGy" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="box model" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoVoGy/">box model</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+            </div>
+
+              <div class="test2">
+                <div class="typeform-widget" data-url="https://cdp2.typeform.com/to/j43Z3O" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 1000px; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/?utm_campaign=j43Z3O&amp;utm_source=typeform.com-8944533-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/classroom.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101994624-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
