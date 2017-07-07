@@ -44,6 +44,8 @@
                 </div>
                 <div class="white-space"></div>
                 <p>Las pseudo clases nos permiten crear un estado predefinido de un elemento al que se le puede aplicar un estilo independiente.</p>
+
+                <div class="white-space"></div>
                 <p>Muchos elementos en HTML disponen de estados especiales o usos asociados a ellos lo cual nos permite aplicar estilos diferentes a nuestros elementos en el HTML</p>
                 <p>Por ejemplo, el elemento <mark>&lta> &lt/a></mark> tiene cuartro estados: </p>
                 <ul>
@@ -53,12 +55,40 @@
                   <li><b>Active:</b>Cuando hacemos click sobre él</li>
                 </ul>
 
-                <p>La funcionalidad de las pseudo clases ya esta ampliamente implementada en la mayoría de los navegarores actuales.  Existen cuatro tipos diferentes de pseudo clases:</p>
+                <p>La funcionalidad de las pseudo clases ya esta ampliamente implementada en la mayoría de los navegarores actuales. Esto nos permite aplicar una caracteristica especifica a un elemento a travez de una clase definida en el CSS. Existen cuatro tipos diferentes de pseudo clases:</p>
                 <div class="white-space"></div>
-                <p>Por ejemplo, si querés construir el sitio web de una tienda de vestimenta femenina, podes dividir la página en varias secciones gracias a &ltdiv>&lt/div>, una de ellas puede tener fotos de las prendas, otra sección puede tener alguna descripción de la tienda, y en la última sección se pueden encontrar los números de contacto telefónicos de la tienda. Cada sección puede tener colores y otros estilos diferentes que los identifiquen.</p>
+                <ul>
+                  <li><b>Links:</b> Estas pseudo clases se usan para dar estilo al enlace tanto en su estado normal por defecto como cuando ya ha sido visitado, mientras mantenemos el cursor encima de él o cuando hacemos click en él</li>
+                  <li><b>Dinamicas:</b> Estas pseudo clases pueden ser aplicadas a cualquier elemento para definir como se muestran cuando el cursor está situado sobre ellos, o haciendo click en ellos o bien cuando son seleccionados.  Por ejemplo <mark>:active</mark></li>
+                  <li><b>Estructurales:</b> Permiten dar estilo a elementos basándonos en una posición numérica exacta del elemento.  Por ejemplo <mark>:first-child, :nth-child</mark></li>
+                  <li><b>Otros:</b>Algunos elementos pueden ser estilizados de manera diferente basándonos en el lenguaje o que tipo de etiqueta no son</li>
+                </ul>
                 <div class="white-space"></div>
-                <p>Por otro lado, las etiquetas <mark>&ltspan> &lt/span></mark> te permiten cambiar el estilo de las partes más pequeñas del sitio web, como por ejemplo una palabra específica. Lo único que tienes que hacer es rodear el texto que necesitas cambiar con las etiquetas de span para luego agregar o modificar el estilo con CSS.</p>
+                <p>Además, las pseudo-clases siempre están precedidas por dos puntos <mark>(:)</mark>. Luego viene el nombre de la pseudo-clase y aveces un valor entre paréntesis. Ex. <mark>:nth-child</mark>.</p>
                 <div class="white-space"></div>
+                <p>Dejemos a un lado la teoria y veamos como son las pseudo-clases: </p>
+                <pre><code>
+                  a:link {
+                    color: red;
+                  }
+
+                  a:visited {
+                    color: blue;
+                  }
+
+                  a:hover {
+                    color: gray;
+                  }
+
+                  li:first-child {
+                    color: gree;
+                  }
+                </code></pre>
+                <div class="white-space"></div>
+                <p>Si queremos renderizar los elementos de una lista de menor a mayor tamaño de fuente y el primer y último elemento de la lista deben ser rojos, entonces esto seria lo que hariamos:</p>
+                <div class="white-space"></div>
+                <!-- PENDING: ADD PEN HERE -->
+                <STRONG><a href="https://codepen.io/evagabriela/pen/pwOBZz">See the Pen</a></STRONG>
                 <div class="white-space"></div>
             </div>
 
