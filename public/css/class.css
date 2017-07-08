@@ -164,6 +164,21 @@ pre {
 }
 
 
+/* PENDING: REFACTOR LISTS FOR WHOLE SITE*/
+.content-list {
+	color: #435a64;
+}
+
+.content-list li {
+	text-transform: none !important;
+    letter-spacing: 1px;
+    padding: 25px 20px;
+    border: none;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+
 
 
 
