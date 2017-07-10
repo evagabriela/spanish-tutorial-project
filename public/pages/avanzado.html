@@ -1,270 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-      <title>Classroom</title>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Classroom</title>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <script src="https://use.fontawesome.com/442a884b4a.js"></script>
-      <link rel="stylesheet" href="../css/class.css">
-      <link rel="stylesheet" href="../css/classroom.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
-  </head>
-<body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/442a884b4a.js"></script>
+        <link rel="stylesheet" href="../css/class.css">
+        <link rel="stylesheet" href="../css/classroom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
+    </head>
+  <body>
 
-  <!-- sidebar -->
-  <div id="sidebar-container">
-    <ul class="sidebar-nav">
-      <h4>HTML & CSS Avanzado</h4>
-        <li class="divsLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Pseudoclases</li>
-        <li class="ejercicioDivsLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
-        <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Keyframes</li>
-        <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
-        <li class="idLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
-        <li class="ejercicioIdLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
-        <li class="universalLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Media Queries</li>
-        <li class="ejercicioboxLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
-        <li class="test2Link"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
-    </ul>
-  </div>
+    <!-- sidebar -->
+    <div id="sidebar-container">
+      <ul class="sidebar-nav">
+        <h4>HTML & CSS Avanzado</h4>
+          <li class="divsLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Pseudoclases</li>
+          <li class="ejercicioDivsLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Transiciones</li>
+          <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Keyframes</li>
+          <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="idLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
+          <li class="ejercicioIdLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="universalLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Media Queries</li>
+          <li class="ejercicioboxLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="test2Link"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
+      </ul>
+    </div>
 
-    <!-- page-content -->
-    <div class="page-content-container">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-          
-            <div class="lesson-divSpan">
-                <div class="highlight">
-                  <p>En la lección anterior vimos sobre los elementos básicos que nos ayudan a estructurar mejor el sitio web. En esta lección, aprenderemos de aquellos elementos que nos ayudan a mejorarlo y convertirlo en una página mas dinámica.</p>
+      <!-- page-content -->
+      <div class="page-content-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+            
+              <div class="lesson-divSpan">
+                  <div class="highlight">
+                    <p>En la lección anterior vimos sobre los elementos básicos que nos ayudan a estructurar mejor el sitio web. En esta lección, aprenderemos de aquellos elementos que nos ayudan a mejorarlo y convertirlo en una página mas dinámica.</p>
+                    
+                  </div>
+                  <div class="white-space"></div>
+                  <p>Las pseudo clases nos permiten crear un estado predefinido de un elemento al que se le puede aplicar un estilo independiente. En otras palabras, podemos utilizar CSS para poder aplicar una característica especifica a un elemento. </p>
+
+                  <div class="white-space"></div>
+                  <p>Muchos elementos en HTML disponen de estados especiales o usos asociados a ellos, lo cual nos permite aplicar estilos diferentes a nuestros elementos en el HTML.</p>
+                  <p>Por ejemplo, el elemento <mark>&lta> &lt/a></mark> tiene cuatro estados: </p>
                   
-                </div>
-                <div class="white-space"></div>
-                <p>Las pseudo clases nos permiten crear un estado predefinido de un elemento al que se le puede aplicar un estilo independiente. En otras palabras, podemos utilizar CSS para poder aplicar una característica especifica a un elemento. </p>
-
-                <div class="white-space"></div>
-                <p>Muchos elementos en HTML disponen de estados especiales o usos asociados a ellos, lo cual nos permite aplicar estilos diferentes a nuestros elementos en el HTML.</p>
-                <p>Por ejemplo, el elemento <mark>&lta> &lt/a></mark> tiene cuatro estados: </p>
-                
-                <div class="content-list">
-                <ul>
-                  <li><b>Normal:</b> Su estado normal</li>
-                  <li><b>Visited:</b> Cuando ya hemos visitado el link al que hace referencia</li>
-                  <li><b>Hover:</b> Cuando tenemos el cursor situado encima del mismo</li>
-                  <li><b>Active:</b> Cuando hacemos click sobre él</li>
-                </ul>
-                </div>
-
-                <p>La funcionalidad de las pseudo clases ya esta ampliamente implementada en la mayoría de los navegadores actuales. Esto nos permite aplicar una característica específica a un elemento a travéz de una clase definida en el CSS. Existen cuatro tipos diferentes de pseudo clases:</p>
-                <div class="white-space"></div>
-                <div class="content-list">
+                  <div class="content-list">
                   <ul>
-                    <li><b>Links:</b> Estas pseudo clases se usan para dar estilo al enlace tanto en su estado normal por defecto como cuando ya ha sido visitado, mientras mantenemos el cursor encima de él o cuando hacemos click en él</li>
-                    <li><b>Dinamicas:</b> Estas pseudo clases pueden ser aplicadas a cualquier elemento para definir como se muestran cuando el cursor está situado sobre ellos, o haciendo click en ellos o bien cuando son seleccionados.  Por ejemplo <mark>:active</mark></li>
-                    <li><b>Estructurales:</b> Permiten dar estilo a elementos basándonos en una posición numérica exacta del elemento.  Por ejemplo <mark>:first-child, :nth-child</mark></li>
-                    <li><b>Otros:</b>Algunos elementos pueden ser estilizados de manera diferente basándonos en el lenguaje o que tipo de etiqueta no son</li>
+                    <li><b>Normal:</b> Su estado normal</li>
+                    <li><b>Visited:</b> Cuando ya hemos visitado el link al que hace referencia</li>
+                    <li><b>Hover:</b> Cuando tenemos el cursor situado encima del mismo</li>
+                    <li><b>Active:</b> Cuando hacemos click sobre él</li>
                   </ul>
-                </div>
-                <div class="white-space"></div>
-                <p>Además, las pseudo-clases siempre están precedidas por dos puntos <mark>(:)</mark>. Luego viene el nombre de la pseudo-clase y aveces un valor entre paréntesis. Ex. <mark>:nth-child</mark>.</p>
-                <div class="white-space"></div>
-                <p>Dejemos a un lado la teoria y veamos como son las pseudo-clases: </p>
-                <pre><code>
-                  a:link {
-                    color: red;
-                  }
+                  </div>
 
-                  a:visited {
-                    color: blue;
-                  }
-
-                  a:hover {
-                    color: gray;
-                  }
-
-                  li:first-child {
-                    color: gree;
-                  }
-                </code></pre>
-                <div class="white-space"></div>
-                <p>Si queremos renderizar los elementos de una lista de menor a mayor tamaño de fuente y el primer y último elemento de la lista deben ser rojos, entonces esto sería lo que tenemos que hacer:</p>
-                <div class="white-space"></div>
-
-                <!-- >>>>>>>>>>>>>>>>> PENDING: ADD PEN HERE <<<<<<<<<<<<<<<<< -->
-                <STRONG><a href="https://codepen.io/evagabriela/pen/pwOBZz">See the Pen</a></STRONG>
-                <div class="white-space"></div>
-                <div class="highlight">
-                  <p>En conclusión esta es una introducción a las pseudo clases de CSS y hemos podido ver el gran potencial que nos brinda estas funcionalidades el cual nos permite remplazar usar <mark>style</mark> dentro de nuestro HTML lo cual es una mala práctica.</p>
-                </div>
-            </div>
-
-            <div class="lesson-ejercicioDivs">
-                <p>En el editor tenemos un ejemplo de una lista de paises, juega con los estilos utilizando pseudo clases y realza el que contenta el nombre de tu pais y si tu pais no esta en esta lista entonces agrégalo.</p>
-                <div class="white-space"></div>
-                <!-- >>>>>>>>>>>>>>>>> PENDING: ADD PEN HERE <<<<<<<<<<<<<<<<< -->
-                <STRONG><a href="https://codepen.io/evagabriela/pen/jwvoOE">See the Pen</a></STRONG>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>  
-
-            <div class="lesson-classes">
-                  <p>Existen dos tipos de selectores que son muy útiles para agregar estilos en CSS: <mark>las clases (class) y los identificadores (id)</mark>. Las clases sirven para seleccionar elementos que deberían tener el mismo estilo. Por ejemplo, imagina que tenemos tres secciones separadas por divs y queremos que dos de ellas tengan el mismo color verde, y una de ellas tenga un color diferente, por ejemplo, amarillo. Si utilizamos el elemento div para cambiar el estilo en CSS, todas las secciones representadas por div van a tener el mismo color. El cambio les afectará a todas las secciones por igual. Sin embargo, si discriminamos a las secciones, en este caso por color, agregando el selector <mark>class</mark> a las etiquetas div, entonces va a ser mucho más fácil hacer cambios en CSS.</p> 
+                  <p>La funcionalidad de las pseudo clases ya esta ampliamente implementada en la mayoría de los navegadores actuales. Esto nos permite aplicar una característica específica a un elemento a travéz de una clase definida en el CSS. Existen cuatro tipos diferentes de pseudo clases:</p>
                   <div class="white-space"></div>
-                  <p>En HTML,<mark>class</mark> siempre va seguido del signo <mark>=</mark> y un nombre descriptivo entre comillas.</p> 
+                  <div class="content-list">
+                    <ul>
+                      <li><b>Links:</b> Estas pseudo clases se usan para dar estilo al enlace tanto en su estado normal por defecto como cuando ya ha sido visitado, mientras mantenemos el cursor encima de él o cuando hacemos click en él</li>
+                      <li><b>Dinamicas:</b> Estas pseudo clases pueden ser aplicadas a cualquier elemento para definir como se muestran cuando el cursor está situado sobre ellos, o haciendo click en ellos o bien cuando son seleccionados.  Por ejemplo <mark>:active</mark></li>
+                      <li><b>Estructurales:</b> Permiten dar estilo a elementos basándonos en una posición numérica exacta del elemento.  Por ejemplo <mark>:first-child, :nth-child</mark></li>
+                      <li><b>Otros:</b>Algunos elementos pueden ser estilizados de manera diferente basándonos en el lenguaje o que tipo de etiqueta no son</li>
+                    </ul>
+                  </div>
                   <div class="white-space"></div>
-                 <pre><code>&lt!DOCTYPE html&gt
-&lthtml&gt
-  &ltbody&gt
-    
-    &ltdiv class="rosado"&gtSoy un div!&lt/div&gt
-    &ltdiv class="negro"&gtSoy otro div!&lt/div&gt
-    
-  &lt/body&gt
-&lt/html&gt</code></pre>
-                 <div class="white-space"></div>
-                 <p>En CSS agregamos los estilos utilizando las clases. Para eso, debemos poner un punto (.) antes del nombre de la clase, y luego seguir con el procedimiento normal, es decir, definir los estilos dentro de las llaves.</p>
-                 <div class="white-space"></div>
-                 <pre><code>
-.rosado {
-  background-color: pink;
-}
+                  <p>Además, las pseudo-clases siempre están precedidas por dos puntos <mark>(:)</mark>. Luego viene el nombre de la pseudo-clase y aveces un valor entre paréntesis. Ex. <mark>:nth-child</mark>.</p>
+                  <div class="white-space"></div>
+                  <p>Dejemos a un lado la teoria y veamos como son las pseudo-clases: </p>
+                  <pre><code>
+                    a:link {
+                      color: red;
+                    }
 
-.negro {
-  background-color: black;
-}
+                    a:visited {
+                      color: blue;
+                    }
+
+                    a:hover {
+                      color: gray;
+                    }
+
+                    li:first-child {
+                      color: gree;
+                    }
                   </code></pre>
                   <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-
-            <div class="lesson-ejercicioClass">
-                 <p>Ahora, practiquemos un poco. En el panel de HTML tenemos tres secciones diferentes separados por divs. Dos de ellas tienen la clase "verde". Agrega una clase llamada "amarillo" a la sección del medio. Luego, en el panel de CSS agregá el nombre de la clase que acabas de poner en el HTML y los estilos, por ejemplo, background-color: "yellow". Por último, haz click en "Result" para ver el resultado.</p>
+                  <p>Si queremos renderizar los elementos de una lista de menor a mayor tamaño de fuente y el primer y último elemento de la lista deben ser rojos, entonces esto sería lo que tenemos que hacer:</p>
                   <div class="white-space"></div>
-                 <p data-height="362" data-theme-id="30285" data-slug-hash="WOzOMe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Class" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/WOzOMe/">Class</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                 <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
 
-            <div class="lesson-identificadores">
-                <p>Al igual que las clases, los identificadores sirven para agregar estilos a los elementos. Sin embargo, a diferencia de las clases, el mismo identificador se puede utilizar una sola vez en toda la página. Para asignar un identificador a un elemento HTML lo hacemos utilizando la palabra <mark>id</mark> seguida del signo <mark>=</mark> y un nombre entre comillas.</p>
-                <div class="white-space"></div>
-                  <pre><code>&lt!DOCTYPE html&gt
-&lthtml&gt
-  &ltbody&gt
-    
-    &ltdiv id="unico"&gtSoy un div especial!&lt/div&gt
-    
-  &lt/body&gt
-&lt/html&gt</code></pre>
-
-                <div class="white-space"></div>
-                <p>CSS reconoce a los identificadores con el signo <mark>#</mark>. Luego del signo numeral se coloca el nombre del identificador, seguido por las llaves y respectivos estilos.</p>
-                <div class="white-space"></div>
-                <pre><code>
-#unico {
-  border-color: pink;
-  border-width: 2px;
-  border-style: dashed;
-  font-size: 15px;
-}
-                  </code></pre>
+                  <!-- >>>>>>>>>>>>>>>>> PENDING: ADD PEN HERE <<<<<<<<<<<<<<<<< -->
+                  <STRONG><a href="https://codepen.io/evagabriela/pen/pwOBZz">See the Pen</a></STRONG>
                   <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-
-             <div class="lesson-ejercicioId">
-                 <p>En el panel CSS del editor, agrega estilos al id "row2". Haz click en "Result" para el ver el resultado final.</p>
-                  <div class="white-space"></div>
-                 <p data-height="364" data-theme-id="30285" data-slug-hash="yXKXKe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Id" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/yXKXKe/">Id</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                 <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-
-            <div class="lesson-universal">
-                <p>Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces recurrimos a CSS:</p> 
-                <div class="white-space"></div>
-                <a class="jsbin-embed" href="http://jsbin.com/velagetinu/edit?html&height=400px&width=975px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.2"></script>
-                <div class="white-space"></div>
-                <p>Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS.</p>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-
-            <div class="lesson-box">
-                <p>El modelo de la caja está representado por el siguiente gráfico:</p>
-                <div class="white-space"></div>
-                <img src="../images/modeloCaja2.png" alt="Modelo de la caja">
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <p>Cada elemento en HTML está compuesto por cuatro partes: <mark>contenido, padding, borde, margen</mark>. Lo que se encuentra en el medio es el contenido, osea el texto o la imágen. Entre el contenido y el borde, se encuentra el espacio llamado padding. Por último, el margen es el espacio que rodea a todo el elemento y está ubicado después del borde. El margen es el espacio que separa al elemento de otro elemento.</p>
-                <div class="white-space"></div>
-                <p>Gracias a CSS podemos modificar el borde, padding y margen. Por ejemplo, podemos aumentar el ancho del borde, el espacio entre cada elemento, o el espacio entre el borde y el contenido. El ejemplo de abajo nos muestra como modificar los cuatro lados de la caja</p>
-                <div class="white-space"></div>
-                <pre><code>
-#unico {
-  margin: 15px;
-  padding: 20px;
-}
-                  </code></pre>
-                  <div class="white-space"></div>
-                <p>Si no quieres aumentar el margen o padding de los cuatro lados al mismo tiempo, entonces podemos especificar sólo el lado que queramos. Por ejemplo, margin-top se refiere al margen de arriba de la caja, margin-right, indica el margen derecho, margin-bottom es el margen ubicado abajo de la caja, y por último, margin-left, a la izquierda de la caja. Lo mismo se aplica al padding.</p>
-                <div class="white-space"></div>
-                <pre><code>
-#unico {
-  margin-top: 15px;
-  padding-bottom: 20px;
-}
-                  </code></pre>
-                <div class="white-space"></div>
-                <p>Por ultimo, si necesitas que cada lado de la caja tenga un margen o padding diferente, esto lo podés definir en una sóla línea de código como en el ejemplo de abajo. Ten en cuenta que la primera medida (10px) se refiere al padding-top de la caja, y luego avanzás de acuerdo al sentido de las manecillas del reloj. Es decir, padding-top, padding-right, padding-bottom y padding-left.</p>
-                <pre><code>
-div {
-  padding: 10px 15px 20px 5px;
-  margin: 5px 12px 30px 5px;
-}
-                  </code></pre>
-            </div>
-
-            <div class="lesson-ejerciciobox">
-                <p>En el editor, agrega márgen y padding al div. Ejemplo: <mark>margin: 10px; padding: 20px</mark>. Te diste cuenta del cambio? Puedes aumentar el número de pixeles para seguir probando.</p>
-                <div class="white-space"></div>
-                <p data-height="362" data-theme-id="30285" data-slug-hash="MoVoGy" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="box model" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoVoGy/">box model</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-
-              <div class="test2">
-                <div class="typeform-widget" data-url="https://cdp2.typeform.com/to/j43Z3O" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 1000px; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/?utm_campaign=j43Z3O&amp;utm_source=typeform.com-8944533-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
+                  <div class="highlight">
+                    <p>En conclusión esta es una introducción a las pseudo clases de CSS y hemos podido ver el gran potencial que nos brinda estas funcionalidades el cual nos permite remplazar usar <mark>style</mark> dentro de nuestro HTML lo cual es una mala práctica.</p>
+                  </div>
               </div>
 
+              <div class="lesson-ejercicioDivs">
+                  <p>En el editor tenemos un ejemplo de una lista de paises, juega con los estilos utilizando pseudo clases y realza el que contenta el nombre de tu pais y si tu pais no esta en esta lista entonces agrégalo.</p>
+                  <div class="white-space"></div>
+                  <!-- >>>>>>>>>>>>>>>>> PENDING: ADD PEN HERE <<<<<<<<<<<<<<<<< -->
+                  <STRONG><a href="https://codepen.io/evagabriela/pen/jwvoOE">See the Pen</a></STRONG>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>  
 
+              <div class="lesson-classes">
+                <p>Utilizar transiciones nos brinda la opcion de poder agregar animaciones simples y elegantes a nuestra pagina web. Al mismo tiemmpo también nos permite tener una manera de controlar el tiempo de la animación cuando las propiedades cambian. Anteriormente hemos hablado de pseudo clases, y por ejemplo usamos el estado <mark>:hover</mark> , la cual es una manera simple de aplicar transiciones con las pseudo clases de CSS.  En el siguiente ejemplo vamos a utilizar <mark>:hover</mark> y también vamos a especificar el nombre de la propiedad, el tiempo de transicion y una de las funciones de tiempo de transicion el cual usamos <mark>linear</mark> <STRONG><a href="https://codepen.io/evagabriela/pen/jwQaQG">[demo]</a></STRONG></p>
+                <pre>
+                  <code>
+  .nombre_del_elemento{
+    height: 100px;
+    transition: height 2s linear;
+  }
+
+  .nombre_del_elemento:hover {
+    height: 200px;
+   }
+                </code>
+              </pre>
+                <div class="white-space"></div>
+                <p>En el ejemplo que vimos, cuando la pseudo clase <mark>:hover</mark> es activada, la altura del elemento cambia linearmente de <mark>100px</mark> a <mark>200px</mark> en 2 segundos.</p>
+                <p>Por lo tanto vemos que podemos hacer que el cambio de una propiedad pueda darse en un tiempo espeficicado, por ejemplo nosotros lo pusimos a 2 segundos. En la siguiente linea te muestro la estructure basica del formato de como utilizar transiciones:</p>
+                <pre>
+                  <code>
+  .ejemplo {
+  transition: [propieda] [tiempo] [tipo de funcion] [tiempo de retrazo]
+  }
+                  </code>
+                </pre>
+                <pre>
+                  <code>
+  .button {
+  transition: all .5s ease-in-out
+  }
+                  </code>
+                </pre>
+                <div class="white-space"></div>
+                <p>Ahora veamos ejemplos de otras mas elaboradas posibilidades donde podemos usar transiciones:</p>
+                <h3>Ejemplo 1: Aparición de letras aleatoriamente</h3>
+                <p>Una de las poderosas herramientas a nuestra disposición es <mark>transition-delay</mark>. Nos permite retrazar el comienzo de cuando la transición ocurre.  En este primer ejemplo, quiero mostrales la combinación de utilizar la propiedad <mark>opacity</mark> y poder darle una animación utilizando <mark> transition-delay</mark> a cada una de las letras y así poder crear un efecto que sutíl y atractivo:</p>
+                <style>
+                        .typography-example-1 {
+                            background-image: linear-gradient(135deg, #723362, #9d223c);
+                            background-color: #9d223c;
+                            color: #fff;
+                            padding: 1em 0;
+                            text-align: center;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            letter-spacing: .4em;
+                            padding-left: .4em;
+                            font-size: 1.8em;
+                            margin-top: 2.5rem
+                        }
+
+                        .typography-example-1 span {
+                            opacity: 0;
+                            transition: opacity 1300ms
+                        }
+
+                        .typography-example-1 span:nth-child(1)  { transition-delay:  200ms }
+                        .typography-example-1 span:nth-child(2)  { transition-delay: 1200ms }
+                        .typography-example-1 span:nth-child(3)  { transition-delay:  800ms }
+                        .typography-example-1 span:nth-child(4)  { transition-delay:  300ms }
+                        .typography-example-1 span:nth-child(5)  { transition-delay:  700ms }
+                        .typography-example-1 span:nth-child(6)  { transition-delay:  600ms }
+                        .typography-example-1 span:nth-child(7)  { transition-delay:  400ms }
+                        .typography-example-1 span:nth-child(8)  { transition-delay:  900ms }
+                        .typography-example-1 span:nth-child(9)  { transition-delay:  700ms }
+                        .typography-example-1 span:nth-child(10) { transition-delay:   50ms }
+
+                        .typography-example-1:hover span {
+                            opacity: 1
+                        }
+                    </style>
+                <pre>
+                  <code>
+.ejemplo span {
+    opacity: 0;
+    transition: opacity 1300ms
+}
+
+.ejemplo span:nth-child(1)  { transition-delay:  200ms }
+.ejemplo span:nth-child(2)  { transition-delay: 1200ms }
+.ejemplo span:nth-child(3)  { transition-delay:  800ms }
+.ejemplo span:nth-child(4)  { transition-delay:  300ms }
+.ejemplo span:nth-child(5)  { transition-delay:  700ms }
+.ejemplo span:nth-child(6)  { transition-delay:  600ms }
+.ejemplo span:nth-child(7)  { transition-delay:  400ms }
+.ejemplo span:nth-child(8)  { transition-delay:  900ms }
+.ejemplo span:nth-child(9)  { transition-delay:  700ms }
+.ejemplo span:nth-child(10) { transition-delay:   50ms }
+
+.ejemplo:hover span {
+    opacity: 1
+}
+                  </code>
+                </pre>  
+                <p>Pon el cursor en la siguiente imagen,para ver la transicion:</p>
+                <div class="ejemplo typography-example typography-example-1">
+                  <span>E</span>
+                  <span>j</span> 
+                  <span>e</span>
+                  <span>m</span> 
+                  <span>p</span>
+                  <span>l</span>
+                   <span>o</span>
+                  <br>
+                  <span>U</span>
+                  <span>n</span>
+                  <span>o</span>
+                </div>
+                <div class="white-space"></div>
+                <div class="white-space"></div>
+
+              </div>
+
+              <div class="lesson-ejercicioClass">
+                   <p>Ahora, practiquemos un poco. En el panel de HTML tenemos tres secciones diferentes separados por divs. Dos de ellas tienen la clase "verde". Agrega una clase llamada "amarillo" a la sección del medio. Luego, en el panel de CSS agregá el nombre de la clase que acabas de poner en el HTML y los estilos, por ejemplo, background-color: "yellow". Por último, haz click en "Result" para ver el resultado.</p>
+                    <div class="white-space"></div>
+                   <p data-height="362" data-theme-id="30285" data-slug-hash="WOzOMe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Class" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/WOzOMe/">Class</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+
+              <div class="lesson-identificadores">
+                  <p>Al igual que las clases, los identificadores sirven para agregar estilos a los elementos. Sin embargo, a diferencia de las clases, el mismo identificador se puede utilizar una sola vez en toda la página. Para asignar un identificador a un elemento HTML lo hacemos utilizando la palabra <mark>id</mark> seguida del signo <mark>=</mark> y un nombre entre comillas.</p>
+                  <div class="white-space"></div>
+                    <pre><code>&lt!DOCTYPE html&gt
+  &lthtml&gt
+    &ltbody&gt
+      
+      &ltdiv id="unico"&gtSoy un div especial!&lt/div&gt
+      
+    &lt/body&gt
+  &lt/html&gt</code></pre>
+
+                  <div class="white-space"></div>
+                  <p>CSS reconoce a los identificadores con el signo <mark>#</mark>. Luego del signo numeral se coloca el nombre del identificador, seguido por las llaves y respectivos estilos.</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+  #unico {
+    border-color: pink;
+    border-width: 2px;
+    border-style: dashed;
+    font-size: 15px;
+  }
+                    </code></pre>
+                    <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+
+               <div class="lesson-ejercicioId">
+                   <p>En el panel CSS del editor, agrega estilos al id "row2". Haz click en "Result" para el ver el resultado final.</p>
+                    <div class="white-space"></div>
+                   <p data-height="364" data-theme-id="30285" data-slug-hash="yXKXKe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Id" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/yXKXKe/">Id</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+
+              <div class="lesson-universal">
+                  <p>Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces recurrimos a CSS:</p> 
+                  <div class="white-space"></div>
+                  <a class="jsbin-embed" href="http://jsbin.com/velagetinu/edit?html&height=400px&width=975px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.2"></script>
+                  <div class="white-space"></div>
+                  <p>Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS.</p>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+
+              <div class="lesson-box">
+                  <p>El modelo de la caja está representado por el siguiente gráfico:</p>
+                  <div class="white-space"></div>
+                  <img src="../images/modeloCaja2.png" alt="Modelo de la caja">
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+                  <p>Cada elemento en HTML está compuesto por cuatro partes: <mark>contenido, padding, borde, margen</mark>. Lo que se encuentra en el medio es el contenido, osea el texto o la imágen. Entre el contenido y el borde, se encuentra el espacio llamado padding. Por último, el margen es el espacio que rodea a todo el elemento y está ubicado después del borde. El margen es el espacio que separa al elemento de otro elemento.</p>
+                  <div class="white-space"></div>
+                  <p>Gracias a CSS podemos modificar el borde, padding y margen. Por ejemplo, podemos aumentar el ancho del borde, el espacio entre cada elemento, o el espacio entre el borde y el contenido. El ejemplo de abajo nos muestra como modificar los cuatro lados de la caja</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+  #unico {
+    margin: 15px;
+    padding: 20px;
+  }
+                    </code></pre>
+                    <div class="white-space"></div>
+                  <p>Si no quieres aumentar el margen o padding de los cuatro lados al mismo tiempo, entonces podemos especificar sólo el lado que queramos. Por ejemplo, margin-top se refiere al margen de arriba de la caja, margin-right, indica el margen derecho, margin-bottom es el margen ubicado abajo de la caja, y por último, margin-left, a la izquierda de la caja. Lo mismo se aplica al padding.</p>
+                  <div class="white-space"></div>
+                  <pre><code>
+  #unico {
+    margin-top: 15px;
+    padding-bottom: 20px;
+  }
+                    </code></pre>
+                  <div class="white-space"></div>
+                  <p>Por ultimo, si necesitas que cada lado de la caja tenga un margen o padding diferente, esto lo podés definir en una sóla línea de código como en el ejemplo de abajo. Ten en cuenta que la primera medida (10px) se refiere al padding-top de la caja, y luego avanzás de acuerdo al sentido de las manecillas del reloj. Es decir, padding-top, padding-right, padding-bottom y padding-left.</p>
+                  <pre><code>
+  div {
+    padding: 10px 15px 20px 5px;
+    margin: 5px 12px 30px 5px;
+  }
+                    </code></pre>
+              </div>
+
+              <div class="lesson-ejerciciobox">
+                  <p>En el editor, agrega márgen y padding al div. Ejemplo: <mark>margin: 10px; padding: 20px</mark>. Te diste cuenta del cambio? Puedes aumentar el número de pixeles para seguir probando.</p>
+                  <div class="white-space"></div>
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="MoVoGy" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="box model" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoVoGy/">box model</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+              </div>
+
+                <div class="test2">
+                  <div class="typeform-widget" data-url="https://cdp2.typeform.com/to/j43Z3O" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 1000px; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/?utm_campaign=j43Z3O&amp;utm_source=typeform.com-8944533-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+                </div>
+
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="../js/classroom.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="../js/vendor/jquery-1.12.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="../js/classroom.js"></script>
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-101994624-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</body>
-</html>
+    ga('create', 'UA-101994624-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </body>
+  </html>
