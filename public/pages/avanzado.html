@@ -23,10 +23,10 @@
           <li class="ejercicioDivsLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
           <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Transiciones</li>
           <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
-          <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Keyframes</li>
-          <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
           <li class="idLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
           <li class="ejercicioIdLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="universalLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
+          <li class="ejercicioboxLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
           <li class="universalLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Media Queries</li>
           <li class="ejercicioboxLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
           <li class="test2Link"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
@@ -544,11 +544,11 @@
                </pre>         
                   <div class="example typography-example typography-example-3">
                       <span class="letter">
-                          <span class="back">o</span>
+                          <span class="back">d</span>
                           <span class="front">M</span>
                       </span><!--
                    --><span class="letter">
-                          <span class="back">f</span>
+                          <span class="back">e</span>
                           <span class="front">A</span>
                       </span><!--
                    --><span class="letter">
@@ -571,39 +571,84 @@
                   <div class="white-space"></div>
            </div>
 
-
+<!-- >>>>>> PENDING: to add ejercicios para transicions <<<<<<<<<<<<<< -->
               <div class="lesson-ejercicioClass">
                    <p>Ahora, practiquemos un poco. En el panel de HTML tenemos tres secciones diferentes separados por divs. Dos de ellas tienen la clase "verde". Agrega una clase llamada "amarillo" a la sección del medio. Luego, en el panel de CSS agregá el nombre de la clase que acabas de poner en el HTML y los estilos, por ejemplo, background-color: "yellow". Por último, haz click en "Result" para ver el resultado.</p>
                     <div class="white-space"></div>
                    <p data-height="362" data-theme-id="30285" data-slug-hash="WOzOMe" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="Class" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/WOzOMe/">Class</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                    <div class="white-space"></div>
                   <div class="white-space"></div>
               </div>
-
+<!-- Animaciones -->
               <div class="lesson-identificadores">
-                  <p>Al igual que las clases, los identificadores sirven para agregar estilos a los elementos. Sin embargo, a diferencia de las clases, el mismo identificador se puede utilizar una sola vez en toda la página. Para asignar un identificador a un elemento HTML lo hacemos utilizando la palabra <mark>id</mark> seguida del signo <mark>=</mark> y un nombre entre comillas.</p>
+                  <p>Las animaciones en CSS permite que un elemento cambie gradualmente de un stilo a otro.  Uno puedo cambiar diferentes propiedas del CSS cuantas veces uno desee. Para usar animaciones, uno primero necesita especificar algunas <mark>@keyframes</mark> para poder codificar la animación. Las <mark>@keyframes</mark> son los que guardan que stilo de elemento va a tener.</p>
                   <div class="white-space"></div>
-                    <pre><code>&lt!DOCTYPE html&gt
-  &lthtml&gt
-    &ltbody&gt
-      
-      &ltdiv id="unico"&gtSoy un div especial!&lt/div&gt
-      
-    &lt/body&gt
-  &lt/html&gt</code></pre>
-
+                  <center><strong><p>Cual es la diferencia entre animaciones y transiciones en CSS?</p></strong></center>
+                  <p>Si esque uno quiere utilizar CSS para poder brindar una animación donde no se especifique cuando comienza y termina la animación, o si esque se necesita mas control sobre la transición, entonces necesitas usar animacion <mark>@keyframe</mark>.  Usando keyframes, uno define la animación y la describe especificando ciertas propiedades las cuales necesitan actuar durante el proceso de la animación. En el siguiente ejemplo puedes ver como es la declaración basica y el uso de <mark>@keyframe</mark></p>
                   <div class="white-space"></div>
-                  <p>CSS reconoce a los identificadores con el signo <mark>#</mark>. Luego del signo numeral se coloca el nombre del identificador, seguido por las llaves y respectivos estilos.</p>
-                  <div class="white-space"></div>
-                  <pre><code>
-  #unico {
-    border-color: pink;
-    border-width: 2px;
-    border-style: dashed;
-    font-size: 15px;
-  }
+                    <pre><code>
+@keyframes NOMBRE-DE-TU-ANIMACION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
                     </code></pre>
+                  <div class="white-space"></div>
+                     <pre><code>
+#EJEMPLO {
+  -webkit-animation: NOMBRE-DE-TU-ANIMACION 5s infinite; /* Safari 4+ */
+  -moz-animation:    NOMBRE-DE-TU-ANIMACION 5s infinite; /* Fx 5+ */
+  -o-animation:      NOMBRE-DE-TU-ANIMACION 5s infinite; /* Opera 12+ */
+  animation:         NOMBRE-DE-TU-ANIMACION 5s infinite; /* IE 10+, Fx 29+ */
+}
+                    </code></pre>
+                  <div class="white-space"></div>
+                  <p>Cuando uno espeficica con el estilo que uno quiere dentro de <mark>@keyframe</mark>, la animación gradualmente cambia de un estilo a otro en un tiempo al cual se ha espeficado.  Para que la animación funcione, uno debe conectar la animación a un elemento específico.  Aquí podrás ver un ejemplo donde conectamos la animación llamada "Ejemplo" a un elemento <mark>div</mark> a travéz de un Id, en este ejercicio puedes ver que la animación dura 5 segundos, y vemos que durante este tiempo el color del fondo del bloque <mark>div</mark> cambia de "azul" a "rojo":</p>
+                  <div class="white-space"></div>
+                 <style> 
+                  #ejemplo {
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                    animation-name: example;
+                    animation-duration: 4s;
+                    margin: 0 auto;
+                  }
+
+                  /* Safari 4.0 - 8.0 */
+                  @-webkit-keyframes example {
+                    from {background-color: blue;}
+                    to {background-color: red;}
+                  }
+
+                  /* Standard syntax */
+                  @keyframes example {
+                    from {background-color: blue;}
+                    to {background-color: red;}
+                  }
+                </style>
+                  <pre><code>
+/* El código de la animación */
+@keyframes ejemplo {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
+
+/* El elemento al cual aplicamos la animación*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: ejemplo;
+    animation-duration: 5s;
+}
+
+
+                    </code></pre>
+                  <p><b>Ojo:</b> Cuando la animación termina, el color cambia al estilo original.</p>
+                    <div id="ejemplo"></div>
                     <div class="white-space"></div>
                   <div class="white-space"></div>
               </div>
@@ -618,9 +663,14 @@
               </div>
 
               <div class="lesson-universal">
-                <p>Si esque uno quiere utilizar CSS para poder brindar una animación donde no se especifique cuando comienza y cuando termina el estado de la animación, o si esque se necesita mas control sobre la transición, entonces se necesita usar keyframes en la animación.  Usando keyframes, uno define la animación y la describe a travéz de especificar ciertas propiedades las cuales necesitan actuar durante el proceso de la animación.</p>
+                <p>Si esque uno quiere utilizar CSS para poder brindar una animación donde no se especifique cuando comienza y cuando termina el estado de la animación, o si esque se necesita mas control sobre la transición, entonces se necesita usar keyframes en la animación.  Usando keyframes, uno define la animación y la describe a travéz de especificar ciertas propiedades las cuales necesitan actuar durante el proceso de la animación. En el siguiente ejemplo puedes ver como es la declaración basica y el uso de</p>
                   <div class="white-space"></div>
-                  <a class="jsbin-embed" href="http://jsbin.com/velagetinu/edit?html&height=400px&width=975px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.2"></script>
+      <pre><code>
+  div {
+    padding: 10px 15px 20px 5px;
+    margin: 5px 12px 30px 5px;
+  }
+                    </code></pre>
                   <div class="white-space"></div>
                   <p>Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS.</p>
                   <div class="white-space"></div>
