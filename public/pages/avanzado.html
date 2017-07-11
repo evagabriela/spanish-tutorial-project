@@ -709,21 +709,18 @@ div {
                   <div class="white-space"></div>
                   <div class="white-space"></div>
 
-                  <h3>Ejemplo 3: Animaciones utilizando <mark>animation-delay</mark></h3>
-                  <p>La propiedad <mark>animation-delay</mark> especifica un retrazo para empezar la animación.  El siguiente ejemplo da 2 segundos de retrazo antes de que comienze la animación.</p>
+                  <h3>Ejemplo 3: Animaciones especificando el número de veces de la animación</h3>
+                  <p>La propiedad <mark>animation-iteration-count</mark> especifica el número de veces que la animación ocurre.  En el siguiente ejemplo veremos que la animación sucede 3 veces.</p>
                   <div class="white-space"></div>
                   <style> 
 div #ejemplo3 {
-    width: 100px;
+     width: 100px;
     height: 100px;
-    background-color: red;
     position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    background-color: red;
     animation-name: example;
     animation-duration: 4s;
-    animation-delay: 2s;
+    animation-iteration-count: 3;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -753,13 +750,199 @@ div #ejemplo3 {
     background-color: red;
     animation-name: example;
     animation-duration: 4s;
-    animation-delay: 2s;
+    animation-iteration-count: 3;
 }
                     </code>
                   </pre>
                     <div id="ejemplo3"></div>
                   <div class="white-space"></div>
                   <div class="white-space"></div>
+
+                   <h3>Ejemplo 4: Animaciones utilizando <mark>animation-delay</mark></h3>
+                  <p>La propiedad <mark>animation-delay</mark> especifica un retrazo para empezar la animación.  El siguiente ejemplo da 2 segundos de retrazo antes de que comienze la animación.</p>
+                  <div class="white-space"></div>
+                  <style> 
+                    div #ejemplo4 {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        position: relative;
+                        -webkit-animation-name: ejemplo-animacion-delay; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+                        animation-name: ejemplo-animacion-delay;
+                        animation-duration: 4s;
+                        animation-delay: 2s;
+                    }
+
+                    /* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo-animacion-delay {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo-animacion-delay {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+div #ejemplo4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo-animacion-delay;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo4"></div>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+
+
+
+                   <h3>Ejemplo 5: Animaciones en sentido inverso o ciclos alternativos</h3>
+                  <p>La propiedad <mark>animation-direction</mark> es usada para poder hacer que la animación suceda en dirección inversa o ciclos alternativos.</p>
+                  <p>El siguiente ejemplo veremos la animación en dirección inversa:</p>
+                  <style> 
+                    div #ejemplo-inversa {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        position: relative;
+                        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+                        animation-name: example;
+                        animation-duration: 4s;
+                        animation-iteration-count: 3;
+                        animation-direction: reverse;   
+                    }
+
+                    //* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo5-animacion-inversa {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo5-animacion-inversa {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+div #ejemplo-inversa {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo5-animacion-inversa;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo-inversa"></div>
+                  <div class="white-space"></div>
+
+                  <p>En este otro ejemplo veremos la animación en ciclos alternativos:</p>
+                  <style> 
+                    div #ejemplo-ciclo-alternativo {
+                      width: 100px;
+                      height: 100px;
+                      background-color: red;
+                      position: relative;
+                      -webkit-animation-name: ejemplo-ciclo-alternativo; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+                      animation-name: ejemplo-ciclo-alternativo;
+                      animation-duration: 4s;
+                      animation-iteration-count: 3;
+                      animation-direction: alternate;  
+                    }
+
+                    //* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo-ciclo-alternativo {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo-ciclo-alternativo {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+div #ejemplo-ciclo-alternativo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo-ciclo-alternativo;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo-ciclo-alternativo"></div>
+                  <div class="white-space"></div>
+                  <div class="white-space"></div>
+                  <div class="highlight">
+                    <strong><p>Abreviatura</p></strong>
+                  </div>
+                    <p>En el siguiente ejemplo vemos que la animación usa 6 propiedades:</p>
+                    <pre>
+                      <code>
+div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+                      </code>
+                    </pre>
+
+                    <p>El mismo resultado podemos obtener usando la siguiente abreviatura:</p>
+                    <pre>
+                      <code>
+div {
+    animation: example 5s linear 2s infinite alternate;
+}
+                      </code>
+                    </pre>
               </div>
 <!-- >>>>>>>>>>>>> Pending: ejercicios para transition <<<<<<<<<<<<<-->
                <div class="lesson-ejercicioId">
