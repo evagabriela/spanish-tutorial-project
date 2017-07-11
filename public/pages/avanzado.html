@@ -603,7 +603,7 @@
 }
                     </code></pre>
                   <div class="white-space"></div>
-                  <p>Cuando uno espeficica con el estilo que uno quiere dentro de <mark>@keyframe</mark>, la animación gradualmente cambia de un estilo a otro en un tiempo al cual se ha espeficado.  Para que la animación funcione, uno debe conectar la animación a un elemento específico.  Aquí podrás ver un ejemplo donde conectamos la animación llamada "Ejemplo" a un elemento <mark>div</mark> a travéz de un Id, en este ejercicio puedes ver que la animación dura 5 segundos, y vemos que durante este tiempo el color del fondo del bloque <mark>div</mark> cambia de "azul" a "rojo":</p>
+                  <p>Cuando uno espeficica con el estilo que uno quiere dentro de <mark>@keyframe</mark>, la animación gradualmente cambia de un estilo a otro en un tiempo al cual se ha espeficado.  Para que la animación funcione, uno debe conectar la animación a un elemento específico.  Aquí podrás ver un ejemplo donde conectamos la animación llamada "Ejemplo" a un elemento <mark>div</mark> a travéz de un Id, en este ejercicio puedes ver que la animación dura 5 segundos, y vemos que durante este tiempo el color del fondo del bloque <mark>div</mark> cambia de "azul" a "rojo" <STRONG><a href="https://codepen.io/evagabriela/pen/rwoxZg" target="_blank">[demo]</a></STRONG>:</p>
                   <h3>Ejemplo 1: Animaciones de cambio de fondo</h3>
                   <div class="white-space"></div>
                  <style> 
@@ -651,9 +651,10 @@ div {
                     <div class="white-space"></div>
                   <div class="white-space"></div>
                   <h3>Ejemplo 2: Animaciones de cambio de fondo y posición</h3>
+                  <p><STRONG><a href="https://codepen.io/evagabriela/pen/dRwGQp" target="_blank">[demo]</a></STRONG>:</p>
                   <div class="white-space"></div>
                   <style> 
-                    div #ejemplo2{
+                    #ejemplo2{
                         width: 100px;
                         height: 100px;
                         background-color: red;
@@ -710,10 +711,10 @@ div {
                   <div class="white-space"></div>
 
                   <h3>Ejemplo 3: Animaciones especificando el número de veces de la animación</h3>
-                  <p>La propiedad <mark>animation-iteration-count</mark> especifica el número de veces que la animación ocurre.  En el siguiente ejemplo veremos que la animación sucede 3 veces.</p>
+                  <p>La propiedad <mark>animation-iteration-count</mark> especifica el número de veces que la animación ocurre.  En el siguiente ejemplo veremos que la animación sucede 3 veces <STRONG><a href="https://codepen.io/evagabriela/pen/eRbJQa" target="_blank">[demo]</a></STRONG>:</p>
                   <div class="white-space"></div>
                   <style> 
-div #ejemplo3 {
+#ejemplo3 {
      width: 100px;
     height: 100px;
     position: relative;
@@ -743,7 +744,7 @@ div #ejemplo3 {
 </style>
                   <pre>
                     <code>
-div #ejemplo3 {
+#ejemplo3 {
     width: 100px;
     height: 100px;
     position: relative;
@@ -759,10 +760,10 @@ div #ejemplo3 {
                   <div class="white-space"></div>
 
                    <h3>Ejemplo 4: Animaciones utilizando <mark>animation-delay</mark></h3>
-                  <p>La propiedad <mark>animation-delay</mark> especifica un retrazo para empezar la animación.  El siguiente ejemplo da 2 segundos de retrazo antes de que comienze la animación.</p>
+                  <p>La propiedad <mark>animation-delay</mark> especifica un retrazo para empezar la animación.  El siguiente ejemplo da 2 segundos de retrazo antes de que comienze la animación <STRONG><a href="https://codepen.io/evagabriela/pen/mwaVaw" target="_blank">[demo]</a></STRONG>:</p>
                   <div class="white-space"></div>
                   <style> 
-                    div #ejemplo4 {
+                    #ejemplo4 {
                         width: 100px;
                         height: 100px;
                         background-color: red;
@@ -795,7 +796,7 @@ div #ejemplo3 {
                   </style>
                   <pre>
                     <code>
-div #ejemplo4 {
+#ejemplo4 {
     width: 100px;
     height: 100px;
     position: relative;
@@ -814,9 +815,9 @@ div #ejemplo4 {
 
                    <h3>Ejemplo 5: Animaciones en sentido inverso o ciclos alternativos</h3>
                   <p>La propiedad <mark>animation-direction</mark> es usada para poder hacer que la animación suceda en dirección inversa o ciclos alternativos.</p>
-                  <p>El siguiente ejemplo veremos la animación en dirección inversa:</p>
+                  <p>El siguiente ejemplo veremos la animación en dirección inversa <STRONG><a href="https://codepen.io/evagabriela/pen/awPdXz" target="_blank">[demo]</a></STRONG>:</p>
                   <style> 
-                    div #ejemplo-inversa {
+                    #ejemplo-inversa {
                         width: 100px;
                         height: 100px;
                         background-color: red;
@@ -825,14 +826,14 @@ div #ejemplo4 {
                         -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
                         -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
                         -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
-                        animation-name: example;
+                        animation-name: ejemplo-animacion-inversa;
                         animation-duration: 4s;
                         animation-iteration-count: 3;
                         animation-direction: reverse;   
                     }
 
                     //* Safari 4.0 - 8.0 */
-                    @-webkit-keyframes ejemplo5-animacion-inversa {
+                    @-webkit-keyframes ejemplo-animacion-inversa {
                         0%   {background-color:red; left:0px; top:0px;}
                         25%  {background-color:yellow; left:200px; top:0px;}
                         50%  {background-color:blue; left:400px; top:0px;}
@@ -841,7 +842,7 @@ div #ejemplo4 {
                     }
 
                     /* Standard syntax */
-                    @keyframes ejemplo5-animacion-inversa {
+                    @keyframes ejemplo-animacion-inversa {
                         0%   {background-color:red; left:0px; top:0px;}
                         25%  {background-color:yellow; left:200px; top:0px;}
                         50%  {background-color:blue; left:400px; top:0px;}
@@ -851,7 +852,7 @@ div #ejemplo4 {
                   </style>
                   <pre>
                     <code>
-div #ejemplo-inversa {
+#ejemplo-inversa {
     width: 100px;
     height: 100px;
     position: relative;
@@ -866,9 +867,9 @@ div #ejemplo-inversa {
                     <div id="ejemplo-inversa"></div>
                   <div class="white-space"></div>
 
-                  <p>En este otro ejemplo veremos la animación en ciclos alternativos:</p>
+                  <p>En este otro ejemplo veremos la animación en ciclos alternativos <STRONG><a href="https://codepen.io/evagabriela/pen/ZyVQwN" target="_blank">[demo]</a></STRONG>:</p>
                   <style> 
-                    div #ejemplo-ciclo-alternativo {
+                    #ejemplo-ciclo-alternativo {
                       width: 100px;
                       height: 100px;
                       background-color: red;
@@ -903,7 +904,7 @@ div #ejemplo-inversa {
                   </style>
                   <pre>
                     <code>
-div #ejemplo-ciclo-alternativo {
+#ejemplo-ciclo-alternativo {
     width: 100px;
     height: 100px;
     position: relative;
@@ -921,7 +922,7 @@ div #ejemplo-ciclo-alternativo {
                   <div class="highlight">
                     <strong><p>Abreviatura</p></strong>
                   </div>
-                    <p>En el siguiente ejemplo vemos que la animación usa 6 propiedades:</p>
+                    <p>En el siguiente ejemplo vemos que la animación usa 6 propiedades <STRONG><a href="https://codepen.io/evagabriela/pen/vZvLPm" target="_blank">[demo]</a></STRONG>:</p>
                     <pre>
                       <code>
 div {
@@ -935,7 +936,7 @@ div {
                       </code>
                     </pre>
 
-                    <p>El mismo resultado podemos obtener usando la siguiente abreviatura:</p>
+                    <p>El mismo resultado podemos obtener usando la siguiente abreviatura <STRONG><a href="https://codepen.io/evagabriela/pen/gRZPJX" target="_blank">[demo]</a></STRONG>:</p>
                     <pre>
                       <code>
 div {
