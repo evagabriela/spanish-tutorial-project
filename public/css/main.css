@@ -93,8 +93,8 @@ a.btn {
     background: linear-gradient(to bottom right, #69D1C5, #69D1C5);
 	color: #fff;
 	margin-top: 30px;
-	float: left;
-	margin-left: 525px;
+	/*float: left;
+	margin-left: 525px;*/
 	padding: 12px 135px;
 	font-size: 16px;
 	border: 3px solid inherit;
@@ -120,19 +120,24 @@ a.btn {
 .courses {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin: 60px;
 	margin-top: 80px;
 	height: auto;
-	padding-bottom: 62px;
 }
 
 .space {
 	margin-top: 140px;
 }
 
-.courses-box {
-	width: 27%;
+article {
+	flex-basis: 30.3%;
 }
+
+.courses-box {
+	margin-bottom: 140px;
+}	
+
 
 .card {
 	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
@@ -256,6 +261,33 @@ h6 {
 
 .white-spacer {
 	height: 15px;
+}
+
+/*Media Queries*/
+@media (max-width: 970px) {
+  	article {
+		flex-basis: 45.3%;
+	}
+
+	.courses {
+	    margin-top: 80px;
+	    margin: 60px 40px;
+	    padding-bottom: 0;
+    }
+
+    .courses-box {
+    	margin-bottom: 105px;
+    }
+}
+
+@media (max-width: 750px) {
+  article {
+    flex-basis: 99%;
+  }
+
+  .contactUs {
+  	width: 100%;
+  }
 }
 
 
