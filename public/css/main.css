@@ -264,6 +264,20 @@ h6 {
 }
 
 /*Media Queries*/
+@media (min-width: 1120px) {
+	.header-titles {
+		font-size: 40px;
+	}
+
+	.subheader {
+		font-size: 30px;
+	}
+
+	a.btn {
+		font-size: 22px;
+	}
+}
+
 @media (max-width: 970px) {
   	article {
 		flex-basis: 45.3%;
