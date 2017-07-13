@@ -68,7 +68,7 @@ li {
 
 .sidebar-nav {
 	padding: 0;
-	padding-top: 45px;
+	/*padding-top: 45px;*/
 	list-style: none;
 	height: 100%;
 }
@@ -161,6 +161,10 @@ pre {
 
 .dibus {
 	margin-left: 400px;
+}
+
+.home-icon {
+	margin: 20px 40px;
 }
 
 
