@@ -74,7 +74,7 @@ nav {
 
 .container-titles {
 	position: absolute;
-	top: 30px;
+	top: 25%;
 	width: 100%;
 }
 
@@ -314,10 +314,6 @@ h6 {
 
   .contactUs {
   	width: 100%;
-  }
-
-  .container-titles {
-  	padding-bottom: 30px;
   }
 }
 
