@@ -68,7 +68,7 @@ li {
 
 .sidebar-nav {
 	padding: 0;
-	padding-top: 45px;
+	/*padding-top: 45px;*/
 	list-style: none;
 	height: 100%;
 }
@@ -161,6 +161,25 @@ pre {
 
 .dibus {
 	margin-left: 400px;
+}
+
+.home-icon {
+	margin: 20px 40px;
+}
+
+
+/* PENDING: REFACTOR LISTS FOR WHOLE SITE*/
+.content-list {
+	color: #435a64;
+}
+
+.content-list li {
+	text-transform: none !important;
+    letter-spacing: 1px;
+    padding: 25px 20px;
+    border: none;
+    font-size: 21px;
+    font-weight: 500;
 }
 
 

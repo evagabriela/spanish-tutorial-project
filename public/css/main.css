@@ -49,6 +49,7 @@ nav {
 	width: 200px;
 	height: 200px;
 	background: linear-gradient(to bottom right, #69D1C5, #69D1C5);
+	background: -webkit-linear-gradient(top left, #69D1C5, #69D1C5);
 	border-radius: 50%;
 	margin-top: -120px;
 	margin-left: -60px;
@@ -57,6 +58,8 @@ nav {
 
 .header-background{
    background: linear-gradient(to bottom right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");
+   background: -webkit-linear-gradient(top left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
    url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -91,10 +94,9 @@ nav {
 
 a.btn {
     background: linear-gradient(to bottom right, #69D1C5, #69D1C5);
+    background: -webkit-linear-gradient(top left, #69D1C5, #69D1C5);
 	color: #fff;
 	margin-top: 30px;
-	float: left;
-	margin-left: 525px;
 	padding: 12px 135px;
 	font-size: 16px;
 	border: 3px solid inherit;
@@ -102,13 +104,11 @@ a.btn {
 	letter-spacing: 1.5px;
 	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
 	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
 }
-
-/* a.btn:hover {
-	background: #63b2c6;
-} */
 
 /*Courses*/ 
 
@@ -119,26 +119,36 @@ a.btn {
 
 .courses {
 	display: flex;
+	display: -ms-flexbox;
 	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	margin: 60px;
 	margin-top: 80px;
 	height: auto;
-	padding-bottom: 62px;
 }
 
 .space {
 	margin-top: 140px;
 }
 
-.courses-box {
-	width: 27%;
+article {
+	flex-basis: 30.3%;
+	-ms-flex-preferred-size: 30.3%;
 }
+
+.courses-box {
+	margin-bottom: 140px;
+}	
+
 
 .card {
 	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
 	height: 200px;
 	border-radius: 0.375rem;
 	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
 	color: #7d97ad;
 	background-color: #fff;
 }
@@ -147,6 +157,7 @@ a.btn {
 .card:hover {
 	box-shadow: 10px 16px 20px 0px rgba(46,61,73,0.15);
 	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
 }
 
 .color1 {
@@ -256,6 +267,53 @@ h6 {
 
 .white-spacer {
 	height: 15px;
+}
+
+/*Media Queries*/
+@media (min-width: 1120px) {
+	.header-titles {
+		font-size: 40px;
+	}
+
+	.subheader {
+		font-size: 30px;
+	}
+
+	a.btn {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 970px) {
+  	article {
+		flex-basis: 45.3%;
+		-ms-flex-preferred-size: 45.3%;
+	}
+
+	.courses {
+	    margin-top: 80px;
+	    margin: 60px 40px;
+	    padding-bottom: 0;
+    }
+
+    .courses-box {
+    	margin-bottom: 105px;
+    }
+}
+
+@media (max-width: 750px) {
+  article {
+    flex-basis: 99%;
+     -ms-flex-preferred-size: 99%;
+  }
+
+  .contactUs {
+  	width: 100%;
+  }
+
+  .header-background {
+  	height: 90vh;
+  }
 }
 
 
