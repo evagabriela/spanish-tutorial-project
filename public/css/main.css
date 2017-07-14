@@ -115,8 +115,24 @@ a.btn {
 	-webkit-transition: all .3s ease-in-out;
 }
 
-/*Courses*/ 
+/*Courses Redesign*/ 
+.row {
+	margin: 60px;
+}
 
+.container-left {
+	float: left;
+    width: 25%;
+    /*border: solid 2px;*/
+}
+
+.container-right {
+	float: right;
+	width: 75%;
+	/*border: solid 2px;*/
+}
+
+/*Courses*/ 
 .courses-titles {
 	color: rgba(0, 191, 178, 0.8);
 	margin-top: 100px;
