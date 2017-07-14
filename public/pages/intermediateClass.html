@@ -48,7 +48,7 @@
       					<div class="white-space"></div>
       					<p>Las etiquetas <mark>&ltdiv> &lt/div></mark> nos permiten dividir la página en secciones. Funcionan como contenedores o bloques a los cuales se les puede agregar estilos diferentes. El mismo nombre de <mark>div</mark> es la versión corta de la palabra división.</p>
      						<div class="white-space"></div>
-     						<p>Por ejemplo, si querés construir el sitio web de una tienda de vestimenta femenina, podes dividir la página en varias secciones gracias a &ltdiv>&lt/div>, una de ellas puede tener fotos de las prendas, otra sección puede tener alguna descripción de la tienda, y en la última sección se pueden encontrar los números de contacto telefónicos de la tienda. Cada sección puede tener colores y otros estilos diferentes que los identifiquen.</p>
+     						<p>Por ejemplo, si querés construir el sitio web de una tienda de vestimenta, podes dividir la página en varias secciones gracias a &ltdiv>&lt/div>, una de ellas puede tener fotos de las prendas, otra sección puede tener alguna descripción de la tienda, y en la última sección se pueden encontrar los números telefónicos de la tienda. Cada sección puede tener colores y otros estilos diferentes que los identifiquen.</p>
                 <div class="white-space"></div>
                 <p>Por otro lado, las etiquetas <mark>&ltspan> &lt/span></mark> te permiten cambiar el estilo de las partes más pequeñas del sitio web, como por ejemplo una palabra específica. Lo único que tienes que hacer es rodear el texto que necesitas cambiar con las etiquetas de span para luego agregar o modificar el estilo con CSS.</p>
                 <div class="white-space"></div>
@@ -56,7 +56,7 @@
 	  				</div>
 
             <div class="lesson-ejercicioDivs">
-                <p>En el editor tenemos un ejemplo de div y span con diferentes estilos. Juega con los estilos para ver como cambian.</p>
+                <p>En el editor tenemos un ejemplo de div y span con diferentes estilos. Haz click en "Result" y juega con los estilos para ver como cambian. Por ejemplo, intenta modificar el color del background de los divs o el tamaño de letra.</p>
                 <div class="white-space"></div>
                 <p data-height="375" data-theme-id="30285" data-slug-hash="dRmRZd" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="divs y span" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRmRZd/">divs y span</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -65,7 +65,15 @@
             </div>	
 
     				<div class="lesson-classes">
-      						<p>Existen dos tipos de selectores que son muy útiles para agregar estilos en CSS: <mark>las clases (class) y los identificadores (id)</mark>. Las clases sirven para seleccionar elementos que deberían tener el mismo estilo. Por ejemplo, imagina que tenemos tres secciones separadas por divs y queremos que dos de ellas tengan el mismo color verde, y una de ellas tenga un color diferente, por ejemplo, amarillo. Si utilizamos el elemento div para cambiar el estilo en CSS, todas las secciones representadas por div van a tener el mismo color. El cambio les afectará a todas las secciones por igual. Sin embargo, si discriminamos a las secciones, en este caso por color, agregando el selector <mark>class</mark> a las etiquetas div, entonces va a ser mucho más fácil hacer cambios en CSS.</p> 
+      						<p>Existen dos tipos de selectores que son muy útiles para agregar estilos en CSS: <mark>las clases (class) y los identificadores (id)</mark>. Las clases sirven para seleccionar elementos que deberían tener el mismo estilo.</p>
+                  <div class="white-space"></div> 
+                  <p>En el ejemplo de abajo tenemos tres divs de color naranja. ¿Cómo podemos hacer para que dos de los divs tengan el color lila, y sólo el div del medio tenga el color verde? Si utilizamos el elemento <mark>div</mark> para cambiar el color en CSS, todos los divs van a tener el mismo color. El cambio les afectará a todas las secciones por igual debido a que no existe ninguna distinción entre los divs.</p>
+                  <div class="white-space"></div> 
+                  <img src="../images/divNaranja.png" alt="Div color naranja">
+                  <div class="white-space"></div>
+                  <p>Sin embargo, con la ayuda de <mark>class</mark> podemos discriminar a los divs, en este caso por color, agregando el selector <mark>class</mark> a las etiquetas. Gracias a esto, podemos cambiar los colores de acuerdo a cómo identificamos cada div.</p> 
+                  <div class="white-space"></div>
+                  <div style="width:100%;height:0;padding-bottom:36%;position:relative;"><iframe src="https://giphy.com/embed/8ZMJF6Jc55XSo" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/8ZMJF6Jc55XSo"></a></p>
                   <div class="white-space"></div>
                   <p>En HTML,<mark>class</mark> siempre va seguido del signo <mark>=</mark> y un nombre descriptivo entre comillas.</p> 
       						<div class="white-space"></div>
@@ -73,8 +81,9 @@
 &lthtml&gt
   &ltbody&gt
     
-    &ltdiv class="rosado"&gtSoy un div!&lt/div&gt
-    &ltdiv class="negro"&gtSoy otro div!&lt/div&gt
+    &ltdiv class="lila"&gtSoy un div!&lt/div&gt
+    &ltdiv class="verde"&gtSoy otro div!&lt/div&gt
+    &ltdiv class="lila"&gtSoy el último div!&lt/div&gt
     
   &lt/body&gt
 &lt/html&gt</code></pre>
@@ -82,12 +91,12 @@
                  <p>En CSS agregamos los estilos utilizando las clases. Para eso, debemos poner un punto (.) antes del nombre de la clase, y luego seguir con el procedimiento normal, es decir, definir los estilos dentro de las llaves.</p>
                  <div class="white-space"></div>
                  <pre><code>
-.rosado {
-  background-color: pink;
+.lila {
+  background-color: #7A82AB;
 }
 
-.negro {
-  background-color: black;
+.verde {
+  background-color: #439A86;
 }
                   </code></pre>
                   <div class="white-space"></div>
@@ -140,11 +149,12 @@
             </div>
 
      				<div class="lesson-universal">
-       					<p>Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces recurrimos a CSS:</p> 
+       					<p>Existe un selector universal que nos ayuda a agregar los mismos estilos a toda la página. Este selector está representado por el simbolo <mark>*</mark> (asterisco). Por ejemplo, si queremos agregar un borde a todos los elementos de la página entonces seleccionamos * y agregamos el borde en CSS:</p> 
       					<div class="white-space"></div>
-      					<a class="jsbin-embed" href="http://jsbin.com/velagetinu/edit?html&height=400px&width=975px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.2"></script>
+      					<p data-height="363" data-theme-id="30285" data-slug-hash="LLJvyx" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="selector" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/LLJvyx/">selector</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                 <div class="white-space"></div>
-                <p>Ahora todos los elementos de la página tienen un borde rojo. Como ya te habrás dado cuenta, todos los elementos están dentro de unas cajas. A esto se le llama el modelo de la caja de CSS.</p>
+                <p>Ahora todos los elementos de la página tienen un borde rojo. ¿Te diste cuenta que todos los elementos están dentro de unas cajas?. A esto se le llama el modelo de la caja de CSS.</p>
                 <div class="white-space"></div>
                 <div class="white-space"></div>
      				</div>
