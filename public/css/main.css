@@ -116,20 +116,44 @@ a.btn {
 }
 
 /*Courses Redesign*/ 
+#goToCourses{
+background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
+background-position: 50%;
+background-repeat: no-repeat;
+}
+
 .row {
-	margin: 60px;
+	margin: 60px 0;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .container-left {
 	float: left;
     width: 25%;
+  	color: white;
+  	margin-left: 60px;
+  	padding-top: 110px;
     /*border: solid 2px;*/
 }
 
 .container-right {
 	float: right;
-	width: 75%;
+	width: 60%;
 	/*border: solid 2px;*/
+}
+
+.container-right ul {
+	list-style: none;
+	padding:0;
+}
+
+.container-right ul li{
+	display: inline-block;
+	background-color: red;
+	width: 200px;
+	height: 269px;
+	float: left;
+	display: block;
 }
 
 /*Courses*/ 
