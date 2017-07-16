@@ -123,7 +123,6 @@ background-repeat: no-repeat;
 }
 
 .row {
-	margin: 60px 0;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -150,7 +149,7 @@ background-repeat: no-repeat;
 .container-right ul li{
 	display: inline-block;
 	background-color: red;
-	width: 200px;
+	width: 33.33%;
 	height: 269px;
 	float: left;
 	display: block;
