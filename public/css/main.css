@@ -117,8 +117,10 @@ a.btn {
 
 /*Courses Redesign*/ 
 #goToCourses{
-background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
-background-repeat: no-repeat;
+	background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: left;
 }
 
 .row {
