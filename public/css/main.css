@@ -285,9 +285,9 @@ article {
 
 
 .card {
-	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
-	height: 200px;
-	border-radius: 0.375rem;
+	/*box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);*/
+	/*height: 200px;*/
+	/*border-radius: 0.375rem;*/
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	color: #7d97ad;
