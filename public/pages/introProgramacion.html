@@ -38,24 +38,6 @@
 					<div class="col-lg-12">
 					
 						<div class="lesson-programar">
-                <div class="dibus">
-                  <i class="fa fa-birthday-cake fa-5x" aria-hidden="true" style="color:#DE6C83"></i>
-                </div>
-                <div class="white-space"></div>
-      					<p>¿Seguiste alguna vez instrucciones para hornear un pastel o cocinar algún otro plato? Seguramente tuviste que seguir las instrucciones -- en un cierto orden -- para que el pastel te salga igual a la receta.</p> 
-                <div class="white-space"></div>
-                <p>¿Ahora, cómo le explicarías a tu amigo que nunca horneó un pastel los pasos para hacerlo?</p>
-                <div class="white-space"></div>
-                <p>Piensa por un momento en la respuesta <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></p>
-                <div class="white-space"></div>
-                <p>Seguro escribirías la secuencia de pasos a seguir y detallarías cada paso con el tiempo y los ingredientes necesarios para hacer el pastel de manera que tu amigo entienda y pueda prepararlo. Lo mismo ocurre al programar.</p>
-     						<div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="highlight">
-                <p>Programar es escribir una serie de instrucciones que la computadora pueda entender y ejecutar.</p>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-              </div>
             </div>
      					
 
@@ -134,5 +116,11 @@
 		<script src="../js/vendor/jquery-1.12.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="../js/classroom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
+    <script type="text/javascript">
+    var click_cb = dbLoadClass(".programarLink", "programming", "intro", ".lesson-programar");
+    click_cb();
+    </script>
 	</body>
 </html>

@@ -11,7 +11,6 @@
 			<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
-			<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 	</head>
 	<body>
 
@@ -67,7 +66,7 @@
 		
 			<article class="courses-box">
 				<div class="card color4">
-					<a href="#"><h4>Responsive Design</h4></a>
+					<a href="pages/introProgramacion.html"><h4>Intro a la programacion</h4></a>
 					<h5>Nivel básico - Próximamente</h5>
 				</div>
 			</article>
@@ -89,36 +88,35 @@
 		</section>
 
 			<!-- Contact section  -->
-		<div class="main-contact" id="goToContact">
-			<div class="contactUs">
-				<span class="contact-title"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><h2>Contáctanos</h2></span>
-				<p>Si te interesa colaborar con EKU, o tenés alguna sugerencia acerca de cómo mejorar las clases, entonces no dudes en dejarnos un mensaje!</p>
-				<div class="white-spacer"></div>
-				<a href="mailto:contacto@eku.academy?Subject=Hola%20Eku" target="_top">Enviar email</a>
-			</div>
-		</div>
 
 		<div class="contact">
 			<div class="container">
 				<div class="row">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
 					<h2>Contactános</h2>
 					<p>Si te interesa colaborar con EKU, o tenés alguna sugerencia acerca de cómo mejorar las clases, entonces no dudes en dejarnos un mensaje!</p>	
-					<div class="col-lg-6 col-md-6">
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="sizing-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-							<input type="text" class="form-control" aria-describeby="sizing-addon" placeholder="Nombre y apellido">
+					<form action="" id="message-form">
+						<div class="col-md-6">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon" id="sizing-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" id="name" aria-describeby="sizing-addon" placeholder="Nombre y apellido">
+							</div>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon" id="sizing-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" id="mail" aria-describeby="sizing-addon" placeholder="Correo electrónico">
+							</div>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon" id="sizing-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" id="subject" aria-describeby="sizing-addon" placeholder="Asunto">
+							</div>
 						</div>
-						<div class="input-group input-group-lg">
-							<span class="input-group-addon" id="sizing-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-							<input type="text" class="form-control" aria-describeby="sizing-addon" placeholder="Correo electrónico">
+						<div class="col-md-6">	
+							<div class="input-group">
+								<textarea name="" cols="80" rows="4" class="form-control" id="message" placeholder="Mensaje"></textarea>
+								<button class="btn btn-lg">Enviar</button>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="input-group">
-							<textarea name="" id="" cols="80" rows="6" class="form-control" placeholder="Mensaje"></textarea>
-							<button class="btn btn-lg">Enviar</button>
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -131,8 +129,10 @@
 		</footer>
 
 		<script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 		<script src="js/main.js"></script>
-		
+		<script src="js/vendor/message.js"></script>
+
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
