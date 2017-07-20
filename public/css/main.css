@@ -132,14 +132,14 @@ a.btn {
 	float: left;
     width: 25%;
   	color: white;
-  	margin-left: 60px;
-  	padding-top: 110px;
-    /*border: solid 2px;*/
+  	margin: 5% 0 0 5%;
 }
 
 .tagline-text-uppercase {
 	font: 700 3.5em/1em 'Montserrat', sans-serif;
     text-transform: uppercase;
+	float: left;
+    margin-left: 30%;
 }
 
 .tagline-small-text {
@@ -148,7 +148,7 @@ a.btn {
     font-size: 20px;
     float: left;
     text-align: left;
-    margin: 20px 0 0 45px;
+    margin: 5% 30%;
 }
 
 .container-right {
@@ -163,7 +163,7 @@ a.btn {
 }
 
 .lessons-color li:nth-child(1) {
-    background: rgba(255, 122, 113, 0.9);
+    background: rgba(255, 122, 113, 1);
 }
 
 .lessons-color li:nth-child(2) {
@@ -175,7 +175,7 @@ a.btn {
 }
 
 .lessons-color li:nth-child(4) {
-    background: rgba(227, 119, 170, 0.9);
+    background: rgba(227, 119, 170, 1);
 }
 
 .lessons-color li:nth-child(5) {
