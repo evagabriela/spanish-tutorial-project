@@ -123,27 +123,27 @@ a.btn {
 	background-size: 100%;
 	background-position: 0% 0%;
   display: table;
-  /*background-color: rgba(0, 0, 0, 0.6);*/
 }
 
 .main-lesson-container {
   background-color: rgba(0, 0, 0, 0.6);
-  height: 538px;
+  /*height: 538vh;*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 .container-left {
-	float: left;
-    width: 25%;
-  	color: white;
-  	margin: 5% 0 0 15%;
+  flex-basis: 40%;
+	color: white;
+	margin: 5% 0;
 }
 
 .tagline-text-uppercase {
 	font: 700 3.5em/1em 'Montserrat', sans-serif;
     text-transform: uppercase;
 	float: left;
-    margin-left: 30%;
+    margin-left: 15%;
     text-align: left;
 }
 
@@ -153,17 +153,20 @@ a.btn {
     font-size: 20px;
     float: left;
     text-align: left;
-    margin: 5% 30%;
+    margin: 5% 15%;
 }
 
 .container-right {
 	float: right;
-	width: 60%;
+	flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container-right ul {
 	list-style: none;
 	padding:0;
+  margin: auto;
 }
 
 .lessons-color li:nth-child(1) .lesson-box-style {
@@ -171,11 +174,11 @@ a.btn {
 }
 
 .lessons-color li:nth-child(2) .lesson-box-style {
-    background: rgba(143, 215, 136, 0.9);
+    background: rgba(143, 215, 136, 1);
 }
 
 .lessons-color li:nth-child(3) .lesson-box-style {
-    background: rgba(3, 187, 199, 0.9);
+    background: rgba(3, 187, 199, 1);
 }
 
 .lessons-color li:nth-child(4) .lesson-box-style {
@@ -183,11 +186,11 @@ a.btn {
 }
 
 .lessons-color li:nth-child(5) .lesson-box-style {
-    background: rgba(245, 244, 136, 0.9);
+    background: rgba(245, 244, 136, 1);
 }
 
 .lessons-color li:nth-child(6) .lesson-box-style {
-    background: rgba(91, 229, 207, 0.9);
+    background: rgba(91, 229, 207, 1);
 }
 
 
@@ -199,7 +202,7 @@ a.btn {
 	display: block;
 	cursor: pointer;
 	overflow: hidden;
-    text-align: center;
+  text-align: center;
 }
 
 
@@ -427,9 +430,6 @@ h6 {
 		font-size: 22px;
 	}
 
-  .container-left {
-    margin: 5% 0 0 0%;
-  }
 }
 
 @media (max-width: 970px) {
@@ -447,6 +447,35 @@ h6 {
     .courses-box {
     	margin-bottom: 105px;
     }
+
+    .container-left {
+      flex-basis: 100%;
+      /*color: white;
+      margin: 5% 0;*/
+      margin: 5% 0;
+    }
+
+    .main-lesson-container {
+      /*background-color: rgba(0, 0, 0, 0.6);*/
+      height: auto;
+      /*display: flex;
+      flex-wrap: wrap;*/
+    }
+
+    .container-right {
+      /*float: right;*/
+       flex-basis: 100%;
+      /*display: flex;*/
+      /*flex-wrap: wrap;*/
+    }
+
+    #goToCourses {
+      background-size: 140%;
+    }
+
+    .contact {
+      /*margin-top: 500px;*/
+    }
 }
 
 @media (max-width: 750px) {
@@ -457,5 +486,29 @@ h6 {
 
   .contactUs {
   	width: 100%;
+  }
+
+  .container-left {
+    margin: 4.2% 0;
+  }
+
+  .container-right ul li {
+    width: 100%;
+  }
+
+  .contact {
+    /*margin-top: 1380px;*/
+  }
+
+  .tagline-text-uppercase {
+    font-size: 2.0em;
+  }
+
+  .tagline-small-text {
+    font-size: 1.9rem;
+  }
+
+  .lesson-box-style {
+    padding: 10%;
   }
 }
