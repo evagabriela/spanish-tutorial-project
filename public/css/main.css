@@ -199,6 +199,11 @@ a.btn {
     text-align: center;	
 }
 
+ul li a:hover .content-hover {
+ color:red;
+ height: 100%;
+}
+
 .lesson-box-style {
 	text-align: center;
     position: relative;
