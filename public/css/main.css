@@ -132,7 +132,7 @@ a.btn {
 	float: left;
     width: 25%;
   	color: white;
-  	margin: 5% 0 0 5%;
+  	margin: 5% 0 0 15%;
 }
 
 .tagline-text-uppercase {
@@ -140,6 +140,7 @@ a.btn {
     text-transform: uppercase;
 	float: left;
     margin-left: 30%;
+    text-align: left;
 }
 
 .tagline-small-text {
