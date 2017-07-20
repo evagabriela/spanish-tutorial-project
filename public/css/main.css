@@ -116,7 +116,7 @@ a.btn {
 	-webkit-transition: all .3s ease-in-out;
 }
 
-/*Courses Redesign*/ 
+/*Courses Redesign*/
 #goToCourses{
 	background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
 	background-repeat: no-repeat;
@@ -155,7 +155,6 @@ a.btn {
 .container-right {
 	float: right;
 	width: 60%;
-	/*border: solid 2px;*/
 }
 
 .container-right ul {
@@ -196,13 +195,14 @@ a.btn {
 	display: block;
 	cursor: pointer;
 	overflow: hidden;
-    text-align: center;	
+    text-align: center;
 }
 
 
 ul li a:hover .content-hover{
  height: 100%;
  color: #fff;
+ padding: 25px;
 }
 
 .lessons-color li:hover .lesson-box-style {
@@ -219,6 +219,7 @@ ul li a:hover .content-hover{
     overflow: hidden;
     height: 100%;
     width: 100%;
+    padding: 25%;
 }
 
 
@@ -235,7 +236,7 @@ ul li a:hover .content-hover{
 }
 
 
-/*Courses*/ 
+/*Courses*/
 .courses-titles {
 	color: rgba(0, 191, 178, 0.8);
 	margin-top: 100px;
@@ -264,7 +265,7 @@ article {
 
 .courses-box {
 	margin-bottom: 140px;
-}	
+}
 
 
 .card {
@@ -314,15 +315,11 @@ article {
 h4 {
 	color: #A96DA3;
 	font-size: 25px;
-	padding-left: 20px;
-	padding-top: 20px;
 }
 
 h5 {
 	font-size: 17px;
 	text-transform: uppercase;
-	padding-left: 21px;
-    padding-top: 20px;
 }
 
 
@@ -425,6 +422,10 @@ h6 {
 	a.btn {
 		font-size: 22px;
 	}
+
+  .container-left {
+    margin: 5% 0 0 0%;
+  }
 }
 
 @media (max-width: 970px) {
@@ -454,8 +455,3 @@ h6 {
   	width: 100%;
   }
 }
-
-
-
-
-
