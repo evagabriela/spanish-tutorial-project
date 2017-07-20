@@ -163,27 +163,27 @@ a.btn {
 	padding:0;
 }
 
-.lessons-color li:nth-child(1) {
+.lessons-color li:nth-child(1) .lesson-box-style {
     background: rgba(255, 122, 113, 1);
 }
 
-.lessons-color li:nth-child(2) {
+.lessons-color li:nth-child(2) .lesson-box-style {
     background: rgba(143, 215, 136, 0.9);
 }
 
-.lessons-color li:nth-child(3) {
+.lessons-color li:nth-child(3) .lesson-box-style {
     background: rgba(3, 187, 199, 0.9);
 }
 
-.lessons-color li:nth-child(4) {
+.lessons-color li:nth-child(4) .lesson-box-style {
     background: rgba(227, 119, 170, 1);
 }
 
-.lessons-color li:nth-child(5) {
+.lessons-color li:nth-child(5) .lesson-box-style {
     background: rgba(245, 244, 136, 0.9);
 }
 
-.lessons-color li:nth-child(6) {
+.lessons-color li:nth-child(6) .lesson-box-style {
     background: rgba(91, 229, 207, 0.9);
 }
 
@@ -199,9 +199,18 @@ a.btn {
     text-align: center;	
 }
 
-ul li a:hover .content-hover {
- color:red;
+
+ul li a:hover .content-hover{
  height: 100%;
+ color: #fff;
+}
+
+.lessons-color li:hover .lesson-box-style {
+    background: none;
+}
+
+.lesson-box-style:hover .lesson-content{
+    display: none;
 }
 
 .lesson-box-style {
@@ -212,58 +221,19 @@ ul li a:hover .content-hover {
     width: 100%;
 }
 
-.lesson-content {
-	visibility: visible;
-    animation-duration: 0.7s;
-    animation-delay: 0.5s;
-    animation-name: fadeIn;
-}
-
 
 .content-hover {
-/*	opacity: 0;
-    filter: alpha(opacity=0);
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -moz-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -ms-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -o-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    transition: bottom .5s ease, opacity .5s ease-out 0s;
-    padding: 45px;*/
  	 position: absolute;
 	 bottom: 0;
 	 left: 0;
 	 right: 0;
-	 background-color: #008CBA;
+	 background-color: rgba(0, 0, 0, 0.3);
 	 overflow: hidden;
 	 width: 100%;
 	 height: 0;
 	 transition: .5s ease;
 }
 
-.container:hover .overlay{
-  height: 100%;
-}
-
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-/*.box-item:hover {
-	cursor: pointer;
-}*/
 
 /*Courses*/ 
 .courses-titles {
