@@ -10,7 +10,6 @@
    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
    		<script src="https://use.fontawesome.com/442a884b4a.js"></script>
    		<link rel="stylesheet" href="../css/class.css">
-   		<link rel="stylesheet" href="../css/classroom.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
 	</head>
 	<body>
@@ -41,35 +40,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 					
-						<div class="lesson-divSpan">                                      
+						<div class="lesson">                                      
 	  				</div>
 
-            <div class="lesson-ejercicioDivs">
-            </div>	
-
-    				<div class="lesson-classes">
-     				</div>
-
-            <div class="lesson-ejercicioClass">
-            </div>
-
-     				<div class="lesson-identificadores">
-     				</div>
-
-             <div class="lesson-ejercicioId">
-            </div>
-
-     				<div class="lesson-universal">
-     				</div>
-
-     				<div class="lesson-box">
-     				</div>
-
-            <div class="lesson-ejerciciobox">
-            </div>
-
-     					<div class="test2">
-     					</div>
 
 					</div>
 				</div>
@@ -84,18 +57,18 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
     <script type="text/javascript">
-    var click_cb = dbLoadClass(".divsLink", "intermedio-html", "div-span", ".lesson-divSpan");
-    // force load of the first lesson
-    click_cb();
-    dbLoadClass(".ejercicioDivsLink", "intermedio-html", "ejercicio-divs", ".lesson-ejercicioDivs");
-    dbLoadClass(".classLink", "intermedio-html", "class", ".lesson-classes");
-    dbLoadClass(".ejercicioClassLink", "intermedio-html", "ejercicio-class", ".lesson-ejercicioClass");
-    dbLoadClass(".idLink", "intermedio-html", "identificadores", ".lesson-identificadores");
-    dbLoadClass(".ejercicioIdLink", "intermedio-html", "ejercicio-id", ".lesson-ejercicioId");
-    dbLoadClass(".universalLink", "intermedio-html", "universal", ".lesson-universal");
-    dbLoadClass(".boxLink", "intermedio-html", "box-model", ".lesson-box");
-    dbLoadClass(".ejercicioboxLink", "intermedio-html", "ejercicio-box", ".lesson-ejerciciobox");
-    dbLoadClass(".test2Link", "intermedio-html", "test2", ".test2");
+    var click_cb = dbLoadClass(".divsLink", "intermedio-html", "div-span");
+    
+    $(".divsLink").click();
+    dbLoadClass(".ejercicioDivsLink", "intermedio-html", "ejercicio-divs");
+    dbLoadClass(".classLink", "intermedio-html", "class");
+    dbLoadClass(".ejercicioClassLink", "intermedio-html", "ejercicio-class");
+    dbLoadClass(".idLink", "intermedio-html", "identificadores");
+    dbLoadClass(".ejercicioIdLink", "intermedio-html", "ejercicio-id");
+    dbLoadClass(".universalLink", "intermedio-html", "universal");
+    dbLoadClass(".boxLink", "intermedio-html", "box-model");
+    dbLoadClass(".ejercicioboxLink", "intermedio-html", "ejercicio-box");
+    dbLoadClass(".test2Link", "intermedio-html", "test2");
     </script>
 
     <script>
