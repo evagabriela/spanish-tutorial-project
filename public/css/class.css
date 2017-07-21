@@ -38,7 +38,7 @@ p {
 /* sidebar  */
 #sidebar-container {
 	overflow: scroll;
-	background-color: #304564;
+	background-color: #082736;
 	color: #fff;
 	display: block;
 	position: fixed;
@@ -140,16 +140,22 @@ pre {
 	padding: 0px;
 }
 
+.highlight {
+	background: linear-gradient(#FA9962, #D0545C);
+}
+
 
 .highlight p {
-	background-color: #209F90;
+	
 	color: #fff;
 	padding: 30px;
 	margin-bottom: 22px;
+	
 }
 
 .dibus {
 	margin-left: 400px;
+	color: #e33343;
 }
 
 .home-icon {

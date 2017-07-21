@@ -1,0 +1,352 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Classroom</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/442a884b4a.js"></script>
+        <link rel="stylesheet" href="../css/class.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
+    </head>
+  <body>
+
+    <!-- sidebar -->
+    <div id="sidebar-container">
+      <div class="home-icon">
+        <a class="fa fa-home fa-5x" aria-hidden="true" style="color:#fff" href="../index.html"></a>
+      </div>
+      <ul class="sidebar-nav">
+        <h4>HTML & CSS Avanzado</h4>
+          <li class="divsLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Pseudoclases</li>
+          <li class="ejercicioDivsLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="classLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Transiciones</li>
+          <li class="ejercicioClassLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="idLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>&nbsp;Animaciones</li>
+          <li class="ejercicioIdLink"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;A practicar!</li>
+          <li class="test2Link"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>&nbsp;Test</li>
+      </ul>
+    </div>
+
+      <!-- page-content -->
+      <div class="page-content-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+            
+              <div class="lesson-divSpan">
+        
+                    <h4>Pseudo-clases</h4>
+                    
+                  <p>En el curso anterior aprendimos sobre las <mark>clases (class)</mark>. Por si no te acordás, las clases son selectores múy útiles para agrupar elementos y añadir el mismo estilo a ese grupo de elementos.</p>
+                  <p>En el archivo HTML, una clase se agrega dentro de la etiqueta de apertura. Si vemos el archivo HTML de cualquier sitio web podemos identificar exactamente donde se encuentran las clases.</p>
+                  <pre><code><div class="lila">Soy un div con una clase!</div></code></pre>
+                  <p>Existen otros tipos de selectores llamados pseudo-clases. Pero a diferencia de las clases, las pseudo-clases no aparecen en el archivo HTML. Las pseudo-clases se escriben directamente en el archivo CSS y se utilizan para estilizar un estado especial de un elemento.</p>
+                  <p>La manera de definir una pseudo-clase es agregando dos puntos y el nombre de la pseudo-clase al elemento que se quiere modificar. Ejemplo:</p>
+                  <img src="../images/pseudoclaseImage.png">
+
+                  <p>Existen varias pseudo-clases pero nosotros nos enfocaremos sólo en las más comunes. Si te interesa saber más puedes investigar en la web.</p>
+                  <p>Algunas de las pseudo-clases más conocidas modifican links o enlances. Estas pseudo-clases pueden modificar la apariencia de los links cuando estos son visitados o cuando aún no son visitados, es decir cuando todavía no se hizo click sobre ellos. También se puede cambiar el aspecto de los links cuando el cursor se encuentra sobre ellos o al hacer click y activarlos.</p>
+                  <div class='highlight'>
+                  <p>Esto se logra a través de las pseudo-clases dinámicas llamadas <mark>link, visited, hover y active</mark>. Estas pseudo-clases se agregan a los links para lograr diferentes efectos.</p>
+                  </div>
+                  <p>Fijate en el siguiente ejemplo, luego pon tu cursor encima del link. Por último haz click en el link:</p>
+                  <p data-height="370" data-theme-id="30285" data-slug-hash="QgeZRp" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="QgeZRp" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/QgeZRp/">QgeZRp</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                  <p>¿Te diste cuenta como el color del link cambió de azul a rojo al hacer click sobre él?</p>
+
+                  <p>Ten en cuenta el orden correcto en el que se utilizan las pseudo-clases en este caso. 'Link' siempre va primero, seguido de 'visited', 'hover' y por último 'active'.</p>
+                  <p>Las pseudo-clases 'hover' y 'active' también se utilizan con otros selectores que no sean links. Fijate en el siguiente ejemplo, y luego pon tu cursor encima del div.</p>
+
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="dRxQox" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="dRxQox" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRxQox/">dRxQox</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                  <p>¿Te diste cuenta de lo que pasó? Al poner tu cursor encima del div, no solo cambió de color, sino también de tamaño. Ahora fijate en el CSS. El div tiene un estilo inicial que luego cambia gracias a la pseudo-clase 'hover'.</p>
+
+                  <div class="highlight">
+                  <p>Además de las pseudo-clases dinámicas que vimos recién, existe otro tipo de pseudo-clases llamadas estructurales. Algunas de ellas son: 'first-child' 'last-child' y 'nth-child()'</p>
+                  </div>
+                  <p>Es importante saber que existe una jerarquía entre los elementos HTML donde de acuerdo a la estructura, algunos se consideran los padres de algunos elementos (parents), otros son los hijos (children) y también encontramos a los hermanos (siblings). Por ejemplo, fijate la siguiente lista desordenada:</p>
+                  <pre><code><ul><br>&nbsp;<li>Primer hijo</li><br>&nbsp;<li>Segundo hijo</li><br>&nbsp;<li>Tercer hijo</li><br>&nbsp;<li>Ultimo hijo</li><br></ul></code></pre>
+
+                  <p>El elemento <mark>ul</mark> es el padre de los elementos <mark>li</mark>. Al mismo tiempo los elementos <mark>li</mark> son hermanos entre ellos e hijos del elemento <mark>ul</mark>.</p>
+                  <p>Ahora, volvamos a nuestras pseudo-clases. Si queremos aplicar la pseudo-clase 'first-child' para modificar el estilo de la lista de nuestro ejemplo, ¿qué elemento te parece que modificaría esa pseudo-clase? ¿y la pseudo-clase 'last-child'?</p>
+                  <p>Fijate en el editor para ver la respuesta:</p>
+
+                  <p data-height="450" data-theme-id="30285" data-slug-hash="dRxrJo" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="dRxrJo" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRxrJo/">dRxrJo</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+                 
+                  <p>Usando pseudo-clases, agrega diferentes tamaños de letra a cada uno de los items de la lista de manera que la lista esté ordenada de menor a mayor. Luego haz que el primer item de la lista sea color rojo y el último item de la lista sea color azul.</p>
+
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="gRVEKm" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="gRVEKm" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/gRVEKm/">gRVEKm</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              
+
+
+                  <p>En el siguiente ejercicio cambiá el color y tamaño del circulo al poner el cursor encima.</p>
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="zdOqdE" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="zdOqdE" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/zdOqdE/">zdOqdE</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                   
+<!-- Transiciones -->
+              <h4>Transiciones</h4>
+              
+                 <div class='highlight'>
+                  <p>Las transiciones nos permiten cambiar ciertas propiedades de CSS de una forma gradual en un periodo determinado.</p>
+                 </div>
+                <p>En el ejercicio anterior vimos que al poner el cursor encima del div, este cambia de color y tamaño inmediatamente. El cambio se realiza de una manera brusca. Sin embargo, las transiciones nos ayudan a suavizar esos cambios de manera que la animación sea mucho más elegante.</p>
+                <p>Fijate en los dos cuadrados que aparecen en el editor. Al poner el cursor encima del cuadrado al que no se le aplica la transición, podrás ver que el cambio de las propiedades es instantáneo. Sin embargo, al poner el cursor encima del cuadrado al cual sí se le aplica la transición, podrás notar que el cambio de propiedad es mucho más sutil.</p>
+
+                  <p data-height="497" data-theme-id="30285" data-slug-hash="RgzBqZ" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="RgzBqZ" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/RgzBqZ/">RgzBqZ</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+                <p>En el ejemplo de arriba, vimos como gracias a las transiciones se puede cambiar el ancho del elemento de 150px a 300px de una manera lineal en 2 segundos.</p>
+                <p>Ahora veamos como se forma una transición.</p>
+                <div class="transition-box">
+                  <p>Las transiciones requieren varios parámetros. Estos son:</p>
+                    <p><span style="color:#B43E8F">Transition-property (nombre de la propiedad):</span> este parámetro especifica el nombre o los nombres de las propiedades que se quieren cambiar y a los cuales se les debe aplicar la transición.</p>
+                    <p><span style="color:#3B0086">Transition-duration:(duración)</span> este parámetro especifica la duración que debe tener la transición.</p>
+                    <p><span style="color:#4CB944">Transition-timing-function:(tipo de función)</span> este parámetro especifica la velocidad de la transición.</p>
+                    <p><span style="color:#246EB9">Transition-delay:(retraso)</span> este parámetro especifica el tiempo de espera antes de que comience la transición.</p>
+                    </div>
+                    <p>La siguiente linea nos muestra como declarar una transición en CSS</p>
+                <pre>
+                  <code>
+  .ejemplo {
+  transition: [propiedad] [duración] [tipo de función] [retraso]
+  }
+                  </code>
+                </pre>
+                <p>Veamos que significa cada parámetro:</p>
+                <p>1) El nombre de la propiedad puede ser 'background-color', 'height', 'width' o cualquier otro, sólo depende de que propiedad te gustaría cambiar. También como nombre de propiedad se puede escribir simplemente <mark>all</mark> que significa <mark>todo</mark>. Esto es muy útil en el caso de que tengas que cambiar varias propiedades a la misma vez.</p>
+                <p>2) En cuanto a la duración, esto se escribe en segundos o milisegundos.</p>
+                <p>3) Otro parámetro que es importante aclarar es el tipo de función. Existen varios tipos de función. <br>Ejemplo:<br>Linear: la velocidad del cambio es constante. Es decir, es la misma velocidad de principio a fin. <br>Ease: este tipo de función es el default. Es decir, que si no le agregás el tipo de función, la transición se hará utilizando ease. Esto quiere decir que el cambio tendrá un comienzo lento, luego rápido, y por último lento nuevamente.<br>Ease-in: la velocidad de cambio comienza lenta y luego se mantiene constante. <br>Ease-out: La velocidad es constante y el final es lento.<br>Ease-in-out: la velocidad es lenta al comienzo y al final.</p>
+                <p>4) El último parámetro, retraso, es opcional.</p>
+                <p>Fijate en el ejemplo de abajo. El parámetro del retraso no está declarado, pero si el de la propiedad (all), la duración (.5s) y el tipo de función (ease-in-out).</p>
+                <pre>
+                  <code>
+  .button {
+  transition: all .5s ease-in-out;
+  }
+                  </code>
+                </pre>
+                
+                <p>Ahora veamos ejemplos de otras posibilidades más elaboradas donde podemos usar transiciones:</p>
+                <h3>Ejemplo 1: Aparición de letras aleatoriamente</h3>
+                <p>Una de las herramientas más poderosas que tenemos a nuestra disposición es <mark>transition-delay</mark>. Nos permite retrasar el comienzo de la transición. En este primer ejemplo, vemos la combinación de utilizar la propiedad <mark>opacity</mark> y poder darle una animación utilizando <mark> transition-delay</mark> a cada una de las letras y así poder crear un efecto que sea sutil y atractivo. Pon tu cursor encima de la imagen para ver la animación. Luego haz click en 'CSS' para ver el código.</p>
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="bRPxJG" data-default-tab="result" data-user="eku" data-embed-version="2" data-pen-title="bRPxJG" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/bRPxJG/">bRPxJG</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               
+                
+                <h3>Ejemplo 2: Múltiples transiciones y delays:</h3>
+                <p>Las transiciones en CSS realmente destacan cuando las combinas.  En este ejemplo, vamos a especificar dos transiciones, la primera es <mark>transform</mark> y la segunda es <mark>opacity</mark>.  Ambas se escriben en la misma declaración de <mark> transition</mark>, separadas por comas. Fijate en el ejemplo del editor. Pon el cursor encima de la imagen para ver la animación.</p>
+                  <p data-height="366" data-theme-id="30285" data-slug-hash="VWJEPR" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="VWJEPR" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/VWJEPR/">VWJEPR</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               
+ 
+              
+               <h3>Ejemplo 3: Animaciones 3D</h3>
+               <p>Así también podemos utilizar las transiciones de CSS para poder dar un efecto 3D</p>
+               <p data-height="363" data-theme-id="30285" data-slug-hash="MoMPEE" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="MoMPEE" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoMPEE/">MoMPEE</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        
+                    <p>Estos son solo unos ejemplos de toda las animaciones que puedes crear con CSS. La combinación de diferentes propiedades como colores, gradientes, tamaños, posiciones, orientación, etc; todas estas simultaneamente también.  También puedes utilizar los <mark>delays</mark> para crear tus propias funciones.</p>
+           </div>
+
+<!-- >>>>>> PENDING: to add ejercicios para transicions <<<<<<<<<<<<<< -->
+              <div class="lesson-ejercicioClass">
+                   <p>Ahora, practiquemos un poco. Adiciona 2 segundos de efecto de transición al efecto de cambio del ancho del cuadrado. Luego, haz click en 'Result' para ver el resultado.</p>
+                    
+                  <p data-height="363" data-theme-id="30285" data-slug-hash="dRBgdL" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="dRBgdL" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRBgdL/">dRBgdL</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   
+
+                    <p>En el siguiente ejercicio, especifica la transición del <mark>div</mark> a que sea <mark>transition-delay</mark> de 0.5 segundos para que así la animación comience con 0.5 segundos de retraso. Por último, haz click en 'Result'para ver el resultado.</p>
+                    
+                    <p data-height="365" data-theme-id="30285" data-slug-hash="gRNBza" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="gRNBza" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/gRNBza/">gRNBza</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   
+              </div>
+<!-- Animaciones -->
+              <div class="lesson-identificadores">
+                 <div class='highlight'>
+                  <p>Las animaciones en CSS permiten que un elemento cambie gradualmente de un estilo a otro. Uno puede cambiar diferentes propiedades del CSS cuantas veces se quiera.</p>
+                </div>
+                  <p>Para usar animaciones, primero se necesita especificar algunas <mark>@keyframes</mark>. Las <mark>@keyframes</mark> son los que guardan que estilo de elemento va a tener.</p>
+                  <center><strong><p>Cual es la diferencia entre animaciones y transiciones en CSS?</p></strong></center>
+                  <p>Si es que uno quiere utilizar CSS para poder brindar una animación donde no se especifique cuando comienza y termina la animación, o si es que se necesita más control sobre la transición, entonces necesitas usar animación <mark>@keyframe</mark>.  Usando keyframes, uno define la animación y la describe especificando ciertas propiedades las cuales necesitan actuar durante el proceso de la animación. En el siguiente ejemplo puedes ver como es la declaración básica y el uso de <mark>@keyframes</mark></p>
+                    <pre><code>
+@keyframes NOMBRE-DE-TU-ANIMACION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+                    </code></pre>
+                  
+                     <pre><code>
+#EJEMPLO {
+  -webkit-animation: NOMBRE-DE-TU-ANIMACION 5s infinite; /* Safari 4+ */
+  -moz-animation:    NOMBRE-DE-TU-ANIMACION 5s infinite; /* Fx 5+ */
+  -o-animation:      NOMBRE-DE-TU-ANIMACION 5s infinite; /* Opera 12+ */
+  animation:         NOMBRE-DE-TU-ANIMACION 5s infinite; /* IE 10+, Fx 29+ */
+}
+                    </code></pre>
+                  
+                  <p>Cuando uno especifica con el estilo que uno quiere dentro de <mark>@keyframes</mark>, la animación gradualmente cambia de un estilo a otro en un tiempo al cual se ha especificado. Para que la animación funcione, uno debe conectar la animación a un elemento específico.  Aquí podrás ver un ejemplo donde conectamos la animación llamada "Ejemplo" a un elemento <mark>div</mark> a través de un Id, en este ejercicio puedes ver que la animación dura 5 segundos, y vemos que durante este tiempo el color del fondo del bloque <mark>div</mark> cambia de azul a rojo</p>
+                  <p data-height="365" data-theme-id="30285" data-slug-hash="awgRrX" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="awgRrX" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/awgRrX/">awgRrX</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  <h3>Ejemplo 1: Animaciones de cambio de fondo</h3>
+                 <style> 
+                  #ejemplo {
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                    animation-name: example;
+                    animation-duration: 4s;
+                    margin: 0 auto;
+                  }
+
+                  /* Safari 4.0 - 8.0 */
+                  @-webkit-keyframes example {
+                    from {background-color: blue;}
+                    to {background-color: red;}
+                  }
+
+                  /* Standard syntax */
+                  @keyframes example {
+                    from {background-color: blue;}
+                    to {background-color: red;}
+                  }
+                </style>
+                  <pre><code>
+/* El código de la animación */
+@keyframes ejemplo {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
+
+/* El elemento al cual aplicamos la animación*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: ejemplo;
+    animation-duration: 5s;
+}
+                    </code></pre>
+                  <p><b>Ojo:</b> Cuando la animación termina, el color cambia al estilo original.</p>
+                    <div id="ejemplo"></div>
+                    
+                  <h3>Ejemplo 2: Animaciones de cambio de fondo y posición</h3>
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="vZqQBN" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="vZqQBN" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/vZqQBN/">vZqQBN</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+
+                  <h3>Ejemplo 3: Animaciones especificando el número de veces de la animación</h3>
+                  <p>La propiedad <mark>animation-iteration-count</mark> especifica el número de veces que la animación ocurre. En el siguiente ejemplo veremos que la animación sucede 3 veces</p>
+                  <p data-height="365" data-theme-id="30285" data-slug-hash="JJQeoQ" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="JJQeoQ" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/JJQeoQ/">JJQeoQ</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+
+                   <h3>Ejemplo 4: Animaciones utilizando <mark>animation-delay</mark></h3>
+                  <p>La propiedad <mark>animation-delay</mark> especifica un retraso para empezar la animación. El siguiente ejemplo da 2 segundos de retraso antes de que comience la animación.</p>
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="NgZENw" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="NgZENw" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/NgZENw/">NgZENw</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+
+                   <h3>Ejemplo 5: Animaciones en sentido inverso o ciclos alternativos</h3>
+                  <p>La propiedad <mark>animation-direction</mark> es usada para poder hacer que la animación suceda en dirección inversa o ciclos alternativos.</p>
+                  <p>En el siguiente ejemplo se puede ver la animación en dirección inversa:</p>
+                  <p data-height="365" data-theme-id="30285" data-slug-hash="dRBQpY" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="dRBQpY" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/dRBQpY/">dRBQpY</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+
+                  <p>En este otro ejemplo veremos la animación con ciclos alternativos:</p>
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="yXdQVx" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="yXdQVx" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/yXdQVx/">yXdQVx</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  
+                  <div class='highlight'>
+                    <strong><p>Abreviatura</p></strong>
+                  </div>
+                    <p>En el siguiente ejemplo vemos que la animación usa 6 propiedades:</p>
+                    <p data-height="366" data-theme-id="30285" data-slug-hash="vZqQmX" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="vZqQmX" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/vZqQmX/">vZqQmX</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    <pre>
+                      <code>
+div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+                      </code>
+                    </pre>
+
+                    <p>El mismo resultado podemos obtener usando la siguiente abreviatura:</p>
+                    <pre><code>div&nbsp;{<br>&nbsp;animation: example 5s linear 2s infinite alternate;<br>}</code></pre>
+                    <p>Ahora fijate en el ejemplo del editor.</p>
+                    <p data-height="362" data-theme-id="30285" data-slug-hash="QgXJMx" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="QgXJMx" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/QgXJMx/">QgXJMx</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+<!-- >>>>>>>>>>>>> Pending: ejercicios para animacion <<<<<<<<<<<<<-->
+               <div class="lesson-ejercicioId">
+                   <p>Ejercicio 1: Practiquemos un poco. En el editor, adiciona 2 segundos de animación al elemento <mark>div</mark>, el cual cambia de color de rojo a azul. Ponle el nombre 'ejemplo' a la animación que vas a crear:</p>
+                    
+                  <p data-height="363" data-theme-id="30285" data-slug-hash="MoMzrL" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="MoMzrL" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/MoMzrL/">MoMzrL</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              
+                    <p>Ejercicio 2: En el siguiente ejercicio, adiciona los siguientes 5 pasos para la animación llamada "ejemplo" (usando 0%, 25%, 50%, 75%, y 100%):</p>
+                    <div class="content-list">
+                      <ul>
+                        <li>0% - Cambia el color de fondo a rojo ("red"), la posicion izquierda a "0px", la posicion top a "0px"</li>
+                        <li>25% - Cambia el color de fondo a azul ("blue"), la posicion izquierda a "0px", la posicion top a "200px"</li>
+                        <li>50% - Cambia el color de fondo a verde ("green"), la posicion izquierda a "200px", la posicion top a "200px"</li>
+                        <li>75% - Cambia el color de fondo a amarillo ("yellow"), la posicion izquierda a "200px", la posicion top a "0px"</li>
+                        <li>100% - Cambia el color de fondo a rojo ("red"), la posicion izquierda a "0px", la posicion top a "0px"</p></li>
+                      </ul>
+                    </div>
+                  
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="BZgvEX" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="BZgvEX" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/BZgvEX/">BZgvEX</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                    <p>Ejercicio 3: Ahora especifica la animación del elemento <mark>div</mark> que debe tener 1 segundo de retraso antes de empezar:</p>
+                   
+                  <p data-height="363" data-theme-id="30285" data-slug-hash="XgLoLg" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="XgLoLg" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/XgLoLg/">XgLoLg</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+
+              </div>
+
+               
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="../js/vendor/jquery-1.12.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="../js/classroom.js"></script>
+
+      <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101994624-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </body>
+  </html>
