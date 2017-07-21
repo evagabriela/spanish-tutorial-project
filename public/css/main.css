@@ -8,6 +8,7 @@ body {
 	text-align: center;
 	color: #7d97ad;
 	font-family: 'Gentium Basic', serif;
+	min-height: 100vh;
 }
 
 img {
@@ -115,60 +116,81 @@ a.btn {
 	-webkit-transition: all .3s ease-in-out;
 }
 
-/*Courses Redesign*/ 
+/*Courses Redesign*/
 #goToCourses{
 	background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
 	background-repeat: no-repeat;
-	background-size: 40%;
-	background-position: left;
+	background-size: 130%;
+	background-position: 0% 0%;
+  display: table;
 }
 
-.row {
-	background-color: rgba(0, 0, 0, 0.6);
+.main-lesson-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 538vh;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 
 .container-left {
+  flex-basis: 40%;
+	color: white;
+	margin: 5% 0;
+}
+
+.tagline-text-uppercase {
+	font: 700 3.5em/1em 'Montserrat', sans-serif;
+    text-transform: uppercase;
 	float: left;
-    width: 25%;
-  	color: white;
-  	margin-left: 60px;
-  	padding-top: 110px;
-    /*border: solid 2px;*/
+    margin-left: 15%;
+    text-align: left;
+}
+
+.tagline-small-text {
+	font: 400 16px/34px 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    font-size: 20px;
+    float: left;
+    text-align: left;
+    margin: 5% 15%;
 }
 
 .container-right {
 	float: right;
-	width: 60%;
-	/*border: solid 2px;*/
+	flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container-right ul {
 	list-style: none;
 	padding:0;
+  margin: auto;
 }
 
-.lessons-color li:nth-child(1) {
-    background: rgba(255, 122, 113, 0.9);
+.lessons-color li:nth-child(1) .lesson-box-style {
+    background: rgba(255, 122, 113, 1);
 }
 
-.lessons-color li:nth-child(2) {
-    background: rgba(143, 215, 136, 0.9);
+.lessons-color li:nth-child(2) .lesson-box-style {
+    background: rgba(143, 215, 136, 1);
 }
 
-.lessons-color li:nth-child(3) {
-    background: rgba(3, 187, 199, 0.9);
+.lessons-color li:nth-child(3) .lesson-box-style {
+    background: rgba(3, 187, 199, 1);
 }
 
-.lessons-color li:nth-child(4) {
-    background: rgba(227, 119, 170, 0.9);
+.lessons-color li:nth-child(4) .lesson-box-style {
+    background: rgba(227, 119, 170, 1);
 }
 
-.lessons-color li:nth-child(5) {
-    background: rgba(245, 244, 136, 0.9);
+.lessons-color li:nth-child(5) .lesson-box-style {
+    background: rgba(245, 244, 136, 1);
 }
 
-.lessons-color li:nth-child(6) {
-    background: rgba(91, 229, 207, 0.9);
+.lessons-color li:nth-child(6) .lesson-box-style {
+    background: rgba(91, 229, 207, 1);
 }
 
 
@@ -180,7 +202,22 @@ a.btn {
 	display: block;
 	cursor: pointer;
 	overflow: hidden;
-    text-align: center;	
+  text-align: center;
+}
+
+
+ul li a:hover .content-hover{
+ height: 100%;
+ color: #fff;
+ padding: 25px;
+}
+
+.lessons-color li:hover .lesson-box-style {
+    background: none;
+}
+
+.lesson-box-style:hover .lesson-content{
+    display: none;
 }
 
 .lesson-box-style {
@@ -189,85 +226,41 @@ a.btn {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    padding: 25%;
 }
 
-.lesson-content {
-	visibility: visible;
-    animation-duration: 0.7s;
-    animation-delay: 0.5s;
-    animation-name: fadeIn;
-}
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .content-hover {
-	 opacity: 0;
-    filter: alpha(opacity=0);
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -moz-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -ms-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    -o-transition: bottom .5s ease, opacity .5s ease-out 0s;
-    transition: bottom .5s ease, opacity .5s ease-out 0s;
-    padding: 45px;
+ 	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 background-color: rgba(0, 0, 0, 0.3);
+	 overflow: hidden;
+	 width: 100%;
+	 height: 0;
+	 transition: .5s ease;
 }
 
-
-/*.box-item {
-	cursor: pointer;
-}*/
-
-/*Courses*/ 
-.courses-titles {
-	color: rgba(0, 191, 178, 0.8);
-	margin-top: 100px;
+/* Intro*/
+.main-intro-container {
+    display: block;
+    padding: 40px;
+    max-width: 980px;
 }
 
-.courses {
-	display: flex;
-	display: -ms-flexbox;
-	justify-content: space-around;
-	-ms-flex-pack: distribute;
-	flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	margin: 60px;
-	margin-top: 80px;
-	height: auto;
+.intro-icon {
+  height: 250px;
+  width: 250px;
+}
+
+.intro-content {
+    width: 630px;
+    padding: 0 0 50px 50px;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    font: 400 16px/34px 'Raleway', sans-serif;
 }
 
 .space {
@@ -279,29 +272,6 @@ article {
 	-ms-flex-preferred-size: 30.3%;
 }
 
-.courses-box {
-	margin-bottom: 140px;
-}	
-
-
-.card {
-	/*box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);*/
-	/*height: 200px;*/
-	/*border-radius: 0.375rem;*/
-	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	color: #7d97ad;
-	background-color: #fff;
-}
-
-
-.card:hover {
-	box-shadow: 10px 16px 20px 0px rgba(46,61,73,0.15);
-	transform: scale(1.03);
-	-webkit-transform: scale(1.03);
-	border-radius: 0.375rem;
-	/*box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);*/
-}
 
 .color1 {
 	border-top: 7px solid #e0568b;
@@ -331,15 +301,11 @@ article {
 h4 {
 	color: #A96DA3;
 	font-size: 25px;
-	padding-left: 20px;
-	padding-top: 20px;
 }
 
 h5 {
 	font-size: 17px;
 	text-transform: uppercase;
-	padding-left: 21px;
-    padding-top: 20px;
 }
 
 
@@ -442,6 +408,7 @@ h6 {
 	a.btn {
 		font-size: 22px;
 	}
+
 }
 
 @media (max-width: 970px) {
@@ -459,6 +426,23 @@ h6 {
     .courses-box {
     	margin-bottom: 105px;
     }
+
+    .container-left {
+      flex-basis: 100%;
+      margin: 5% 0;
+    }
+
+    .main-lesson-container {
+      height: auto;
+    }
+
+    .container-right {
+       flex-basis: 100%;
+    }
+
+    #goToCourses {
+      background-size: 140%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -470,9 +454,24 @@ h6 {
   .contactUs {
   	width: 100%;
   }
+
+  .container-left {
+    margin: 4.2% 0;
+  }
+
+  .container-right ul li {
+    width: 100%;
+  }
+
+  .tagline-text-uppercase {
+    font-size: 2.0em;
+  }
+
+  .tagline-small-text {
+    font-size: 1.9rem;
+  }
+
+  .lesson-box-style {
+    padding: 10%;
+  }
 }
-
-
-
-
-
