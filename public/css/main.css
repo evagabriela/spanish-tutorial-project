@@ -39,6 +39,12 @@ nav {
 	padding: 20px 0;
 }
 
+nav a:hover{
+  color: #fff;
+  background-color: #D0545C;
+  font-size: 2.0rem;
+}
+
 .brand {
 	font-size: 30px;
 	font-family: 'Palanquin Dark', sans-serif;
@@ -104,6 +110,7 @@ a.btn {
     /*background: linear-gradient(to bottom right, #69D1C5, #69D1C5);*/
     /*background: -webkit-linear-gradient(top left, #69D1C5, #69D1C5);*/
 	color: #fff;
+  border: 2.0px solid #fff;
 	margin-top: 30px;
 	padding: 12px 135px;
 	font-size: 16px;
@@ -116,6 +123,12 @@ a.btn {
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
+}
+
+a.btn:hover {
+  background-color: #fff;
+  color:#D0545C;
+  border: 2.0px solid #D0545C;
 }
 
 /*Courses Redesign*/
