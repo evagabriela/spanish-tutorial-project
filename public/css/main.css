@@ -71,9 +71,9 @@ nav {
   /* "https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg"*/
    /*background-image: url("../images/header-pic1.jpg");*/
   /* background-color: rgba(79,74,74,.23);*/
-   background: linear-gradient(rgba(79,74,74,.3), rgba(79,74,74,.3)),
+   background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
    url("../images/header-pic1.jpg");
-   background-color: rgba(79,74,74,.6);
+   /*background-color: rgba(79,74,74,.6);*/
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center bottom;
@@ -216,7 +216,7 @@ a.btn:hover {
 
 .lessons-color li:nth-child(6) .lesson-box-style {
     background: rgba(91, 229, 207, 1);
-    background-color: #FA8334;
+    background-color: #FF6F59;
 }
 
 
@@ -511,7 +511,7 @@ h6 {
 }
 
 .floating a:link {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 }
 

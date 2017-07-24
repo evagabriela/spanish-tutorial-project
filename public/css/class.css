@@ -39,7 +39,9 @@ p {
 #sidebar-container {
 	overflow: scroll;
 	background-color: #082736;
-	color: #fff;
+	background-color: #FAFAFA;
+	color: rgb(60, 72, 88);
+	box-shadow: rgba(0, 0, 0, 0.42) 0px 10px 30px -12px, rgba(0, 0, 0, 0.12) 0px 4px 25px 0px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px;
 	display: block;
 	position: fixed;
     left: 0;
@@ -55,9 +57,13 @@ li {
     font-size: 13px;
     letter-spacing: 1px;
     padding: 25px 20px;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    /*border-bottom: 1px solid rgba(0,0,0,.1);*/
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+}
+
+.sidebar-nav h4 {
+	color: rgb(60, 72, 88);
 }
 
 .page-content-container {
@@ -144,7 +150,7 @@ pre {
 .highlight {
 	/*background: linear-gradient(#FA9962, #D0545C);
 	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);*/
-	background-color: #38E4AE;
+	background-color: #69D1C5;
 
 }
 
