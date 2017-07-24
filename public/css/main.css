@@ -9,6 +9,7 @@ body {
 	color: #7d97ad;
 	font-family: 'Gentium Basic', serif;
 	min-height: 100vh;
+	text-rendering: optimizelegibility;
 }
 
 img {
@@ -39,11 +40,11 @@ nav {
 	padding: 20px 0;
 }
 
-nav a:hover{
+/*nav a:hover{
   color: #fff;
   background-color: #D0545C;
   font-size: 2.0rem;
-}
+}*/
 
 .brand {
 	font-size: 30px;
@@ -57,7 +58,7 @@ nav a:hover{
 	height: 200px;
 	/*background: linear-gradient(to bottom right, #69D1C5, #69D1C5);*/
 	/*background: -webkit-linear-gradient(top left, #FA9962, #D0545C);*/
-	background-color: #38E4AE;
+	background-color: #69D1C5;
 	border-radius: 50%;
 	margin-top: -120px;
 	margin-left: -60px;
@@ -109,8 +110,9 @@ nav a:hover{
 a.btn {
   background-color: #D0545C;
   background-color: #38E4AE;
+  background-color: transparent;
 	color: #fff;
-  border: 2.0px solid #38E4AE;;
+  border: 2.0px solid #69D1C5;
 	margin-top: 30px;
 	padding: 12px 135px;
 	font-size: 16px;
@@ -126,9 +128,9 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: #fff;
-  color:#D0545C;
-  border: 2.0px solid #D0545C;
+  background-color: #69D1C5;
+  color:#fff;
+  border: 2.0px solid #69D1C5;
 }
 
 /*Courses Redesign*/
@@ -241,6 +243,12 @@ ul li a:hover .content-hover{
     display: none;
 }
 
+.lesson-content h4, h5 {
+	color: #fff;
+	font-weight: 700;
+
+}
+
 .lesson-box-style {
 	text-align: center;
     position: relative;
@@ -345,8 +353,9 @@ h5 {
 
 .fa-envelope-o {
 	font-size: 40px !important;
-	background: -webkit-linear-gradient(top left, #E5F993, #59C3C3, #59C3C3);
-	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
+	/*background: -webkit-linear-gradient(top left, #E5F993, #59C3C3, #59C3C3);
+	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);*/
+	background-color: #69D1C5;
 	color: #fff;
 	height: 65px;
 	width: 65px;
@@ -496,4 +505,19 @@ h6 {
   .lesson-box-style {
     padding: 10%;
   }
+}
+
+.floating a:link {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.floating a:visited {
+	color: #fff;
+}
+
+.floating a:hover {
+	border-bottom: 2px solid #69D1C5;
+	color: #fff;
+	padding: 10px;
 }
