@@ -132,6 +132,7 @@ pre {
 	width: 950px;
 	height: 100px;
 	tab-size: 2;
+	background: linear-gradient(to right, rgba(66,68,78,0), #eaeaed);
 	background-color: transparent;
 	border-style: none;
 	border: none;
@@ -142,6 +143,7 @@ pre {
 
 .highlight {
 	background: linear-gradient(#FA9962, #D0545C);
+	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
 }
 
 

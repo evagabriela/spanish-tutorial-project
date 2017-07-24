@@ -42,14 +42,14 @@
                     <h4>Pseudo-clases</h4>
                     
                   <p>En el curso anterior aprendimos sobre las <mark>clases (class)</mark>. Por si no te acordás, las clases son selectores múy útiles para agrupar elementos y añadir el mismo estilo a ese grupo de elementos.</p>
-                  <p>En el archivo HTML, una clase se agrega dentro de la etiqueta de apertura. Si vemos el archivo HTML de cualquier sitio web podemos identificar exactamente donde se encuentran las clases.</p>
+                  <p>En el archivo HTML, una clase se agrega dentro de la etiqueta de apertura. Si vemos el archivo HTML de cualquier sitio web podremos identificar exactamente donde se encuentran las clases.</p>
                   <pre><code><div class="lila">Soy un div con una clase!</div></code></pre>
                   <p>Existen otros tipos de selectores llamados pseudo-clases. Pero a diferencia de las clases, las pseudo-clases no aparecen en el archivo HTML. Las pseudo-clases se escriben directamente en el archivo CSS y se utilizan para estilizar un estado especial de un elemento.</p>
                   <p>La manera de definir una pseudo-clase es agregando dos puntos y el nombre de la pseudo-clase al elemento que se quiere modificar. Ejemplo:</p>
                   <img src="../images/pseudoclaseImage.png">
 
-                  <p>Existen varias pseudo-clases pero nosotros nos enfocaremos sólo en las más comunes. Si te interesa saber más puedes investigar en la web.</p>
-                  <p>Algunas de las pseudo-clases más conocidas modifican links o enlances. Estas pseudo-clases pueden modificar la apariencia de los links cuando estos son visitados o cuando aún no son visitados, es decir cuando todavía no se hizo click sobre ellos. También se puede cambiar el aspecto de los links cuando el cursor se encuentra sobre ellos o al hacer click y activarlos.</p>
+                  <p>Existen varias pseudo-clases pero nosotros nos enfocaremos sólo en las más comunes.</p>
+                  <p>Algunas de las pseudo-clases más conocidas modifican los enlances o links. Estas pseudo-clases pueden modificar la apariencia de los links cuando estos son visitados o cuando aún no son visitados, es decir cuando todavía no se hizo click sobre ellos. También se puede cambiar el aspecto de los links cuando el cursor se encuentra sobre ellos o al hacer click y activarlos.</p>
                   <div class='highlight'>
                   <p>Esto se logra a través de las pseudo-clases dinámicas llamadas <mark>link, visited, hover y active</mark>. Estas pseudo-clases se agregan a los links para lograr diferentes efectos.</p>
                   </div>
@@ -68,9 +68,9 @@
                   <p>¿Te diste cuenta de lo que pasó? Al poner tu cursor encima del div, no solo cambió de color, sino también de tamaño. Ahora fijate en el CSS. El div tiene un estilo inicial que luego cambia gracias a la pseudo-clase 'hover'.</p>
 
                   <div class="highlight">
-                  <p>Además de las pseudo-clases dinámicas que vimos recién, existe otro tipo de pseudo-clases llamadas estructurales. Algunas de ellas son: 'first-child' 'last-child' y 'nth-child()'</p>
+                  <p>Además de las pseudo-clases dinámicas que vimos recién, existen otros tipo de pseudo-clases llamadas estructurales. Algunas de ellas son: 'first-child' 'last-child' y 'nth-child()'</p>
                   </div>
-                  <p>Es importante saber que existe una jerarquía entre los elementos HTML donde de acuerdo a la estructura, algunos se consideran los padres de algunos elementos (parents), otros son los hijos (children) y también encontramos a los hermanos (siblings). Por ejemplo, fijate la siguiente lista desordenada:</p>
+                  <p>Es importante saber que los elementos HTML están estructurados de forma jerárquica. Es decir, los elementos de HTML pueden ser padres (parents), hijos (children) y/o hermanos (siblings). Por ejemplo, fijate la siguiente lista desordenada:</p>
                   <pre><code><ul><br>&nbsp;<li>Primer hijo</li><br>&nbsp;<li>Segundo hijo</li><br>&nbsp;<li>Tercer hijo</li><br>&nbsp;<li>Ultimo hijo</li><br></ul></code></pre>
 
                   <p>El elemento <mark>ul</mark> es el padre de los elementos <mark>li</mark>. Al mismo tiempo los elementos <mark>li</mark> son hermanos entre ellos e hijos del elemento <mark>ul</mark>.</p>
@@ -82,7 +82,7 @@
 
 
                  
-                  <p>Usando pseudo-clases, agrega diferentes tamaños de letra a cada uno de los items de la lista de manera que la lista esté ordenada de menor a mayor. Luego haz que el primer item de la lista sea color rojo y el último item de la lista sea color azul.</p>
+                  <p>Ahora es tu turno de jugar con las pseudo-clases. En el editor, agregá diferentes tamaños de letra a cada uno de los items de la lista de manera que la lista esté ordenada de menor a mayor. Luego haz que el primer item de la lista sea color rojo y el último item de la lista sea color azul.</p>
 
                   <p data-height="364" data-theme-id="30285" data-slug-hash="gRVEKm" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="gRVEKm" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/gRVEKm/">gRVEKm</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
                   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -136,7 +136,15 @@
   }
                   </code>
                 </pre>
+
+                <p>En el editor tenemos tres divs pero sólo el primero tiene una transición. Pon tu cursor sobre el primer div para ver que pasa.</p>
+                <p>¿Te diste cuenta de que el cambio ocurre de una manera sutil? Eso pasa por que definimos el tiempo de la transición en 0.5 segundos. Es decir que la animación no ocurre inmediatamente sino que dentro del periodo de tiempo especificado.</p>
+                <p>Agregá transiciones a los siguientes dos divs. Juega con todos los parámetros que aprendiste en la clase.</p>
+                <p>No te olvides de agregar las propiedades que quieres cambiar al hacer hover o poner tu cursor sobre la imagen.</p>
+                <p data-height="493" data-theme-id="30285" data-slug-hash="YxKOzW" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="YxKOzW" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/YxKOzW/">YxKOzW</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                 
+                <h4>Bonus!</h4>
                 <p>Ahora veamos ejemplos de otras posibilidades más elaboradas donde podemos usar transiciones:</p>
                 <h3>Ejemplo 1: Aparición de letras aleatoriamente</h3>
                 <p>Una de las herramientas más poderosas que tenemos a nuestra disposición es <mark>transition-delay</mark>. Nos permite retrasar el comienzo de la transición. En este primer ejemplo, vemos la combinación de utilizar la propiedad <mark>opacity</mark> y poder darle una animación utilizando <mark> transition-delay</mark> a cada una de las letras y así poder crear un efecto que sea sutil y atractivo. Pon tu cursor encima de la imagen para ver la animación. Luego haz click en 'CSS' para ver el código.</p>

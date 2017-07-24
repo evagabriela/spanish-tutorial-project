@@ -151,3 +151,395 @@
                           <span class="front">C</span>
                       </span>
                   </div>
+
+
+
+
+
+
+
+
+                  <style> 
+                    #ejemplo2{
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        position: relative;
+                        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        animation-name: example;
+                        animation-duration: 4s;
+                    }
+
+                    /* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes example {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes example {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+/* El código de la animación */
+@keyframes ejemplo2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:400px; top:0px;}
+    75%  {background-color:green; left:500px; top:0px;}
+    100% {background-color:red; left:600px; top:0px;}
+}
+
+/* El elemento al cual aplicamos la animación*/
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo2;
+    animation-duration: 4s;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo2"></div>
+
+
+
+
+                    <style> 
+#ejemplo3 {
+     width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:400px; top:0px;}
+    75%  {background-color:green; left:500px; top:0px;}
+    100% {background-color:red; left:600px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:400px; top:0px;}
+    75%  {background-color:green; left:500px; top:0px;}
+    100% {background-color:red; left:600px; top:0px;}
+}
+</style>
+                  <pre>
+                    <code>
+#ejemplo3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo3"></div>
+
+
+                    <style> 
+                    #ejemplo4 {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        position: relative;
+                        -webkit-animation-name: ejemplo-animacion-delay; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+                        animation-name: ejemplo-animacion-delay;
+                        animation-duration: 4s;
+                        animation-delay: 2s;
+                    }
+
+                    /* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo-animacion-delay {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo-animacion-delay {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+#ejemplo4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo-animacion-delay;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo4"></div>
+
+
+
+
+
+                    <style> 
+                    #ejemplo-inversa {
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                        position: relative;
+                        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+                        animation-name: ejemplo-animacion-inversa;
+                        animation-duration: 4s;
+                        animation-iteration-count: 3;
+                        animation-direction: reverse;   
+                    }
+
+                    //* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo-animacion-inversa {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo-animacion-inversa {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+#ejemplo-inversa {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo5-animacion-inversa;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo-inversa"></div>
+
+
+
+                    <style> 
+                    #ejemplo-ciclo-alternativo {
+                      width: 100px;
+                      height: 100px;
+                      background-color: red;
+                      position: relative;
+                      -webkit-animation-name: ejemplo-ciclo-alternativo; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+                      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+                      animation-name: ejemplo-ciclo-alternativo;
+                      animation-duration: 4s;
+                      animation-iteration-count: 3;
+                      animation-direction: alternate;  
+                    }
+
+                    //* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes ejemplo-ciclo-alternativo {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+
+                    /* Standard syntax */
+                    @keyframes ejemplo-ciclo-alternativo {
+                        0%   {background-color:red; left:0px; top:0px;}
+                        25%  {background-color:yellow; left:200px; top:0px;}
+                        50%  {background-color:blue; left:400px; top:0px;}
+                        75%  {background-color:green; left:500px; top:0px;}
+                        100% {background-color:red; left:600px; top:0px;}
+                    }
+                  </style>
+                  <pre>
+                    <code>
+#ejemplo-ciclo-alternativo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: ejemplo-ciclo-alternativo;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+                    </code>
+                  </pre>
+                    <div id="ejemplo-ciclo-alternativo"></div>
+
+
+
+
+                    <p>Las pseudo clases nos permiten crear un estado predefinido de un elemento al que se le puede aplicar un estilo independiente. En otras palabras, podemos utilizar CSS para poder aplicar una característica especifica a un elemento.</p>
+
+                  <p>Muchos elementos en HTML disponen de estados especiales o usos asociados a ellos, lo cual nos permite aplicar estilos diferentes a nuestros elementos en el HTML.</p>
+                  <p>Por ejemplo, el elemento <mark>&lt;a&gt; &lt;/a&gt;</mark> tiene cuatro estados: </p>
+                  
+                  <div class="content-list">
+                  <ul>
+                    <li><b>Normal:</b> Su estado normal</li>
+                    <li><b>Visited:</b> Cuando ya hemos visitado el link al que hace referencia</li>
+                    <li><b>Hover:</b> Cuando tenemos el cursor situado encima del mismo</li>
+                    <li><b>Active:</b> Cuando hacemos click sobre él</li>
+                  </ul>
+                  </div>
+
+                  <p>La funcionalidad de las pseudo clases ya se encuentra ampliamente implementada en la mayoría de los navegadores actuales. Esto nos permite aplicar una característica específica a un elemento a través de una clase definida en el CSS. Existen cuatro tipos diferentes de pseudo clases:</p>
+                  <div class="content-list">
+                    <ul>
+                      <li><b>Links:</b> Estas pseudo clases se usan para dar estilo al enlace tanto en su estado normal por defecto como cuando ya ha sido visitado, mientras mantenemos el cursor encima de él o cuando hacemos click en él</li>
+                      <li><b>Dinámicas:</b> Estas pseudo clases pueden ser aplicadas a cualquier elemento para definir como se muestran cuando el cursor está situado sobre ellos, o haciendo click en ellos o bien cuando son seleccionados.  Por ejemplo <mark>:active</mark></li>
+                      <li><b>Estructurales:</b> Permiten dar estilo a elementos basándonos en una posición numérica exacta del elemento.  Por ejemplo <mark>:first-child, :nth-child</mark></li>
+                      <li><b>Otros:</b>Algunos elementos pueden ser estilizados de manera diferente basándonos en el lenguaje o que tipo de etiqueta no son</li>
+                    </ul>
+                  </div>
+                  <p>Además, las pseudo-clases siempre están precedidas por dos puntos <mark>(:)</mark>. Luego viene el nombre de la pseudo-clase y a veces un valor entre paréntesis. Ejemplo: <mark>:nth-child</mark>.</p>
+                  <p>Dejemos a un lado la teoria y veamos como son las pseudo-clases:</p>
+                  <pre class='avanzado'><code>
+                    a:link {
+                      color: red;
+                    }
+
+                    a:visited {
+                      color: blue;
+                    }
+
+                    a:hover {
+                      color: gray;
+                    }
+
+                    li:first-child {
+                      color: green;
+                    }
+                  </code></pre>
+                  <p>Si queremos renderizar los elementos de una lista de menor a mayor tamaño de fuente y el primer y último elemento de la lista deben ser azúl, entonces esto sería lo que tenemos que hacer:</p>
+
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="VWJBje" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="VWJBje" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/VWJBje/">VWJBje</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+
+
+
+              <div class="lesson-ejercicioDivs">
+                  <p>En el editor tenemos un ejemplo de una lista de paises, juega con los estilos utilizando pseudo clases y realza el que contenga el nombre de tu pais y si tu pais no esta en esta lista entonces agrégalo. Por último, haz click en 'Result' para ver el resultado.</p>
+                  <p data-height="300" data-theme-id="30285" data-slug-hash="ZydjLV" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="ZydjLV" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/ZydjLV/">ZydjLV</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                  <p>En el siguiente ejercicio, cambia el color de fondo de los enlaces visitados y no visitados a azul ('blue'), y el color de fondo de <mark>hover</mark> y de los enlances activos a amarillo ('yellow'). Por último, haz click en 'Result' para ver el resultado.</p>
+                  
+                  <p data-height="363" data-theme-id="30285" data-slug-hash="VWJBzj" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="VWJBzj" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/VWJBzj/">VWJBzj</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                  
+                  <p>En el siguiente ejercicio, cambia el color de fondo de los elementos <mark>input</mark> cuando estan en focus (clicked o activos), a azul claro ('lightblue'). Por último, haz click en 'Result' para ver el resultado.</p>
+                  
+                  <p data-height="364" data-theme-id="30285" data-slug-hash="bRPjoL" data-default-tab="html,result" data-user="eku" data-embed-version="2" data-pen-title="bRPjoL" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/bRPjoL/">bRPjoL</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>  
+<!-- Transiciones -->
+              <div class="lesson-classes">
+                 <div class='highlight'>
+                  <p>Utilizar transiciones nos brinda la opción de poder agregar animaciones simples y elegantes a nuestro sitio web. Al mismo tiempo también nos permite tener una manera de controlar el tiempo de la animación cuando las propiedades cambian. </p>
+                 </div>
+                <p>Anteriormente hemos hablado de pseudo clases, y por ejemplo usamos el estado <mark>:hover</mark> , la cual es una manera simple de aplicar transiciones con las pseudo clases de CSS.  En el siguiente ejemplo vamos a utilizar <mark>:hover</mark> y también vamos a especificar el nombre de la propiedad, el tiempo de transición y una de las funciones de tiempo de transición el cual usamos <mark>linear</mark>
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="RgzBqZ" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="RgzBqZ" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/RgzBqZ/">RgzBqZ</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              
+                
+                <p>En el ejemplo que vimos, cuando la pseudo clase <mark>:hover</mark> es activada, la altura del elemento cambia linearmente de <mark>100px</mark> a <mark>200px</mark> en 2 segundos.</p>
+                <p>Por lo tanto vemos que podemos hacer que el cambio de una propiedad pueda darse en un tiempo especifico. En la siguiente linea se puede ver la estructura básica del formato de como utilizar transiciones:</p>
+                <pre>
+                  <code>
+  .ejemplo {
+  transition: [propiedad] [tiempo] [tipo de función] [tiempo de retraso]
+  }
+                  </code>
+                </pre>
+                <pre>
+                  <code>
+  .button {
+  transition: all .5s ease-in-out;
+  }
+                  </code>
+                </pre>
+                
+                <p>Ahora veamos ejemplos de otras posibilidades más elaboradas donde podemos usar transiciones:</p>
+                <h3>Ejemplo 1: Aparición de letras aleatoriamente</h3>
+                <p>Una de las herramientas más poderosas que tenemos a nuestra disposición es <mark>transition-delay</mark>. Nos permite retrasar el comienzo de la transición. En este primer ejemplo, vemos la combinación de utilizar la propiedad <mark>opacity</mark> y poder darle una animación utilizando <mark> transition-delay</mark> a cada una de las letras y así poder crear un efecto que sea sutil y atractivo. Pon tu cursor encima de la imagen para ver la animación. Luego haz click en 'CSS' para ver el código.</p>
+                  <p data-height="362" data-theme-id="30285" data-slug-hash="bRPxJG" data-default-tab="result" data-user="eku" data-embed-version="2" data-pen-title="bRPxJG" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/bRPxJG/">bRPxJG</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               
+                
+                <h3>Ejemplo 2: Múltiples transiciones y delays:</h3>
+                <p>Las transiciones en CSS realmente destacan cuando las combinas.  En este ejemplo, vamos a especificar dos transiciones, la primera es <mark>transform</mark> y la segunda es <mark>opacity</mark>.  Ambas se escriben en la misma declaración de <mark> transition</mark>, separadas por comas. Fijate en el ejemplo del editor. Pon el cursor encima de la imagen para ver la animación.</p>
+                  <p data-height="366" data-theme-id="30285" data-slug-hash="VWJEPR" data-default-tab="css,result" data-user="eku" data-embed-version="2" data-pen-title="VWJEPR" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/eku/pen/VWJEPR/">VWJEPR</a> by eku (<a href="https://codepen.io/eku">@eku</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               
+                <pre>
+                  <code>
+.ejemplo .titulo span, 
+.ejemplo .autor span {
+  display:inline-block;
+  opacity: 0;
+  transition: -webkit-transform 800ms, opacity 800ms
+}
+                  </code>
+                </pre>
+                <p>Así como especificamos transiciones, nosotros también debemos especificar dos delays. Se escriben similarmente:</p>
+                <pre>
+                  <code>
+.ejemplo .titulo span:nth-child(1) { transition-delay: 360ms, 300ms }
+.ejemplo .titulo span:nth-child(2) { transition-delay: 420ms, 300ms }
+.ejemplo .titulo span:nth-child(3) { transition-delay: 480ms, 300ms }
+                  </code>
+                </pre>
+                <p>Entonces si juntamos ambos, estas transiciones y sus delays nos permiten crear lindos efectos tipo olas en las letras. Fijate en el siguiente ejemplo:</p>
+                <pre>
+                  <code>
