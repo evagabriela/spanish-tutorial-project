@@ -93,12 +93,16 @@ nav {
 
 .header-titles {
 	color: #fff;
-	font-size: 25px;
+	font-size: 35px;
 	margin: 0 auto;
 	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 	font-family:'Playfair Display', serif;
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.header-titles h1 {
+	font-size: 90px;
 }
 
 .subheader {
@@ -293,6 +297,10 @@ ul li a:hover .content-hover{
     display: inline-block;
     float: right;
     font: 400 16px/34px 'Raleway', sans-serif;
+}
+
+.intro-content h5 {
+	color: #737373;
 }
 
 .space {
