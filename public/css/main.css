@@ -55,9 +55,9 @@ nav a:hover{
 .circle {
 	width: 200px;
 	height: 200px;
- 	background: linear-gradient(to bottom right, #FA9962, #D0545C);
 	/*background: linear-gradient(to bottom right, #69D1C5, #69D1C5);*/
-	background: -webkit-linear-gradient(top left, #FA9962, #D0545C);
+	/*background: -webkit-linear-gradient(top left, #FA9962, #D0545C);*/
+	background-color: #38E4AE;
 	border-radius: 50%;
 	margin-top: -120px;
 	margin-left: -60px;
@@ -82,7 +82,8 @@ nav a:hover{
 
 .container-titles {
 	position: absolute;
-	top: 25%;
+	top: 33%;
+	left: -25%;
 	width: 100%;
 }
 
@@ -107,8 +108,9 @@ nav a:hover{
 
 a.btn {
   background-color: #D0545C;
+  background-color: #38E4AE;
 	color: #fff;
-  border: 2.0px solid #fff;
+  border: 2.0px solid #38E4AE;;
 	margin-top: 30px;
 	padding: 12px 135px;
 	font-size: 16px;
@@ -132,6 +134,7 @@ a.btn:hover {
 /*Courses Redesign*/
 #goToCourses{
 	background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
+	background-image: url('../images/coursespic.jpg');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 0% 0%;
@@ -139,7 +142,7 @@ a.btn:hover {
 }
 
 .main-lesson-container {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
 }
@@ -183,26 +186,32 @@ a.btn:hover {
 
 .lessons-color li:nth-child(1) .lesson-box-style {
     background: rgba(255, 122, 113, 1);
+    background-color: #A9FDAC;
 }
 
 .lessons-color li:nth-child(2) .lesson-box-style {
     background: rgba(143, 215, 136, 1);
+    background-color: #F896D8;
 }
 
 .lessons-color li:nth-child(3) .lesson-box-style {
     background: rgba(3, 187, 199, 1);
+    background-color: #38E4AE;
 }
 
 .lessons-color li:nth-child(4) .lesson-box-style {
     background: rgba(227, 119, 170, 1);
+    background-color: #A491D3;
 }
 
 .lessons-color li:nth-child(5) .lesson-box-style {
     background: rgba(245, 244, 136, 1);
+    background-color: #EDFF7A;
 }
 
 .lessons-color li:nth-child(6) .lesson-box-style {
     background: rgba(91, 229, 207, 1);
+    background-color: #FA8334;
 }
 
 
