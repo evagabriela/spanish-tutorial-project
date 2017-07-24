@@ -66,10 +66,14 @@ nav {
 
 
 .header-background{
-   background: linear-gradient(to bottom right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");
-   background: -webkit-linear-gradient(top left, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");
+   /*background: linear-gradient(rgba(79,74,74,.23), rgba(79,74,74,.23)),
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");*/
+  /* "https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg"*/
+   /*background-image: url("../images/header-pic1.jpg");*/
+  /* background-color: rgba(79,74,74,.23);*/
+   background: linear-gradient(rgba(79,74,74,.3), rgba(79,74,74,.3)),
+   url("../images/header-pic1.jpg");
+   background-color: rgba(79,74,74,.6);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center bottom;
@@ -83,8 +87,7 @@ nav {
 
 .container-titles {
 	position: absolute;
-	top: 33%;
-	left: -25%;
+	top: 25%;
 	width: 100%;
 }
 
@@ -110,9 +113,9 @@ nav {
 a.btn {
   background-color: #D0545C;
   background-color: #38E4AE;
-  background-color: transparent;
+  background-color: #69D1C5;
 	color: #fff;
-  border: 2.0px solid #69D1C5;
+  border: 3.5px solid #69D1C5;
 	margin-top: 30px;
 	padding: 12px 135px;
 	font-size: 16px;
@@ -517,7 +520,7 @@ h6 {
 }
 
 .floating a:hover {
-	border-bottom: 2px solid #69D1C5;
+	border-bottom: 4px solid #69D1C5;
 	color: #fff;
 	padding: 10px;
 }
