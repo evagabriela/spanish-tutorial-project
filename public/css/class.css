@@ -105,6 +105,10 @@ li {
 	background-color: #AFDEDC;
 }
 
+.sideba-nav li.active {
+	background-color: #AFDEDC;
+}
+
 .completion {
 	text-align: center;
 	border: 6px ridge #DBD56E;
@@ -138,7 +142,7 @@ pre {
 	width: 950px;
 	height: 100px;
 	tab-size: 2;
-	background: linear-gradient(to right, rgba(66,68,78,0), #eaeaed);
+	/*background: linear-gradient(to right, rgba(66,68,78,0), #eaeaed);*/
 	background-color: transparent;
 	border-style: none;
 	border: none;

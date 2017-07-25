@@ -297,6 +297,7 @@ ul li a:hover .content-hover{
     display: inline-block;
     float: right;
     font: 400 16px/34px 'Raleway', sans-serif;
+    color: #737373;
 }
 
 .intro-content h5 {
