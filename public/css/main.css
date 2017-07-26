@@ -309,9 +309,11 @@ ul li a:hover .content-hover{
     padding: 0 0 50px 50px;
     vertical-align: middle;
     display: inline-block;
-    float: right;
+    /*float: right;*/
     font: 400 16px/34px 'Raleway', sans-serif;
     color: #737373;
+    margin-left: 77px;
+    height: 290px;
 }
 
 .intro-content h5 {
@@ -320,10 +322,12 @@ ul li a:hover .content-hover{
 	word-spacing: 1.1px;
 	letter-spacing: 0.5px;
 	opacity: .7;
+	margin-top: 150px;
+    margin-left: -144px;
 }
 
 .space {
-	margin-top: 140px;
+	margin-top: 80px;
 }
 
 article {
