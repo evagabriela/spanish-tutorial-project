@@ -85,6 +85,15 @@ nav {
    position: relative;
 }
 
+.header-icon {
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
 .container-titles {
 	position: absolute;
 	top: 25%;
@@ -96,7 +105,7 @@ nav {
 	font-size: 35px;
 	margin: 0 auto;
 	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
-	font-family:'Playfair Display', serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -164,7 +173,7 @@ a.btn:hover {
 }
 
 .tagline-text-uppercase {
-	font: 700 3.5em/1em 'Montserrat', sans-serif;
+	font: 700 3.5em/1em 'Open Sans', sans-serif;
     text-transform: uppercase;
 	float: left;
     margin-left: 15%;
@@ -302,6 +311,9 @@ ul li a:hover .content-hover{
 
 .intro-content h5 {
 	color: #737373;
+	line-height: 1.5;
+	word-spacing: 1.1px;
+	letter-spacing: 0.5px;
 }
 
 .space {
@@ -346,7 +358,7 @@ h4 {
 
 h5 {
 	font-size: 17px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 
