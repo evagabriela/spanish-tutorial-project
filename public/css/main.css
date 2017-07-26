@@ -367,8 +367,8 @@ h5 {
 	font-size: 40px !important;
 	/*background: -webkit-linear-gradient(top left, #E5F993, #59C3C3, #59C3C3);
 	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);*/
-	background-color: #69D1C5;
-	color: #fff;
+	/*background-color: #69D1C5;*/
+  color: #69D1C5;
 	height: 65px;
 	width: 65px;
 	border-radius: 4px;
