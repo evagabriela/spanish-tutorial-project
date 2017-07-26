@@ -174,7 +174,7 @@ a.btn:hover {
 
 .tagline-text-uppercase {
 	font: 700 3.5em/1em 'Open Sans', sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 	float: left;
     margin-left: 15%;
     text-align: left;
@@ -314,6 +314,7 @@ ul li a:hover .content-hover{
 	line-height: 1.5;
 	word-spacing: 1.1px;
 	letter-spacing: 0.5px;
+	opacity: .7;
 }
 
 .space {
