@@ -390,14 +390,14 @@ h5 {
 }
 
 .contact p {
-	padding-bottom: 70px;
+	padding-bottom: 20px;
 	color: #737373;
 	font-size: 18px;
 }
 
 .contact h2 {
 	color: #4c4c4c;
-	margin: 20px 0 20px;
+	margin: 10px 0 10px;
 }
 
 .contact .input-group {
@@ -410,22 +410,48 @@ h5 {
 	font-size: 18px;
 }
 
-.contact .btn {
-	width: 100%;
+.contact-content {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.contact-content a {
+	color: #69D1C5;
+	text-decoration: none;
+	width: 40%;
+	font-size: 18px;
+	border: 2px solid #69D1C5;
+	color: #fff;
+	background-color: #69D1C5;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	padding: 15px 40px;
+	border-radius: 4px;
+	transition: all .4s ease-in-out;
+}
+
+.contact-content a:hover {
+	background-color: #5cbcb1;
+	border-color: #5cbcb1;
+}
+
+/*.contact .btn {
+	width: 40%;
 	font-size: 18px;
 	border: 2px solid #69D1C5;
 	color: #69D1C5;
-	margin-top: 20px;
 	background-color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1.2px;
-}
+}*/
 
-.contact .btn:hover {
+/*.contact .btn:hover {
 	background-color: #69D1C5;
 	color: #fff;
-}
+}*/
 
 
 /*FOOTER*/
