@@ -210,26 +210,31 @@ a.btn:hover {
 .lessons-color li:nth-child(2) .lesson-box-style {
     background: rgba(143, 215, 136, 1);
     background-color: #F896D8;
+    background-color: #fbbaba;
 }
 
 .lessons-color li:nth-child(3) .lesson-box-style {
     background: rgba(3, 187, 199, 1);
     background-color: #38E4AE;
+    background-color: #99fbcc;
 }
 
 .lessons-color li:nth-child(4) .lesson-box-style {
     background: rgba(227, 119, 170, 1);
     background-color: #A491D3;
+    background-color: #88d8ea;
 }
 
 .lessons-color li:nth-child(5) .lesson-box-style {
     background: rgba(245, 244, 136, 1);
     background-color: #EDFF7A;
+    background-color: #f6f6ad;
 }
 
 .lessons-color li:nth-child(6) .lesson-box-style {
     background: rgba(91, 229, 207, 1);
     background-color: #FF6F59;
+    background-color: #eecdab;
 }
 
 
@@ -359,12 +364,35 @@ h4 {
 
 h5 {
 	font-size: 17px;
-	/*text-transform: uppercase;*/
 }
 
 
 .text-center {
 	text-align: left;
+}
+
+/*info section*/
+.info-section {
+	/*background-color: #fafafa;*/
+	height: 500px;
+	width: 100%;
+}
+
+.col-md-4 {
+	margin-top: 40px;
+}
+
+.info-section p {
+	padding: 20px;
+	font-size: 18px;
+	color: #737373;
+	opacity: .7;
+}
+
+.info-section h2 {
+	color: #4c4c4c;
+	opacity: .6;
+	margin-top: 120px;
 }
 
 
@@ -374,6 +402,7 @@ h5 {
 	padding: 50px 0 80px;
 	text-align: center;
 	position: relative;
+	background-color: #fafafa;
 }
 
 .fa-envelope-o {
@@ -436,22 +465,6 @@ h5 {
 	background-color: #5cbcb1;
 	border-color: #5cbcb1;
 }
-
-/*.contact .btn {
-	width: 40%;
-	font-size: 18px;
-	border: 2px solid #69D1C5;
-	color: #69D1C5;
-	background-color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1.2px;
-}*/
-
-/*.contact .btn:hover {
-	background-color: #69D1C5;
-	color: #fff;
-}*/
 
 
 /*FOOTER*/
