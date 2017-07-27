@@ -70,9 +70,11 @@ nav {
   /* "https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg"*/
    /*background-image: url("../images/header-pic1.jpg");*/
   /* background-color: rgba(79,74,74,.23);*/
+     /*background-color: rgba(79,74,74,.6);*/
+   /*background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg");*/
    background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
-   url("../images/header-pic1.jpg");
-   /*background-color: rgba(79,74,74,.6);*/
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-1.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center bottom;
@@ -151,12 +153,17 @@ a.btn:hover {
 
 /*Courses Redesign*/
 #goToCourses{
-	background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);
-	background-image: url('../images/coursespic.jpg');
+	/*background-image: url(https://s3-us-west-1.amazonaws.com/spanishtutorial/learn-to-code.jpeg);*/
+	/*background-image: url('../images/coursespic.jpg');*/
+	/*background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-2.jpeg');*/
+  /*background-size: 40%;*/
+	/*background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-3.jpeg');*/
+	/*background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-4.jpeg');*/
+	background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg');
 	background-repeat: no-repeat;
-	background-size: 130%;
+	background-size: 60%;
 	background-position: 0% 0%;
-  	display: table;
+  display: table;
 }
 
 .main-lesson-container {
@@ -620,5 +627,3 @@ h6 {
 	color: #fff;
 	padding: 10px;
 }
-
-
