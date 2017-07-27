@@ -95,6 +95,10 @@ nav {
 	margin-top: 30px;
 }
 
+.header-icon:hover{
+  background-color: #69D1C5;
+}
+
 .container-titles {
 	position: absolute;
 	top: 25%;
