@@ -64,7 +64,6 @@ nav {
 	margin-left: -60px;
 }
 
-
 .header-background{
    /*background: linear-gradient(rgba(79,74,74,.23), rgba(79,74,74,.23)),
    url("https://s3-us-west-1.amazonaws.com/spanishtutorial/womentech-small.jpg");*/
@@ -103,6 +102,7 @@ nav {
 .header-titles {
 	color: #fff;
 	font-size: 35px;
+	font-size: 2.1em;
 	margin: 0 auto;
 	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 	font-family: 'Open Sans', sans-serif;
@@ -377,7 +377,6 @@ h5 {
 
 /*info section*/
 .info-section {
-	/*background-color: #fafafa;*/
 	height: 500px;
 	width: 100%;
 }
@@ -545,6 +544,10 @@ h6 {
 }
 
 @media (max-width: 750px) {
+  .header-titles {
+	font-size: 10px;
+   }
+
   article {
     flex-basis: 99%;
      -ms-flex-preferred-size: 99%;
@@ -573,6 +576,32 @@ h6 {
   .lesson-box-style {
     padding: 10%;
   }
+
+  .header-titles h1 {
+	font-size: 5.6em;
+  }
+
+  .subheader {
+  	font-size: 1.25em;
+  }
+
+  .contact-content a {
+  	padding: 15px 10px;
+  }
+
+  a.btn {
+  	display: none;
+  }
+
+  .intro-content h5 {
+  	margin-right: 330px;
+  	margin-top: 100px;
+  }
+
+  .info-section {
+  	display: none;
+  }
+
 }
 
 .floating a:link {
@@ -589,3 +618,5 @@ h6 {
 	color: #fff;
 	padding: 10px;
 }
+
+
