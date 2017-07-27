@@ -84,6 +84,22 @@ nav {
    position: relative;
 }
 
+.brand:link {
+	color: #fff;
+}
+
+.brand:visited {
+	color: #fff;
+}
+
+.brand:hover {
+	color: #fff;
+}
+
+.brand:active {
+	color: #fff;
+}
+
 .header-icon {
 	border: 2px solid white;
 	border-radius: 50%;
