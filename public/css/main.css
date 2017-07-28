@@ -71,10 +71,10 @@ nav {
    /*background-image: url("../images/header-pic1.jpg");*/
   /* background-color: rgba(79,74,74,.23);*/
      /*background-color: rgba(79,74,74,.6);*/
-   /*background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
-   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg");*/
    background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
-   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-1.jpeg");
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg");
+   /*background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
+   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-1.jpeg");*/
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center bottom;
@@ -179,7 +179,7 @@ a.btn:hover {
   /*background-size: 40%;*/
 	/*background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-3.jpeg');*/
 	/*background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-4.jpeg');*/
-	background-image: url('https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg');
+	background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-1.jpeg");
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: 0% 0%;
