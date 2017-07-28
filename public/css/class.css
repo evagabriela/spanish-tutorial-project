@@ -64,6 +64,15 @@ ol {
 	margin: 5px 250px;
 }
 
+.images2-intro, .images-intro, .img-caja {
+	margin-bottom: 15px;
+	margin-left: 220px
+}
+
+.img-box-model {
+	margin-left: 125px;
+}
+
 
 /* sidebar  */
 #sidebar-container {
