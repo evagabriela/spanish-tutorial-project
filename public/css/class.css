@@ -103,7 +103,6 @@ ol {
     font-size: 13px;
     letter-spacing: 1px;
     padding: 25px 20px;
-    /*border-bottom: 1px solid rgba(0,0,0,.1);*/
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
@@ -114,7 +113,6 @@ ol {
 
 .sidebar-nav {
 	padding: 0;
-	/*padding-top: 45px;*/
 	list-style: none;
 	height: 100%;
 }
