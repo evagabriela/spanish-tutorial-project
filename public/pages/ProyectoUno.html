@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<title>Classroom</title>
+
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   		<script src="https://use.fontawesome.com/442a884b4a.js"></script>
+   		<link rel="stylesheet" href="../css/class.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
+	</head>
+	<body>
+
+			<!-- sidebar -->
+			<div id="sidebar-container">
+      <div class="home-icon">
+        <a class="fa fa-home fa-5x" aria-hidden="true" style="color:#69D1C5" href="../index.html"></a>
+      </div>
+				<ul class="sidebar-nav">
+					<h4>PROYECTO UNO<br><br> "Mi Primera Página Web"</h4>
+					<li class="introLink" class="active"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;Introducción</li>
+				    <li class="titlesLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;Esqueleto del HTML</li>
+				    <li class="ejercicioTitlesLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp; Intro a HTML</li>
+				    <li class="imageLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;Intro a CSS</li>
+				    <li class="ejercicioImageLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#02ccba"></i>&nbsp; &nbsp;CSS: Estilos Base</li>
+				    <li class="enlaceLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;CSS: Navegación</li>
+				    <li class="ejercicioLinkLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;CSS: Encabezado</li>
+				    <li class="listLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;CSS: Contenido</li>
+				    <li class="ejercicioListLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color:#69D1C5"></i>&nbsp; &nbsp;CSS: Pie(footer)</li>
+				</ul>
+			</div>
+
+			<!-- page-content -->
+		<div class="page-content-container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+
+  				<div class="lesson">
+<!--
+Videos:
+  Introducción : https://youtu.be/5ymHptrFdtI
+  Esqueleto del HTML: https://youtu.be/sE5U9NZTYWA
+  Intro a HTML: https://youtu.be/ntpsOdEpXDk
+  Intro a CSS: https://youtu.be/mzisjQ4MBp0
+  CSS: Estilos Base
+  https://youtu.be/VASeOs97BxM
+
+  CSS: Navegación
+  https://youtu.be/JaaHWr-zkNo
+
+  CSS: Encabezado
+  https://youtu.be/HS-aV7IDoio
+
+  CSS: Contenido
+  https://youtu.be/Tbmd7P1ae34
+
+  CSS: Pie(footer)
+  https://youtu.be/6pXWKpvwTgg
+
+
+ -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  		<script src="../js/vendor/jquery-1.12.0.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
+      <script type="text/javascript">
+
+      dbLoadClass(".introLink", "basic-html", "intro");
+      $(".introLink").click();
+      dbLoadClass(".ejercicioTitlesLink", "basic-html", "ejercicio-title");
+      dbLoadClass(".titlesLink", "basic-html", "title");
+      dbLoadClass(".imageLink", "basic-html", "images");
+      dbLoadClass(".ejercicioImageLink", "basic-html", "ejercicio-image");
+      dbLoadClass(".enlaceLink", "basic-html", "enlaces");
+      dbLoadClass(".ejercicioLinkLink", "basic-html", "ejercicio-link");
+      dbLoadClass(".listLink", "basic-html", "list");
+      dbLoadClass(".ejercicioListLink", "basic-html", "ejercicio-list");
+      </script>
+
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-101994624-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+	</body>
+</html>
