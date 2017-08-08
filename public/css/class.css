@@ -54,30 +54,6 @@ ol {
 	margin-bottom: 25px;
 }
 
-.img-hex {
-	margin: 15px 100px;
-}
-
-.achievement {
-	margin: 5px 220px;
-}
-
-.typing {
-	margin: 5px 250px;
-}
-
-.img-house {
-	margin: 5px 250px;
-}
-
-.images2-intro, .images-intro, .img-caja {
-	margin-bottom: 15px;
-	margin-left: 220px
-}
-
-.img-box-model {
-	margin-left: 125px;
-}
 
 /* ----------------------------------------
 	Sidebar
@@ -187,6 +163,16 @@ pre {
 	color: #0EAD69;
 }
 
+
+.transition-box {
+	border: 2px solid gray;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+/* ----------------------------------------
+	Icons
+------------------------------------------- */
 .dibus {
 	margin-left: 400px;
 	color: #e33343;
@@ -196,48 +182,33 @@ pre {
 	margin: 20px 40px;
 }
 
-
-/* PENDING: REFACTOR LISTS FOR WHOLE SITE*/
-/*.content-list {
-	color: #435a64;
+/* ----------------------------------------
+	Images & GIFs
+------------------------------------------- */
+.img-hex {
+	margin: 15px 100px;
 }
 
-.content-list li {
-	text-transform: none !important;
-    letter-spacing: 1px;
-    padding: 25px 20px;
-    border: none;
-    font-size: 21px;
-    font-weight: 500;
-}*/
-
-.pager li>a, .pager li>span {
-	border: 2px solid #69D1C5;
-	color: #69D1C5;
-	padding: 10px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+.achievement {
+	margin: 5px 220px;
 }
 
-.pager li>a, .pager li>span:hover {
-	/*background-color: #69D1C5;*/
-	color: #69D1C5;
-	padding: 10px;
+.typing {
+	margin: 5px 250px;
 }
 
-.avanzado {
-	height: 400px;
+.img-house {
+	margin: 5px 250px;
 }
 
-.transition-box {
-	border: 2px solid gray;
-	padding: 10px;
+.images2-intro, .images-intro, .img-caja {
 	margin-bottom: 15px;
+	margin-left: 220px
 }
 
-
-
-
+.img-box-model {
+	margin-left: 125px;
+}
 
 
 
