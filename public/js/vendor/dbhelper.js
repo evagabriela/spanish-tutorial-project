@@ -52,6 +52,14 @@
   };
 
 
+  $(document).ready(function() {
+    $(".sidebar-nav li").on("click", function(){
+        $(".sidebar-nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
+
 
 
  

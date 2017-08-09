@@ -99,10 +99,6 @@ ol {
 	cursor: pointer;
 }
 
-.sidebar-nav li:hover {
-	background-color: #
-}
-
 .sidebar-nav li a {
 	text-decoration: none;
 }
@@ -111,9 +107,14 @@ ol {
 	background-color: #AFDEDC;
 }
 
-.sideba-nav li.active {
+.sidebar-nav li.active {
 	background-color: #AFDEDC;
 }
+
+/*.active {
+	background-color: #AFDEDC;
+}*/
+
 
 /* ----------------------------------------
 	Main lesson
