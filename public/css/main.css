@@ -1,21 +1,80 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
 * {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
-	margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 	text-align: center;
-	color: #7d97ad;
-	font-family: 'Gentium Basic', serif;
-	min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #44545E;
+	/*color: #7d97ad;*/
+	/*font-family: 'Gentium Basic', serif;*/
+	/*min-height: 100vh;*/
 	text-rendering: optimizelegibility;
+  font-size: 16px;
 }
 
 img {
   max-width: 100%;
 }
 
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+h1, h2, h3 {
+	font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-family: "Open Sans",sans-serif;
+  list-style: 1.4;
+}
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+
+/* ----------------------------------------
+Nav
+------------------------------------------- */
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header h1 {
+	letter-spacing: 0.01em;
+  font-size: 5.62em;
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+}
+
+.background-video { position:relative; }
+.background-video video {
+    position:relative;
+    z-index:0;
+    width:100%;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+}
+.subheader {
+	color: #fff;
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+	font-size: 2em;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
 a {
 	color: #fff;
 }
@@ -57,7 +116,7 @@ nav {
 	margin-left: -60px;
 }
 
-.header-background{
+/*.header-background{
    background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
    url("https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg");
    background-repeat: no-repeat;
@@ -69,7 +128,7 @@ nav {
    color: #fff;
    letter-spacing: 1.5px;
    position: relative;
-}
+}*/
 
 .brand:link {
 	color: #fff;
@@ -106,28 +165,10 @@ nav {
 	width: 100%;
 }
 
-.header-titles {
-	color: #fff;
-	font-size: 35px;
-	font-size: 2.1em;
-	margin: 0 auto;
-	text-shadow: 0px 2px 4px rgba(34,62,66,.75);
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	margin-bottom: 50px;
-}
 
-.header-titles h1 {
-	font-size: 90px;
-}
 
-.subheader {
-	color: #fff;
-	font-size: 20px;
-	font-family:'Playfair Display', serif;
-	text-align: center;
-	margin: 0 auto;
-}
+
+
 
 
 a.btn {
@@ -180,7 +221,7 @@ a.btn:hover {
 
 .tagline-text-uppercase {
 	font: 700 3.5em/1em 'Open Sans', sans-serif;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
 	float: left;
     margin-left: 15%;
     text-align: left;
@@ -583,8 +624,8 @@ h6 {
     padding: 10%;
   }
 
-  .header-titles h1 {
-	font-size: 5.6em;
+  h1 {
+	font-size: 5em;
   }
 
   .subheader {
