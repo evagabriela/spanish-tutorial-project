@@ -177,6 +177,7 @@ header h1 {
     z-index:0;
     width:100%;
 }
+
 .overlay {
     position:absolute;
     top:0;
@@ -209,7 +210,8 @@ Content
 }
 
 .courses {
-  background-color: #2DB0A9;
+  /*background-color: #2DB0A9;*/
+  background: linear-gradient(#69D1C5,#0cebeb);
   padding:50px;
 }
 
