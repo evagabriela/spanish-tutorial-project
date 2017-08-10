@@ -11,9 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   color: #44545E;
-	/*color: #7d97ad;*/
-	/*font-family: 'Gentium Basic', serif;*/
-	/*min-height: 100vh;*/
+	min-height: 100vh;
 	text-rendering: optimizelegibility;
   font-size: 16px;
 }
@@ -28,52 +26,23 @@ Typography
 h1, h2, h3 {
 	font-weight: 600;
   letter-spacing: 1.2px;
+  font-family: "Noto Serif",serif;
+}
+
+h1{
+  color:#fff;
 }
 
 p {
   font-family: "Open Sans",sans-serif;
   list-style: 1.4;
+  color: #4d4d4d;
+  line-height: 1.52857;
+  font-size: 1.2em;
 }
 
 /* ----------------------------------------
 Layout
-------------------------------------------- */
-
-/* ----------------------------------------
-Nav
-------------------------------------------- */
-
-/* ----------------------------------------
-Header
-------------------------------------------- */
-header h1 {
-	letter-spacing: 0.01em;
-  font-size: 5.62em;
-  color: #fff;
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
-}
-
-.background-video { position:relative; }
-.background-video video {
-    position:relative;
-    z-index:0;
-    width:100%;
-}
-.overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
-    width:100%;
-}
-.subheader {
-	color: #fff;
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
-	font-size: 2em;
-}
-
-/* ----------------------------------------
-Footer
 ------------------------------------------- */
 a {
 	color: #fff;
@@ -90,86 +59,6 @@ a:link {
 .floating {
   float: right;
 }
-
-nav a {
-	padding: 0 20px;
-}
-
-nav {
-	padding: 20px 0;
-}
-
-
-.brand {
-	font-size: 30px;
-	font-family: 'Palanquin Dark', sans-serif;
-	z-index: 2000;
-	color: #fff;
-}
-
-.circle {
-	width: 200px;
-	height: 200px;
-	background-color: #69D1C5;
-	border-radius: 50%;
-	margin-top: -120px;
-	margin-left: -60px;
-}
-
-/*.header-background{
-   background: linear-gradient(rgba(79,74,74,.4), rgba(79,74,74,.3)),
-   url("https://s3-us-west-1.amazonaws.com/spanishtutorial/header-pic1.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center bottom;
-   background-attachment: fixed;
-   width: 100%;
-   height: 100vh;
-   color: #fff;
-   letter-spacing: 1.5px;
-   position: relative;
-}*/
-
-.brand:link {
-	color: #fff;
-}
-
-.brand:visited {
-	color: #fff;
-}
-
-.brand:hover {
-	color: #fff;
-}
-
-.brand:active {
-	color: #fff;
-}
-
-.header-icon {
-	border: 2px solid white;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-
-.header-icon:hover{
-  background-color: #69D1C5;
-}
-
-.container-titles {
-	position: absolute;
-	top: 25%;
-	width: 100%;
-}
-
-
-
-
-
-
 
 a.btn {
   background-color: #D0545C;
@@ -197,47 +86,151 @@ a.btn:hover {
   border: 2.0px solid #69D1C5;
 }
 
-/*Courses Redesign*/
-#goToCourses{
-	background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-2.jpeg");
-	background-repeat: no-repeat;
-	background-size: 40%;
-	background-position: 0% 0%;
-  display: table;
+.space {
+	margin-top: 50px;
 }
 
-.main-lesson-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-wrap: wrap;
+/* ----------------------------------------
+Nav
+------------------------------------------- */
+nav a {
+	padding: 0 20px;
+}
+
+nav {
+	padding: 20px 0;
 }
 
 
-.container-left {
-  flex-basis: 40%;
-	color: white;
-	margin: 5% 0;
+.brand {
+	font-size: 30px;
+	font-family: 'Palanquin Dark', sans-serif;
+	z-index: 2000;
+	color: #fff;
 }
 
-.tagline-text-uppercase {
-	font: 700 3.5em/1em 'Open Sans', sans-serif;
-    text-transform: uppercase;
-	float: left;
-    margin-left: 15%;
-    text-align: left;
+.circle {
+	width: 200px;
+	height: 200px;
+	background-color: #69D1C5;
+	border-radius: 50%;
+	margin-top: -120px;
+	margin-left: -60px;
 }
 
-.tagline-small-text {
-	font: 400 16px/34px 'Raleway', sans-serif;
-    letter-spacing: .1em;
-    font-size: 20px;
-    float: left;
-    text-align: left;
-    margin: 5% 15%;
+.brand:link {
+	color: #fff;
+}
+
+.brand:visited {
+	color: #fff;
+}
+
+.brand:hover {
+	color: #fff;
+}
+
+.brand:active {
+	color: #fff;
+}
+
+.floating a:link {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.floating a:visited {
+	color: #fff;
+}
+
+.floating a:hover {
+	border-bottom: 4px solid #69D1C5;
+	color: #fff;
+	padding: 10px;
+}
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header h1 {
+	letter-spacing: 0.01em;
+  font-size: 5.62em;
+  /*color: #fff;*/
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+}
+
+.header-icon {
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.header-icon:hover{
+  background-color: #69D1C5;
+}
+
+.background-video { position:relative; }
+.background-video video {
+    position:relative;
+    z-index:0;
+    width:100%;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+}
+.subheader {
+	color: #fff;
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+	font-size: 2em;
+}
+
+/* ----------------------------------------
+Content
+------------------------------------------- */
+.section-wrap{
+  margin:0 auto;
+  width:60%;
+  padding: 80px 0;
+}
+
+.section-wrap h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+
+.intro-icon{
+  font-size: 40px;
+}
+
+.courses {
+  /*background-color: #2DB0A9;*/
+  background: linear-gradient(#69D1C5,#0cebeb);
+  padding:50px;
+}
+
+.courses-title {
+  margin: 0 auto;
+  width:50%;
+  padding-bottom: 18px;
+}
+
+.courses-title p {
+  color: #fff;
+}
+
+.courses-icon{
+  font-size: 40px;
+  color: #fff;
 }
 
 .container-right {
-	float: right;
 	flex-basis: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -249,38 +242,42 @@ a.btn:hover {
   margin: auto;
 }
 
+.container-right li {
+  padding: 10px;
+}
+
 .lessons-color li:nth-child(1) .lesson-box-style {
-    background: rgba(255, 122, 113, 1);
+    /*background: rgba(255, 122, 113, 1);*/
     background-color: #A9FDAC;
 }
 
 .lessons-color li:nth-child(2) .lesson-box-style {
-    background: rgba(143, 215, 136, 1);
-    background-color: #F896D8;
+    /*background: rgba(143, 215, 136, 1);*/
+    /*background-color: #F896D8;*/
     background-color: #fbbaba;
 }
 
 .lessons-color li:nth-child(3) .lesson-box-style {
-    background: rgba(3, 187, 199, 1);
-    background-color: #38E4AE;
+    /*background: rgba(3, 187, 199, 1);*/
+    /*background-color: #38E4AE;*/
     background-color: #99fbcc;
 }
 
 .lessons-color li:nth-child(4) .lesson-box-style {
-    background: rgba(227, 119, 170, 1);
-    background-color: #A491D3;
+    /*background: rgba(227, 119, 170, 1);*/
+    /*background-color: #A491D3;*/
     background-color: #88d8ea;
 }
 
 .lessons-color li:nth-child(5) .lesson-box-style {
-    background: rgba(245, 244, 136, 1);
-    background-color: #EDFF7A;
+    /*background: rgba(245, 244, 136, 1);*/
+    /*background-color: #EDFF7A;*/
     background-color: #f6f6ad;
 }
 
 .lessons-color li:nth-child(6) .lesson-box-style {
-    background: rgba(91, 229, 207, 1);
-    background-color: #FF6F59;
+    /*background: rgba(91, 229, 207, 1);*/
+    /*background-color: #FF6F59;*/
     background-color: #eecdab;
 }
 
@@ -290,10 +287,8 @@ a.btn:hover {
 	width: 33.33%;
 	height: 269px;
 	float: left;
-	display: block;
 	cursor: pointer;
 	overflow: hidden;
-  text-align: center;
 }
 
 
@@ -301,6 +296,12 @@ ul li a:hover .content-hover{
  height: 100%;
  color: #fff;
  padding: 25px;
+}
+
+.content-hover h5 {
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+  margin-top: 50px;
+  font-size: 1.3em;
 }
 
 .lessons-color li:hover .lesson-box-style {
@@ -311,10 +312,14 @@ ul li a:hover .content-hover{
     display: none;
 }
 
+.lesson-content {
+  text-shadow: 0px 2px 4px rgba(34,62,66,.4);
+
+}
+
 .lesson-content h4, h5 {
 	color: #fff;
 	font-weight: 700;
-
 }
 
 .lesson-box-style {
@@ -323,23 +328,31 @@ ul li a:hover .content-hover{
     overflow: hidden;
     height: 100%;
     width: 100%;
-    padding: 25%;
+    padding: 15%;
 }
-
 
 .content-hover {
  	 position: absolute;
 	 bottom: 0;
 	 left: 0;
 	 right: 0;
-	 background-color: rgba(0, 0, 0, .8);
+   background:rgba(255,255,255,0.35);
 	 overflow: hidden;
 	 width: 100%;
 	 height: 0;
 	 transition: .5s ease;
 }
 
-/* Intro*/
+.benefits-section p{
+  text-align: left;
+  padding: 10px;
+}
+
+.benefits-section span{
+  padding:15px;
+  margin-right:15px;
+}
+
 .main-intro-container {
     display: block;
     padding: 40px;
@@ -356,110 +369,27 @@ ul li a:hover .content-hover{
     padding: 0 0 50px 50px;
     vertical-align: middle;
     display: inline-block;
-    /*float: right;*/
     font: 400 16px/34px 'Raleway', sans-serif;
     color: #737373;
     margin-left: 77px;
     height: 290px;
 }
 
-.intro-content h5 {
-	color: #737373;
-	line-height: 1.5;
-	word-spacing: 1.1px;
-	letter-spacing: 0.5px;
-	opacity: .7;
-	margin-top: 150px;
-    margin-left: -144px;
-}
-
-.space {
-	margin-top: 80px;
-}
-
-article {
-	flex-basis: 30.3%;
-	-ms-flex-preferred-size: 30.3%;
-}
-
-
-.color1 {
-	border-top: 7px solid #e0568b;
-
-}
-
-.color2 {
-	border-top: 7px solid #b656e0;
-}
-
-.color3 {
-	border-top: 7px solid #DCED31;
-}
-
-.color4 {
-	border-top: 7px solid #EF2D56;
-}
-
-.color5 {
-	border-top: 7px solid #ED7D3A;
-}
-
-.color6 {
-	border-top: 7px solid #0CCE6B;
-}
-
-h4 {
-	color: #A96DA3;
-	font-size: 25px;
-}
-
-h5 {
-	font-size: 17px;
-}
-
-
-.text-center {
-	text-align: left;
-}
-
-/*info section*/
-.info-section {
-	height: 500px;
-	width: 100%;
-}
-
-.col-md-4 {
-	margin-top: 40px;
-}
-
-.info-section p {
-	padding: 20px;
-	font-size: 18px;
-	color: #737373;
-	opacity: .7;
-}
-
-.info-section h2 {
-	color: #4c4c4c;
-	opacity: .6;
-	margin-top: 120px;
-}
-
-
-/* CONTACT */
-
 .contact {
 	padding: 50px 0 80px;
 	text-align: center;
 	position: relative;
-	background-color: #fafafa;
+	background-color: #555e5e;
+  background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 253px;
+  padding-top: 50px;
 }
 
 .fa-envelope-o {
 	font-size: 40px !important;
-	/*background: -webkit-linear-gradient(top left, #E5F993, #59C3C3, #59C3C3);
-	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);*/
-	/*background-color: #69D1C5;*/
   color: #69D1C5;
 	height: 65px;
 	width: 65px;
@@ -468,31 +398,21 @@ h5 {
 	padding-top: 10px;
 }
 
-.contact p {
-	padding-bottom: 20px;
-	color: #737373;
-	font-size: 18px;
-}
-
-.contact h2 {
-	color: #4c4c4c;
-	margin: 10px 0 10px;
-}
-
-.contact .input-group {
-	margin-bottom: 22px;
-	width: 100%;
-
-}
-
-.form-control {
-	font-size: 18px;
-}
-
 .contact-content {
 	width: 50%;
 	height: auto;
 	margin: 0 auto;
+}
+
+.contact p {
+	padding-bottom: 20px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.contact h2 {
+	color: #fff;
+	margin: 10px 0 10px;
 }
 
 .contact-content a {
@@ -516,31 +436,26 @@ h5 {
 	border-color: #5cbcb1;
 }
 
-
-/*FOOTER*/
-.about {
-	margin-top: 0px;
-	background-color: #1b1b1b;
-	overflow: hidden;
-	height: 50px;
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+  background-color: #464e4e;
+  margin: 0 auto;
+  padding: 40px;
 }
 
-h6 {
-	display: inline-block;
-	font-size: 14px;
+
+footer h6 {
+	font-size: 0.7em;
 	text-transform: uppercase;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: 0 auto;
-	margin-top: 5px;
-	margin-left: 660px;
+  margin: 0;
+  color:#ccc;
 }
 
-.white-spacer {
-	height: 15px;
-}
-
-/*Media Queries*/
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
 @media (min-width: 1120px) {
 	.header-titles {
 		font-size: 40px;
@@ -557,11 +472,6 @@ h6 {
 }
 
 @media (max-width: 970px) {
-  	article {
-		flex-basis: 45.3%;
-		-ms-flex-preferred-size: 45.3%;
-	}
-
 	.courses {
 	    margin-top: 80px;
 	    margin: 60px 40px;
@@ -591,79 +501,80 @@ h6 {
 }
 
 @media (max-width: 750px) {
-  .header-titles {
-	font-size: 10px;
-   }
-
-  article {
-    flex-basis: 99%;
-     -ms-flex-preferred-size: 99%;
+  header h1 {
+    font-size: 2.5em;
+    text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+  }
+  .subheader{
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .contactUs {
-  	width: 100%;
+  h2 {
+    font-size: 0.8em;
   }
 
-  .container-left {
-    margin: 4.2% 0;
+  .hero-content{
+    margin-top: -35px;
   }
 
+  .circle {
+    width: 170px;
+    height: 170px;
+    background-color: #69D1C5;
+    border-radius: 50%;
+    margin-top: -120px;
+    margin-left: -60px;
+  }
+
+  .brand {
+    font-size: 1.5em;
+  }
+
+  .header-icon {
+    display: none;
+  }
+
+  .section-wrap {
+    width: 80%;
+    padding: 40px 0;
+  }
   .container-right ul li {
     width: 100%;
-  }
-
-  .tagline-text-uppercase {
-    font-size: 2.0em;
-  }
-
-  .tagline-small-text {
-    font-size: 1.9rem;
   }
 
   .lesson-box-style {
     padding: 10%;
   }
 
-  h1 {
-	font-size: 5em;
-  }
-
-  .subheader {
-  	font-size: 1.25em;
-  }
-
-  .contact-content a {
-  	padding: 15px 10px;
-  }
-
   a.btn {
   	display: none;
   }
 
-  .intro-content h5 {
-  	margin-right: 330px;
-  	margin-top: 100px;
-  	padding-left: 15px;
-    padding-right: 17px;
+  .courses {
+	    margin: 40px 0;
+	    /*margin: 60px 40px;*/
+	    /*padding-bottom: 0;*/
   }
 
-  .info-section {
-  	display: none;
+  .courses-title {
+    /*margin: 0 auto;*/
+    width: 80%;
+    /*padding-bottom: 18px;*/
   }
 
-}
+  .space {
+    margin-top: 20px;
+  }
 
-.floating a:link {
-	font-size: 18px;
-	font-weight: 700;
-}
+  .benefits-section span {
+    width: 100%;
+    /* padding: 50px; */
+    /* margin-right: 15px; */
+  }
 
-.floating a:visited {
-	color: #fff;
+  .benefits-section p {
+    text-align: center;
+    /*padding: 10px;*/
 }
-
-.floating a:hover {
-	border-bottom: 4px solid #69D1C5;
-	color: #fff;
-	padding: 10px;
 }
