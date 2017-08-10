@@ -31,6 +31,10 @@ h1, h2, h3 {
   font-family: "Noto Serif",serif;
 }
 
+h1{
+  color: #fff;
+}
+
 p {
   font-family: "Open Sans",sans-serif;
   list-style: 1.4;
@@ -62,7 +66,7 @@ Header
 header h1 {
 	letter-spacing: 0.01em;
   font-size: 5.62em;
-  color: #fff;
+  /*color: #fff;*/
   text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 }
 
@@ -98,6 +102,27 @@ Content
   font-size: 2.5em;
   margin-bottom: 25px;
 }
+
+.courses {
+  background-color: #2DB0A9;
+  padding:50px;
+}
+
+.courses-title {
+  margin: 0 auto;
+  width:50%;
+  padding-bottom: 18px;
+}
+
+.courses-title p {
+  color: #fff;
+}
+
+.courses-icon{
+  font-size: 40px;
+  color: #fff;
+}
+
 
 
 /* ----------------------------------------
@@ -265,7 +290,7 @@ a.btn:hover {
 }
 
 .container-right {
-	float: right;
+	/*float: right;*/
 	flex-basis: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -275,6 +300,10 @@ a.btn:hover {
 	list-style: none;
 	padding:0;
   margin: auto;
+}
+
+.container-right li {
+  padding: 10px;
 }
 
 .lessons-color li:nth-child(1) .lesson-box-style {
