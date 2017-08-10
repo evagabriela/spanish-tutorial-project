@@ -28,16 +28,29 @@ Typography
 h1, h2, h3 {
 	font-weight: 600;
   letter-spacing: 1.2px;
+  font-family: "Noto Serif",serif;
 }
 
 p {
   font-family: "Open Sans",sans-serif;
   list-style: 1.4;
+  color: #4d4d4d;
+  line-height: 1.52857;
+  font-size: 1.2em;
 }
-
+/*.intro-content h5 {
+	color: #737373;
+	line-height: 1.5;
+	word-spacing: 1.1px;
+	letter-spacing: 0.5px;
+	opacity: .7;
+	margin-top: 150px;
+    margin-left: -144px;
+}*/
 /* ----------------------------------------
 Layout
 ------------------------------------------- */
+
 
 /* ----------------------------------------
 Nav
@@ -71,6 +84,21 @@ header h1 {
   text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 	font-size: 2em;
 }
+
+/* ----------------------------------------
+Content
+------------------------------------------- */
+.intro{
+  margin:0 auto;
+  width:60%;
+  padding: 80px 0;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+
 
 /* ----------------------------------------
 Footer
@@ -314,7 +342,6 @@ ul li a:hover .content-hover{
 .lesson-content h4, h5 {
 	color: #fff;
 	font-weight: 700;
-
 }
 
 .lesson-box-style {
@@ -363,7 +390,7 @@ ul li a:hover .content-hover{
     height: 290px;
 }
 
-.intro-content h5 {
+/*.intro-content h5 {
 	color: #737373;
 	line-height: 1.5;
 	word-spacing: 1.1px;
@@ -371,7 +398,7 @@ ul li a:hover .content-hover{
 	opacity: .7;
 	margin-top: 150px;
     margin-left: -144px;
-}
+}*/
 
 .space {
 	margin-top: 80px;
