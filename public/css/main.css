@@ -11,9 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   color: #44545E;
-	/*color: #7d97ad;*/
-	/*font-family: 'Gentium Basic', serif;*/
-	/*min-height: 100vh;*/
+	min-height: 100vh;
 	text-rendering: optimizelegibility;
   font-size: 16px;
 }
@@ -135,6 +133,21 @@ nav {
 .brand:active {
 	color: #fff;
 }
+
+.floating a:link {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.floating a:visited {
+	color: #fff;
+}
+
+.floating a:hover {
+	border-bottom: 4px solid #69D1C5;
+	color: #fff;
+	padding: 10px;
+}
 /* ----------------------------------------
 Header
 ------------------------------------------- */
@@ -193,7 +206,6 @@ Content
 
 .intro-icon{
   font-size: 40px;
-  /*color: #fff;*/
 }
 
 .courses {
@@ -273,10 +285,8 @@ Content
 	width: 33.33%;
 	height: 269px;
 	float: left;
-	/*display: block;*/
 	cursor: pointer;
 	overflow: hidden;
-  /*text-align: center;*/
 }
 
 
@@ -319,7 +329,6 @@ ul li a:hover .content-hover{
     padding: 15%;
 }
 
-
 .content-hover {
  	 position: absolute;
 	 bottom: 0;
@@ -342,7 +351,6 @@ ul li a:hover .content-hover{
   margin-right:15px;
 }
 
-/* Intro*/
 .main-intro-container {
     display: block;
     padding: 40px;
@@ -359,162 +367,16 @@ ul li a:hover .content-hover{
     padding: 0 0 50px 50px;
     vertical-align: middle;
     display: inline-block;
-    /*float: right;*/
     font: 400 16px/34px 'Raleway', sans-serif;
     color: #737373;
     margin-left: 77px;
     height: 290px;
 }
 
-
-
-
-
-/* ----------------------------------------
-Footer
-------------------------------------------- */
-footer {
-  background-color: #464e4e;
-  margin: 0 auto;
-  padding: 40px;
-}
-
-
-footer h6 {
-	font-size: 0.7em;
-	text-transform: uppercase;
-  margin: 0;
-  color:#ccc;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Courses Redesign*/
-/*#goToCourses{
-	background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-2.jpeg");
-	background-repeat: no-repeat;
-	background-size: 40%;
-	background-position: 0% 0%;
-  display: table;
-}*/
-
-/*.main-lesson-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-wrap: wrap;
-}*/
-
-
-/*.container-left {
-  flex-basis: 40%;
-	color: white;
-	margin: 5% 0;
-}*/
-
-/*.tagline-text-uppercase {
-	font: 700 3.5em/1em 'Open Sans', sans-serif;
-    text-transform: uppercase;
-	float: left;
-    margin-left: 15%;
-    text-align: left;
-}*/
-
-/*.tagline-small-text {
-	font: 400 16px/34px 'Raleway', sans-serif;
-    letter-spacing: .1em;
-    font-size: 20px;
-    float: left;
-    text-align: left;
-    margin: 5% 15%;
-}*/
-
-
-
-
-/*article {
-	flex-basis: 30.3%;
-	-ms-flex-preferred-size: 30.3%;
-}
-
-
-.color1 {
-	border-top: 7px solid #e0568b;
-
-}
-
-.color2 {
-	border-top: 7px solid #b656e0;
-}
-
-.color3 {
-	border-top: 7px solid #DCED31;
-}
-
-.color4 {
-	border-top: 7px solid #EF2D56;
-}
-
-.color5 {
-	border-top: 7px solid #ED7D3A;
-}
-
-.color6 {
-	border-top: 7px solid #0CCE6B;
-}*/
-
-h4 {
-	color: #A96DA3;
-	font-size: 25px;
-}
-
-h5 {
-	font-size: 17px;
-}
-
-
-
-/*info section*/
-/*.info-section {
-	height: 500px;
-	width: 100%;
-}
-
-.col-md-4 {
-	margin-top: 40px;
-}
-
-.info-section p {
-	padding: 20px;
-	font-size: 18px;
-	color: #737373;
-	opacity: .7;
-}
-
-.info-section h2 {
-	color: #4c4c4c;
-	opacity: .6;
-	margin-top: 120px;
-}*/
-
-
-/* CONTACT */
-
 .contact {
 	padding: 50px 0 80px;
 	text-align: center;
 	position: relative;
-	/*background-color: #fafafa;*/
 	background-color: #555e5e;
   background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/bg-footer.jpg");
   background-repeat: no-repeat;
@@ -526,9 +388,6 @@ h5 {
 
 .fa-envelope-o {
 	font-size: 40px !important;
-	/*background: -webkit-linear-gradient(top left, #E5F993, #59C3C3, #59C3C3);
-	background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);*/
-	/*background-color: #69D1C5;*/
   color: #69D1C5;
 	height: 65px;
 	width: 65px;
@@ -537,33 +396,21 @@ h5 {
 	padding-top: 10px;
 }
 
+.contact-content {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
 .contact p {
 	padding-bottom: 20px;
-	/*color: #737373;*/
 	color: #fff;
 	font-size: 18px;
 }
 
 .contact h2 {
-	/*color: #4c4c4c;*/
 	color: #fff;
 	margin: 10px 0 10px;
-}
-
-/*.contact .input-group {
-	margin-bottom: 22px;
-	width: 100%;*/
-
-}
-
-.form-control {
-	font-size: 18px;
-}
-
-.contact-content {
-	width: 50%;
-	height: auto;
-	margin: 0 auto;
 }
 
 .contact-content a {
@@ -587,11 +434,26 @@ h5 {
 	border-color: #5cbcb1;
 }
 
-/*.white-spacer {
-	height: 15px;
-}*/
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+  background-color: #464e4e;
+  margin: 0 auto;
+  padding: 40px;
+}
 
-/*Media Queries*/
+
+footer h6 {
+	font-size: 0.7em;
+	text-transform: uppercase;
+  margin: 0;
+  color:#ccc;
+}
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
 @media (min-width: 1120px) {
 	.header-titles {
 		font-size: 40px;
@@ -608,11 +470,6 @@ h5 {
 }
 
 @media (max-width: 970px) {
-  	article {
-		flex-basis: 45.3%;
-		-ms-flex-preferred-size: 45.3%;
-	}
-
 	.courses {
 	    margin-top: 80px;
 	    margin: 60px 40px;
@@ -642,79 +499,15 @@ h5 {
 }
 
 @media (max-width: 750px) {
-  .header-titles {
-	font-size: 10px;
-   }
-
-  article {
-    flex-basis: 99%;
-     -ms-flex-preferred-size: 99%;
-  }
-
-  .contactUs {
-  	width: 100%;
-  }
-
-  .container-left {
-    margin: 4.2% 0;
-  }
-
   .container-right ul li {
     width: 100%;
-  }
-
-  .tagline-text-uppercase {
-    font-size: 2.0em;
-  }
-
-  .tagline-small-text {
-    font-size: 1.9rem;
   }
 
   .lesson-box-style {
     padding: 10%;
   }
 
-  h1 {
-	font-size: 5em;
-  }
-
-  .subheader {
-  	font-size: 1.25em;
-  }
-
-  .contact-content a {
-  	padding: 15px 10px;
-  }
-
   a.btn {
   	display: none;
   }
-
-  .intro-content h5 {
-  	margin-right: 330px;
-  	margin-top: 100px;
-  	padding-left: 15px;
-    padding-right: 17px;
-  }
-
-  .info-section {
-  	display: none;
-  }
-
-}
-
-.floating a:link {
-	font-size: 18px;
-	font-weight: 700;
-}
-
-.floating a:visited {
-	color: #fff;
-}
-
-.floating a:hover {
-	border-bottom: 4px solid #69D1C5;
-	color: #fff;
-	padding: 10px;
 }
