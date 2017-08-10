@@ -103,6 +103,11 @@ Content
   margin-bottom: 25px;
 }
 
+.intro-icon{
+  font-size: 40px;
+  /*color: #fff;*/
+}
+
 .courses {
   background-color: #2DB0A9;
   padding:50px;
