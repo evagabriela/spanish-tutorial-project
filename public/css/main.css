@@ -560,4 +560,19 @@ Media Queries
     width: 80%;
     /*padding-bottom: 18px;*/
   }
+
+  .space {
+    margin-top: 20px;
+  }
+
+  .benefits-section span {
+    width: 100%;
+    /* padding: 50px; */
+    /* margin-right: 15px; */
+  }
+
+  .benefits-section p {
+    text-align: center;
+    /*padding: 10px;*/
+}
 }
