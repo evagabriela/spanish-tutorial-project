@@ -28,16 +28,33 @@ Typography
 h1, h2, h3 {
 	font-weight: 600;
   letter-spacing: 1.2px;
+  font-family: "Noto Serif",serif;
+}
+
+h1{
+  color: #fff;
 }
 
 p {
   font-family: "Open Sans",sans-serif;
   list-style: 1.4;
+  color: #4d4d4d;
+  line-height: 1.52857;
+  font-size: 1.2em;
 }
-
+/*.intro-content h5 {
+	color: #737373;
+	line-height: 1.5;
+	word-spacing: 1.1px;
+	letter-spacing: 0.5px;
+	opacity: .7;
+	margin-top: 150px;
+    margin-left: -144px;
+}*/
 /* ----------------------------------------
 Layout
 ------------------------------------------- */
+
 
 /* ----------------------------------------
 Nav
@@ -49,7 +66,7 @@ Header
 header h1 {
 	letter-spacing: 0.01em;
   font-size: 5.62em;
-  color: #fff;
+  /*color: #fff;*/
   text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 }
 
@@ -71,6 +88,47 @@ header h1 {
   text-shadow: 0px 2px 4px rgba(34,62,66,.75);
 	font-size: 2em;
 }
+
+/* ----------------------------------------
+Content
+------------------------------------------- */
+.intro{
+  margin:0 auto;
+  width:60%;
+  padding: 80px 0;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+
+.intro-icon{
+  font-size: 40px;
+  /*color: #fff;*/
+}
+
+.courses {
+  background-color: #2DB0A9;
+  padding:50px;
+}
+
+.courses-title {
+  margin: 0 auto;
+  width:50%;
+  padding-bottom: 18px;
+}
+
+.courses-title p {
+  color: #fff;
+}
+
+.courses-icon{
+  font-size: 40px;
+  color: #fff;
+}
+
+
 
 /* ----------------------------------------
 Footer
@@ -198,46 +256,46 @@ a.btn:hover {
 }
 
 /*Courses Redesign*/
-#goToCourses{
+/*#goToCourses{
 	background-image: url("https://s3-us-west-1.amazonaws.com/spanishtutorial/lessons-2.jpeg");
 	background-repeat: no-repeat;
 	background-size: 40%;
 	background-position: 0% 0%;
   display: table;
-}
+}*/
 
-.main-lesson-container {
+/*.main-lesson-container {
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 
 
-.container-left {
+/*.container-left {
   flex-basis: 40%;
 	color: white;
 	margin: 5% 0;
-}
+}*/
 
-.tagline-text-uppercase {
+/*.tagline-text-uppercase {
 	font: 700 3.5em/1em 'Open Sans', sans-serif;
     text-transform: uppercase;
 	float: left;
     margin-left: 15%;
     text-align: left;
-}
+}*/
 
-.tagline-small-text {
+/*.tagline-small-text {
 	font: 400 16px/34px 'Raleway', sans-serif;
     letter-spacing: .1em;
     font-size: 20px;
     float: left;
     text-align: left;
     margin: 5% 15%;
-}
+}*/
 
 .container-right {
-	float: right;
+	/*float: right;*/
 	flex-basis: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -247,6 +305,10 @@ a.btn:hover {
 	list-style: none;
 	padding:0;
   margin: auto;
+}
+
+.container-right li {
+  padding: 10px;
 }
 
 .lessons-color li:nth-child(1) .lesson-box-style {
@@ -303,6 +365,11 @@ ul li a:hover .content-hover{
  padding: 25px;
 }
 
+.content-hover h5 {
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+  margin-top: 50px;
+}
+
 .lessons-color li:hover .lesson-box-style {
     background: none;
 }
@@ -314,7 +381,6 @@ ul li a:hover .content-hover{
 .lesson-content h4, h5 {
 	color: #fff;
 	font-weight: 700;
-
 }
 
 .lesson-box-style {
@@ -323,7 +389,7 @@ ul li a:hover .content-hover{
     overflow: hidden;
     height: 100%;
     width: 100%;
-    padding: 25%;
+    padding: 15%;
 }
 
 
@@ -332,7 +398,8 @@ ul li a:hover .content-hover{
 	 bottom: 0;
 	 left: 0;
 	 right: 0;
-	 background-color: rgba(0, 0, 0, .8);
+	 /*background-color: rgba(0, 0, 0, .8);*/
+   background:rgba(255,255,255,0.35);
 	 overflow: hidden;
 	 width: 100%;
 	 height: 0;
@@ -363,7 +430,7 @@ ul li a:hover .content-hover{
     height: 290px;
 }
 
-.intro-content h5 {
+/*.intro-content h5 {
 	color: #737373;
 	line-height: 1.5;
 	word-spacing: 1.1px;
@@ -371,7 +438,7 @@ ul li a:hover .content-hover{
 	opacity: .7;
 	margin-top: 150px;
     margin-left: -144px;
-}
+}*/
 
 .space {
 	margin-top: 80px;
