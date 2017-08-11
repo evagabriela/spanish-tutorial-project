@@ -217,16 +217,25 @@ Content
 
 .courses-title {
   margin: 0 auto;
-  width:50%;
+  width:35%;
   padding-bottom: 18px;
+  float: left;
+  padding-right: 91px;
+  padding-left: 50px;
+}
+
+.courses-title h1{
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75)
 }
 
 .courses-title p {
   color: #fff;
+  font-size: 1.7em;
+  text-shadow: 0px 2px 4px rgba(34,62,66,.75)
 }
 
 .courses-icon{
-  font-size: 40px;
+  font-size: 55px;
   color: #fff;
 }
 
@@ -243,7 +252,7 @@ Content
 }
 
 .container-right li {
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .lessons-color li:nth-child(1) .lesson-box-style {
@@ -295,7 +304,7 @@ Content
 ul li a:hover .content-hover{
  height: 100%;
  color: #fff;
- padding: 25px;
+ padding: 0 25px;
 }
 
 .content-hover h5 {
@@ -560,21 +569,4 @@ Media Queries
   .courses-title {
     /*margin: 0 auto;*/
     width: 80%;
-    /*padding-bottom: 18px;*/
-  }
-
-  .space {
-    margin-top: 20px;
-  }
-
-  .benefits-section span {
-    width: 100%;
-    /* padding: 50px; */
-    /* margin-right: 15px; */
-  }
-
-  .benefits-section p {
-    text-align: center;
-    /*padding: 10px;*/
-}
 }
