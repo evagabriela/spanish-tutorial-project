@@ -211,7 +211,8 @@ Content
 
 .courses {
   /*background-color: #2DB0A9;*/
-  background: linear-gradient(#69D1C5,#0cebeb);
+  /*background: linear-gradient(#69D1C5,#0cebeb);*/
+  background-color: #fafafa;
   padding:50px;
 }
 
@@ -224,19 +225,19 @@ Content
   padding-left: 50px;
 }
 
-.courses-title h1{
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75)
-}
 
 .courses-title p {
-  color: #fff;
+  /*color: #fff;*/
   font-size: 1.7em;
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75)
+}
+
+.courses-title h1 {
+  color: #44545E !important;
 }
 
 .courses-icon{
   font-size: 55px;
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .container-right {
@@ -257,37 +258,43 @@ Content
 
 .lessons-color li:nth-child(1) .lesson-box-style {
     /*background: rgba(255, 122, 113, 1);*/
-    background-color: #A9FDAC;
+    /*background-color: #A9FDAC;*/
+    background-color: #48d0a7;
 }
 
 .lessons-color li:nth-child(2) .lesson-box-style {
     /*background: rgba(143, 215, 136, 1);*/
     /*background-color: #F896D8;*/
-    background-color: #fbbaba;
+    /*background-color: #fbbaba;*/
+    background-color: #67d8b6;
 }
 
 .lessons-color li:nth-child(3) .lesson-box-style {
     /*background: rgba(3, 187, 199, 1);*/
     /*background-color: #38E4AE;*/
-    background-color: #99fbcc;
+    /*background-color: #99fbcc;*/
+    background-color: #87e0c5;
 }
 
 .lessons-color li:nth-child(4) .lesson-box-style {
     /*background: rgba(227, 119, 170, 1);*/
     /*background-color: #A491D3;*/
-    background-color: #88d8ea;
+    /*background-color: #88d8ea;*/
+    background-color: #31c095;
 }
 
 .lessons-color li:nth-child(5) .lesson-box-style {
     /*background: rgba(245, 244, 136, 1);*/
     /*background-color: #EDFF7A;*/
-    background-color: #f6f6ad;
+    /*background-color: #f6f6ad;*/
+    background-color: #38cc9f;
 }
 
 .lessons-color li:nth-child(6) .lesson-box-style {
     /*background: rgba(91, 229, 207, 1);*/
     /*background-color: #FF6F59;*/
-    background-color: #eecdab;
+    /*background-color: #eecdab;*/
+    background-color: #58d4af;
 }
 
 
