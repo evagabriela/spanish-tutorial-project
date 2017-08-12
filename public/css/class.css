@@ -175,8 +175,14 @@ pre {
 	
 }*/
 
+.highlight {
+	border-left: 7px solid #69D1C5;
+	padding-left: 5px;
+}
+
 .pop {
 	color: #0EAD69;
+	color: #938f8f;
 }
 
 
