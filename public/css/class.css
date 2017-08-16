@@ -36,13 +36,21 @@ p {
 	margin-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
-	font-size: 19px;
+	font-size: 18px;
 	color: #201A1B;
+	color: rgb(86, 84, 84);
 }
 
 h3 {
 	color: #69D1C5;
 	opacity: .9;
+	color: rgb(10, 9, 9);
+	font-family: "Noto Serif",serif;
+	font-size: 25px;
+}
+
+h1 {
+	font-family: "Noto Serif",serif;
 }
 
 ol li {
@@ -72,6 +80,7 @@ ol {
     height: 100vh;
     z-index: 1200;
     font-size: 100%;
+    background-color: #292c44;
 }
 
 #sidebar-container li {
@@ -81,10 +90,12 @@ ol {
     padding: 25px 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    color: rgba(221,221,221,.65);
 }
 
 .sidebar-nav h4 {
 	color: rgb(60, 72, 88);
+	color: rgba(221,221,221,.65);
 }
 
 .sidebar-nav {
@@ -105,10 +116,14 @@ ol {
 
 .sidebar-nav li:hover {
 	background-color: #AFDEDC;
+	background-color: rgb(64, 69, 104);
+	background-color: rgb(80, 86, 127);
 }
 
 .sidebar-nav li.active {
 	background-color: #AFDEDC;
+	background-color: rgb(64, 69, 104);
+	background-color: rgb(80, 86, 127);
 }
 
 /*.active {
@@ -160,8 +175,14 @@ pre {
 	
 }*/
 
+.highlight {
+	border-left: 7px solid #69D1C5;
+	padding-left: 5px;
+}
+
 .pop {
 	color: #0EAD69;
+	color: #938f8f;
 }
 
 
