@@ -194,6 +194,10 @@ header h1 {
 /* ----------------------------------------
 Content
 ------------------------------------------- */
+.mision {
+  background-color: #69D1C5;
+}
+
 .section-wrap{
   margin:0 auto;
   width:60%;
@@ -434,19 +438,23 @@ ul li a:hover .content-hover{
 }
 
 .contact-content a {
-	color: #69D1C5;
-	text-decoration: none;
-	width: 40%;
-	font-size: 18px;
-	border: 2px solid #69D1C5;
-	color: #fff;
-	background-color: #69D1C5;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1.2px;
-	padding: 15px 40px;
-	border-radius: 4px;
-	transition: all .4s ease-in-out;
+  background-color: #D0545C;
+      background-color: #38E4AE;
+      background-color: #69D1C5;
+      color: #fff;
+      border: 3.5px solid #69D1C5;
+      margin-top: 30px;
+      padding: 12px 135px;
+      font-size: 16px;
+      border: 3px solid inherit;
+      border-radius: 25px;
+      letter-spacing: 1.5px;
+      box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+      transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      text-transform: uppercase;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
 }
 
 .contact-content a:hover {
@@ -528,12 +536,9 @@ Media Queries
     margin: 0 auto;
   }
 
-  /*h2 {
-    font-size: 0.8em;
-  }*/
-
   .hero-content{
     margin-top: -35px;
+    position: absolute;
   }
 
   .circle {
