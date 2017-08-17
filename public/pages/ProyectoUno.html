@@ -23,7 +23,8 @@
       </div>
 				<ul class="sidebar-nav">
 					<h4>Mi Primera Página Web</h4>
-					<li class="introduccionLink active"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp;Introducción</li>
+          <li class="objetivosLink active"><i class="fa fa-file-text-o fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp;Objetivos</li>
+					<li class="introduccionLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp;Introducción</li>
 				    <li class="esqueletoLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp;Esqueleto del HTML</li>
 				    <li class="introHTMLLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp; Intro a HTML</li>
 				    <li class="introCSS"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: rgba(221,221,221,.65)"></i>&nbsp; &nbsp;Intro a CSS</li>
@@ -43,48 +44,7 @@
 
   				<div class="lesson">       
 
-            
-<!-- video-tutorial -->
-            
-
-            
-
-            
-
-            
-
-  
-
-          <!--   <h2>Introducción</h2>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/5ymHptrFdtI?rel=0" frameborder="0" allowfullscreen></iframe> 
- -->
-<!-- Videos:
-  Introducción : 
-
-  https://youtu.be/5ymHptrFdtI
-  <p>Introduccion</p>
-
-
-  <h1>Esqueleto del HTML:</h1> https://youtu.be/sE5U9NZTYWA
-  Intro a HTML: https://youtu.be/ntpsOdEpXDk
-  Intro a CSS: https://youtu.be/mzisjQ4MBp0
-  CSS: Estilos Base
-  https://youtu.be/VASeOs97BxM
-
-  CSS: Navegación
-  https://youtu.be/JaaHWr-zkNo
-
-  CSS: Encabezado
-  https://youtu.be/HS-aV7IDoio
-
-  CSS: Contenido
-  https://youtu.be/Tbmd7P1ae34
-
-  CSS: Pie(footer)
-  https://youtu.be/6pXWKpvwTgg -->
-
-
- 
+                         
 
 
 					</div>
@@ -100,8 +60,9 @@
       <script type="text/javascript">
 
 
+      dbLoadClass(".objetivosLink", "website", "objetivos");
+      $(".objetivosLink").click();
       dbLoadClass(".introduccionLink", "website", "introduccion");
-      $(".introduccionLink").click();
       dbLoadClass(".esqueletoLink", "website", "esqueletoHTML");
       dbLoadClass(".introHTMLLink", "website", "intro-HTML");
       dbLoadClass(".introCSS", "website", "intro-css");
