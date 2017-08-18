@@ -597,3 +597,45 @@ Media Queries
     width: 100%;
   }
 }
+
+
+/* ----------------------------------------
+Responsive modal
+------------------------------------------- */
+.modal-background {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.modal-content {
+  padding: 40px 30px;
+  color: #444;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+#cerrar {
+  font-size: .85em;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: #69D1C5;
+  margin: 20px 0;
+}
+
+
