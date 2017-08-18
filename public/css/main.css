@@ -182,8 +182,10 @@ header h1 {
     position:absolute;
     top:0;
     left:0;
+    bottom: 0;
     z-index:1;
     width:100%;
+    background: linear-gradient(rgba(130, 130, 128, .2), rgba(130, 130, 128, .2));
 }
 .subheader {
 	color: #fff;
@@ -321,9 +323,10 @@ ul li a:hover .content-hover{
 }
 
 .content-hover h5 {
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+  /*text-shadow: 0px 2px 4px rgba(34,62,66,.75);*/
   margin-top: 50px;
   font-size: 1.3em;
+  color: #48d0a7;
 }
 
 .lessons-color li:hover .lesson-box-style {
@@ -359,6 +362,7 @@ ul li a:hover .content-hover{
 	 left: 0;
 	 right: 0;
    background:rgba(255,255,255,0.35);
+   /*background-color: #48d0a7;*/
 	 overflow: hidden;
 	 width: 100%;
 	 height: 0;
