@@ -461,6 +461,7 @@ Contact
   text-transform: uppercase;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
+  width: 20%;
 }
 
 .contact-content a:hover {
@@ -606,13 +607,37 @@ Media Queries
 
 @media (max-width: 480px) {
   .contact-content a {
-    padding: 12px 20px;
+    padding: 12px 10px;
   }
 
   .lesson-box-style {
     width: 75%;
     margin: 0 auto;
     height: 90%;
+  }
+
+  .subheader {
+    display: none;
+  }
+
+  .courses-title h1 {
+    font-size: 1.5em;
+  }
+
+  .courses-title p {
+    font-size: 1.1em;
+  }
+
+  .section-wrap h2 {
+    font-size: 1.5em;
+  }
+
+  .section-wrap p {
+    font-size: 1.1em;
+  }
+
+  .hero-content h1 {
+    margin-left: 40%;
   }
 }
 
