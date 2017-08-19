@@ -605,14 +605,9 @@ Media Queries
 }
 
 @media (max-width: 480px) {
-  .contact-content a {
-    padding: 12px 10px;
-  }
-
-  .lesson-box-style {
-    width: 75%;
-    margin: 0 auto;
-    height: 90%;
+  .hero-content h1 {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .subheader {
@@ -635,13 +630,16 @@ Media Queries
     font-size: 1.1em;
   }
 
-  .hero-content h1 {
-    margin-left: 40%;
-    margin: 0 auto;
-  }
-
   .floating {
     display: none;
+  }
+
+  .courses-title p {
+    display: none;
+  }
+
+  .contact-content a {
+    padding: 12px 10px;
   }
 }
 
@@ -650,7 +648,7 @@ Media Queries
 Responsive modal
 ------------------------------------------- */
 .modal-background {
-  padding: 40px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, .3);
   position: fixed;
   top: 0;
