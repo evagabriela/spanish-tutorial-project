@@ -461,7 +461,6 @@ Contact
   text-transform: uppercase;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-  width: 20%;
 }
 
 .contact-content a:hover {
@@ -638,6 +637,11 @@ Media Queries
 
   .hero-content h1 {
     margin-left: 40%;
+    margin: 0 auto;
+  }
+
+  .floating {
+    display: none;
   }
 }
 

@@ -4,9 +4,9 @@
             event.preventDefault();
             $(".content-hover").css("display", "none");
             $(".modal-background").css("display", "block");
-             });
-        $("#cerrar").on("click", function() {
+            $("#cerrar").on("click", function() {
             $(".modal-background").fadeOut()
+             });
         });
     }
 });
