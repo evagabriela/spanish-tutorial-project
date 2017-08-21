@@ -389,7 +389,7 @@ Content
   /*justify-content: space-between;*/
   /*margin-left: -40%;*/
   /*margin-top: 15px;*/
-  margin-left: 12%;
+  margin-left: 10%;
 }
 
 .logo-row-item {
@@ -803,7 +803,12 @@ Media Queries
 }
 
 @media (max-width: 970px) {
-	.courses {
+	 .logo-row-item {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .courses {
 	    margin-top: 80px;
 	    margin: 60px 40px;
 	    padding-bottom: 0;
@@ -870,6 +875,11 @@ Media Queries
     display: none;
   }
 
+  .logo-row-item {
+    margin-left: 0;
+    padding: 0;
+  }
+
   .section-wrap {
     width: 80%;
     padding: 40px 0;
@@ -914,6 +924,11 @@ Media Queries
   .hero-content h1 {
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+  .logo-row-item {
+    margin-left: 0;
+    padding: 0;
   }
 
   .subheader {
