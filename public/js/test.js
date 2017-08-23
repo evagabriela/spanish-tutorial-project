@@ -6,7 +6,6 @@ var prepareTest = function() {
       questionNumber += 1;
     } else {
       questionNumber = 6;
-      $("button").css("display", "none");
     }
     $(".container").hide();
     $('.container').eq(questionNumber).fadeIn();
