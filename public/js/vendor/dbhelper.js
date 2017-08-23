@@ -8,7 +8,7 @@
   };
   firebase.initializeApp(config);
 
-  var makeCallback = function(classKey, lessonKey) {
+  var makeCallback = function(classKey, lessonKey, onReadyCb) {
     var cb = function() {
       var database = firebase.database();
       var classes = database.ref("classes");
@@ -40,14 +40,18 @@
             $('#afterButton').on('click', function() {
               listItem.next().click();
             });
+
+            if (onReadyCb) {
+              onReadyCb();
+            }
           });
     };
 
     return cb;
   };
 
-  var dbLoadClass = function(linkClass, classKey, lessonKey) {
-    var cb = makeCallback(classKey, lessonKey);
+  var dbLoadClass = function(linkClass, classKey, lessonKey, onReadyCb) {
+    var cb = makeCallback(classKey, lessonKey, onReadyCb);
     $(linkClass).on("click", cb);
   };
 
