@@ -198,6 +198,7 @@ nav {
 .floating a:link {
 	font-size: 18px;
 	font-weight: 700;
+  color: #fff;
 }
 
 .floating a:visited {
@@ -206,6 +207,10 @@ nav {
 
 .floating a:hover {
 	color: #fff;
+}
+
+.floating a:active {
+  color: #fff;
 }
 
 /* ----------------------------------------
