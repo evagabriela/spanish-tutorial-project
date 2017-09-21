@@ -62,11 +62,9 @@ a:link {
 }
 
 a.btn {
-  background-color: #D0545C;
-  background-color: #38E4AE;
-  background-color: #69D1C5;
+  background-color: #23cfb9;
 	color: #fff;
-  border: 3.5px solid #69D1C5;
+  border: 3.5px solid #23cfb9;
 	margin-top: 30px;
 	padding: 12px 58px;
 	font-size: 16px;
@@ -82,9 +80,9 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: #69D1C5;
   color:#fff;
-  border: 2.0px solid #69D1C5;
+  background-color: #1aa896;
+  border-color: #1aa896;
 }
 
 .space {
@@ -148,7 +146,7 @@ nav {
   webkit-box-shadow: #128c87 0 3px;
     -moz-box-shadow: #128c87 0 3px;
     box-shadow: #128c87 0 3px;
-    background-color: #0ea5a0;
+    background-color: #23cfb9;
     border-color: transparent;
     color: #fff;
     border-radius: 5px;
@@ -173,7 +171,7 @@ nav {
 .circle {
 	width: 200px;
 	height: 200px;
-	background-color: #69D1C5;
+	background-color: #23cfb9;
 	border-radius: 50%;
 	margin-top: -120px;
 	margin-left: -60px;
@@ -702,7 +700,7 @@ Contact
 
 .fa-envelope-o {
 	font-size: 40px !important;
-  color: #69D1C5;
+  color: #23cfb9;
 	height: 65px;
 	width: 65px;
 	border-radius: 4px;
@@ -728,9 +726,9 @@ Contact
 }
 
 .contact-content a {
-  background-color: #69D1C5;
+  background-color: #23cfb9;
   color: #fff;
-  border: 3.5px solid #69D1C5;
+  border: 3.5px solid #23cfb9;
   margin-top: 30px;
   padding: 12px 50px;
   font-size: 16px;
@@ -746,8 +744,8 @@ Contact
 }
 
 .contact-content a:hover {
-	background-color: #5cbcb1;
-	border-color: #5cbcb1;
+	background-color: #1aa896;
+	border-color: #1aa896;
 }
 
 /* ----------------------------------------
