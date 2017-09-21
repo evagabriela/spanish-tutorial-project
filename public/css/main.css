@@ -345,6 +345,14 @@ Content
   background-color: #69D1C5;
 }*/
 
+.box-item a:link {
+  color: #fff;
+}
+
+.box-item a:visited {
+  color: #fff;
+}
+
 .section-wrap{
   margin:0 auto;
   width:60%;
