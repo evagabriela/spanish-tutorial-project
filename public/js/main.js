@@ -43,16 +43,16 @@ $(window).on('scroll', function () {
 
 });
     
-// classroom
-  // Initialize Firebase
-  // var config = {
-  //   apiKey: "AIzaSyBFuC43STFtR0Vx4NYMh8D9R58wJ2IUlCE",
-  //   authDomain: "ekua-e9d9c.firebaseapp.com",
-  //   databaseURL: "https://ekua-e9d9c.firebaseio.com",
-  //   projectId: "ekua-e9d9c",
-  //   storageBucket: "",
-  //   messagingSenderId: "192283074344"
-  // };
-  // firebase.initializeApp(config);
 
+$(".benefits-section").mouseenter(function(){
+    var icon = $(this).find("i")[0];
+    $(icon).css("background-color", "#fff");
+    $(icon).css("color", "#23cfb9");
+});
+
+ $(".benefits-section").mouseleave(function(){
+    var icon = $(this).find("i")[0];
+    $(icon).css("background-color", "#23cfb9");
+    $(icon).css("color", "#fff");
+});
 
