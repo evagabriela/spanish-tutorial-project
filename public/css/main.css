@@ -74,15 +74,7 @@ a:link {
 
 .to-left .fa:hover {
     color: #23cfb9;
-    opacity: .7;
     border: 2px solid #23cfb9;
-    border-radius: 96px;
-    width: 96px;
-    height: 96px;
-    text-align: center;
-    font-size: 50px;
-    line-height: 34px;
-    padding-top: 30px;
     background-color: #fff;
 }
 
