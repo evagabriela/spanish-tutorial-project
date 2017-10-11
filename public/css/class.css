@@ -91,11 +91,13 @@ ol {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: rgba(221,221,221,.65);
+    color: #d9dcdd;
 }
 
 .sidebar-nav h4 {
 	color: rgb(60, 72, 88);
 	color: rgba(221,221,221,.65);
+	color: #d9dcdd;
 }
 
 .sidebar-nav {
@@ -232,7 +234,65 @@ pre {
 	margin-left: 125px;
 }
 
+.additional {
+	margin-left: 200px;
+}
+
+.additional ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+.additional ul li {
+	display: inline;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin-right: 25px;
+	cursor: pointer;
+}
+
+.additional a {
+	text-decoration: none;
+	color: #5f6060;
+}
+
+.additional a:hover {
+	color: #23cfb9;
+}
+
+.clicked {
+	border-bottom: 3px solid #23cfb9;
+}
+
+.noShow {
+	display: none;
+}
+
+.disabled a {
+	pointer-events: none;
+}
+
+.recursos a {
+	display: block;
+	text-decoration: none;
+	font-size: 17px;
+	margin-top: 15px;
+}
+
+.recursos a:link {
+	color: #2E86AB;
+}
+
+.recursos a:visited {
+	color: #4E0250;
+}
+
+.recursos p {
+	margin-top: 65px;
+}
 
 
-
-
+.video-tutorial h1 {
+	font-size: 24px;
+	margin-top: 45px;
+}
