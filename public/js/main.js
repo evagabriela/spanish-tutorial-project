@@ -47,12 +47,12 @@ $(window).on('scroll', function () {
 $(".benefits-section").mouseenter(function(){
     var icon = $(this).find("i")[0];
     $(icon).css("background-color", "#fff");
-    $(icon).css("color", "#23cfb9");
+    $(icon).css("color", "#00c4cc");
 });
 
  $(".benefits-section").mouseleave(function(){
     var icon = $(this).find("i")[0];
-    $(icon).css("background-color", "#23cfb9");
+    $(icon).css("background-color", "#00c4cc");
     $(icon).css("color", "#fff");
 });
 

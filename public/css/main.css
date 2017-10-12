@@ -58,9 +58,9 @@ a:link {
 
 .space .fa {
     color:#fff;
-    background-color: #23cfb9;
+    background-color: #00c4cc; 
     opacity: .7;
-    border: 2px solid #23cfb9;
+    border: 2px solid #00c4cc;
     border-radius: 96px;
     width: 96px;
     height: 96px;
@@ -68,13 +68,12 @@ a:link {
     font-size: 50px;
     line-height: 34px;
     padding-top: 30px;
-    background-color: #23cfb9;
     transition: all .3s ease-in-out;
 }
 
 .space .fa:hover {
-    color: #23cfb9;
     background-color: #fff;
+    color: #00c4cc;
 }
 
 
@@ -84,9 +83,10 @@ a:link {
 }
 
 a.btn {
-  background-color: #23cfb9;
+  /*background-color: #23cfb9;*/
+  background-color: #00c4cc;
 	color: #fff;
-  border: 3.5px solid #23cfb9;
+  border: 3.5px solid #00c4cc;
 	margin-top: 30px;
 	padding: 12px 58px;
 	font-size: 16px;
@@ -103,8 +103,8 @@ a.btn {
 
 a.btn:hover {
   color:#fff;
-  background-color: #1aa896;
-  border-color: #1aa896;
+  background-color: #03b0b7;
+  border-color: #03b0b7;
 }
 
 .space {
@@ -168,7 +168,7 @@ nav {
   webkit-box-shadow: #128c87 0 3px;
     -moz-box-shadow: #128c87 0 3px;
     box-shadow: #128c87 0 3px;
-    background-color: #23cfb9;
+    background-color: #00c4cc;
     border-color: transparent;
     color: #fff;
     border-radius: 5px;
@@ -193,7 +193,7 @@ nav {
 .circle {
 	width: 200px;
 	height: 200px;
-	background-color: #23cfb9;
+	background-color: #00c4cc;
 	border-radius: 50%;
 	margin-top: -120px;
 	margin-left: -60px;
@@ -729,7 +729,7 @@ Contact
 
 .fa-envelope-o {
 	font-size: 40px !important;
-  color: #23cfb9;
+  color: #00c4cc;
 	height: 65px;
 	width: 65px;
 	border-radius: 4px;
@@ -755,9 +755,9 @@ Contact
 }
 
 .contact-content a {
-  background-color: #23cfb9;
+  background-color: #00c4cc;
   color: #fff;
-  border: 3.5px solid #23cfb9;
+  border: 3.5px solid #00c4cc;
   margin-top: 30px;
   padding: 12px 50px;
   font-size: 16px;
@@ -773,8 +773,8 @@ Contact
 }
 
 .contact-content a:hover {
-	background-color: #1aa896;
-	border-color: #1aa896;
+	background-color: #03b0b7;
+	border-color: #03b0b7;
 }
 
 /* ----------------------------------------
