@@ -1366,7 +1366,8 @@ Media Queries
   }
 
   .vertical-center {
-    height: 70vh;
+    height: 60vh;
+    background-attachment: initial;
   }
 
   .sugerencia h2 {
