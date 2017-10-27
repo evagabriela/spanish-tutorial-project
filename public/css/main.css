@@ -71,14 +71,14 @@ p {
 
 .geo {
   background: linear-gradient(rgba(0, 196, 204, .55), rgba(0, 196, 204, .55)),
-  url('../images/geo.png');
+  url('https://dl.dropboxusercontent.com/s/82agatbj1pyj4dc/geo.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .gaby {
   background: linear-gradient(rgba(0, 196, 204, .55), rgba(0, 196, 204, .55)),
-  url('../images/gaby.png');
+  url('https://dl.dropboxusercontent.com/s/lk7s7pom2oewz2a/gaby.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20% 50%;
@@ -307,7 +307,7 @@ Layout
 
 .extraSection {
   background: linear-gradient(rgba(0, 196, 204, .55), rgba(0, 196, 204, .55)),
-  url("../images/winnershort2.png");
+  url("https://dl.dropboxusercontent.com/s/b04nptc86tvu4t4/winnershort2.png");
   background-size: cover;
   background-position: 50% 80%;
   background-repeat: no-repeat;
@@ -590,7 +590,7 @@ header h1 {
 
 .vertical-center {
   background: linear-gradient(to left, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
-  url("../images/twenty.jpg");
+  url("https://dl.dropboxusercontent.com/s/6tz7sipl8uchsxn/twenty.jpg");
   background-size: cover;
   background-position: center;
   background-position: center 30%;
