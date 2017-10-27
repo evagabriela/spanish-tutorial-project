@@ -54,6 +54,18 @@
 				</div>
 			</div>
 		</div>
+
+
+    <div class="background-modal">
+      <div class="content-modal">
+          <a href="#" class="close">x</a>        
+          <form>
+            <input class="input-style" id="txtEmailSignUp" type="email" placeholder="Email">
+            <input class="input-style" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
+            <button id="btnSignUp" class="signin">Crear cuenta</button>   
+          </form>
+      </div>
+    </div>
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -63,19 +75,29 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
     <script type="text/javascript">
-    var click_cb = dbLoadClass(".divsLink", "intermedio-html", "div-span");
-    
-    $(".divsLink").click();
-    dbLoadClass(".ejercicioDivsLink", "intermedio-html", "ejercicio-divs");
-    dbLoadClass(".classLink", "intermedio-html", "class");
-    dbLoadClass(".ejercicioClassLink", "intermedio-html", "ejercicio-class");
-    dbLoadClass(".idLink", "intermedio-html", "identificadores");
-    dbLoadClass(".ejercicioIdLink", "intermedio-html", "ejercicio-id");
-    dbLoadClass(".universalLink", "intermedio-html", "universal");
-    dbLoadClass(".boxLink", "intermedio-html", "box-model");
-    dbLoadClass(".ejercicioboxLink", "intermedio-html", "ejercicio-box");
-    dbLoadClass(".test2Link", "intermedio-html", "test2", prepareTest);
-    dbLoadClass(".ejercicioLink2", "intermedio-html", "editando");
+
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (!firebaseUser) {
+        $(".background-modal").css("display", "block");
+        $(".locked").css("display", "block");
+        $(".faHide").css("display", "none");
+      
+      } else {
+        var click_cb = dbLoadClass(".divsLink", "intermedio-html", "div-span");
+        
+        $(".divsLink").click();
+        dbLoadClass(".ejercicioDivsLink", "intermedio-html", "ejercicio-divs");
+        dbLoadClass(".classLink", "intermedio-html", "class");
+        dbLoadClass(".ejercicioClassLink", "intermedio-html", "ejercicio-class");
+        dbLoadClass(".idLink", "intermedio-html", "identificadores");
+        dbLoadClass(".ejercicioIdLink", "intermedio-html", "ejercicio-id");
+        dbLoadClass(".universalLink", "intermedio-html", "universal");
+        dbLoadClass(".boxLink", "intermedio-html", "box-model");
+        dbLoadClass(".ejercicioboxLink", "intermedio-html", "ejercicio-box");
+        dbLoadClass(".test2Link", "intermedio-html", "test2", prepareTest);
+        dbLoadClass(".ejercicioLink2", "intermedio-html", "editando");
+      }
+    });
     </script>
 
     <script>

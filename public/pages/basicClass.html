@@ -17,7 +17,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
 	</head>
 	<body>
-	<!-- style="color:#69D1C5" -->
 			<!-- sidebar -->
 			<div id="sidebar-container">
       <div class="home-icon">
@@ -25,7 +24,7 @@
       </div>
 				<ul class="sidebar-nav">
 					<h4>HTML & CSS básico</h4>
-					<li class="introLink active"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Introducción</li>
+					<li class="introLink active"><i class="fa fa-play-circle fa-2x faHide" aria-hidden="true" style="color: #d9dcdd"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>&nbsp; &nbsp;Introducción</li>
 				    <li class="titlesLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Titulos y párrafos</li>
 				    <li class="ejercicioTitlesLink"><i class="fa fa-wrench fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Practiquemos!</li>
 				    <li class="imageLink"><i class="fa fa-file-text-o fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Imágenes</li>
@@ -60,6 +59,19 @@
 				</div>
 			</div>
 		</div>
+
+    <div class="background-modal">
+      <div class="content-modal">
+          <a href="#" class="close">x</a>        
+          <form>
+            <input class="input-style" id="txtEmailSignUp" type="email" placeholder="Email">
+            <input class="input-style" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
+            <button id="btnSignUp" class="signin">Crear cuenta</button>   
+          </form>
+      </div>
+    </div>
+   
+    
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 		<script src="../js/vendor/jquery-1.12.0.min.js"></script>
@@ -69,22 +81,31 @@
     <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
     <script type="text/javascript">
 
-    dbLoadClass(".introLink", "basic-html", "intro");
-    $(".introLink").click();
-    dbLoadClass(".ejercicioTitlesLink", "basic-html", "ejercicio-title");
-    dbLoadClass(".titlesLink", "basic-html", "title");
-    dbLoadClass(".imageLink", "basic-html", "images");
-    dbLoadClass(".ejercicioImageLink", "basic-html", "ejercicio-image");
-    dbLoadClass(".enlaceLink", "basic-html", "enlaces");
-    dbLoadClass(".ejercicioLinkLink", "basic-html", "ejercicio-link");
-    dbLoadClass(".listLink", "basic-html", "list");
-    dbLoadClass(".ejercicioListLink", "basic-html", "ejercicio-list");
-    dbLoadClass(".colorLink", "basic-html", "color-css");
-    dbLoadClass(".ejercicioColorLink", "basic-html", "ejercicio-color-css");
-    dbLoadClass(".multipleChangesLink", "basic-html", "multiple-changes");
-    dbLoadClass(".ejercicioMultipleLink", "basic-html", "ejercicio-multiple");
-    dbLoadClass(".testLink", "basic-html", "test", prepareTest);
-    dbLoadClass(".ejercicioLink", "basic-html", "editor");
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (!firebaseUser) {
+        $(".background-modal").css("display", "block");
+        $(".locked").css("display", "block");
+        $(".faHide").css("display", "none");
+      
+      } else {
+        dbLoadClass(".introLink", "basic-html", "intro");
+        $(".introLink").click();
+        dbLoadClass(".ejercicioTitlesLink", "basic-html", "ejercicio-title");
+        dbLoadClass(".titlesLink", "basic-html", "title");
+        dbLoadClass(".imageLink", "basic-html", "images");
+        dbLoadClass(".ejercicioImageLink", "basic-html", "ejercicio-image");
+        dbLoadClass(".enlaceLink", "basic-html", "enlaces");
+        dbLoadClass(".ejercicioLinkLink", "basic-html", "ejercicio-link");
+        dbLoadClass(".listLink", "basic-html", "list");
+        dbLoadClass(".ejercicioListLink", "basic-html", "ejercicio-list");
+        dbLoadClass(".colorLink", "basic-html", "color-css");
+        dbLoadClass(".ejercicioColorLink", "basic-html", "ejercicio-color-css");
+        dbLoadClass(".multipleChangesLink", "basic-html", "multiple-changes");
+        dbLoadClass(".ejercicioMultipleLink", "basic-html", "ejercicio-multiple");
+        dbLoadClass(".testLink", "basic-html", "test", prepareTest);
+        dbLoadClass(".ejercicioLink", "basic-html", "editor");
+      }
+    });
     </script>
    
    <script>

@@ -1,58 +1,114 @@
+var config = {
+  apiKey: "AIzaSyBFuC43STFtR0Vx4NYMh8D9R58wJ2IUlCE",
+  authDomain: "ekua-e9d9c.firebaseapp.com",
+  databaseURL: "https://ekua-e9d9c.firebaseio.com",
+  projectId: "ekua-e9d9c",
+  storageBucket: "",
+  messagingSenderId: "192283074344"
+};
 
-// Modal 
-    if (screen.width <= 480) {
-        $('.box-item a').on('click', function (event) {
-            event.preventDefault();
-            $(".content-hover").css("display", "none");
-            $(".modal-background").css("display", "block");
-            $("#cerrar").on("click", function() {
-            $(".modal-background").fadeOut()
-             });
-        });
-    }
+firebase.initializeApp(config);
 
-// Subscription Box
-
-    $('.open').on('click', function () {
-        $('body').toggleClass('active');
-         $('.sidebar').show();
+// Modal mobile 
+if (screen.width <= 480) {
+    $('.box-item a').on('click', function (event) {
+        event.preventDefault();
+        $(".content-hover").css("display", "none");
+        $(".modal-background").css("display", "block");
+        $("#cerrar").on("click", function() {
+        $(".modal-background").fadeOut()
+         });
     });
+}
 
-    $('.close').on('click', function () {
-        $('body').removeClass('active');
-      $('.sidebar').hide();
+//Modal login 
+$('.log').on('click', function () {
+    $('body').toggleClass('active');
+    $('.ventana').show();
+});
+$('.close').on('click', function () {
+    $('body').removeClass('active');
+    $('.ventana').hide();
+});
 
-    });
-
-
-// Animation
-$(window).on('scroll', function () {
-    //   //Take the current position (vertical position from top) of your div in the variable
-    var distanceScrolled = $(window).scrollTop();
-
-    // console.log('The distance scrolled is: ' + distanceScrolled);
-
-   if (distanceScrolled > 100) {
-     $('#intro').addClass('animated');
-   }
-   //If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
-   else {
-     $('#intro').removeClass("animated");
-   }
-   //Note: If you want the content should be shown always once you scroll and do not want to hide it again when go to top agian, no need to write the else part
-
+//Modal signup 
+$('.register').on('click', function () {
+    $('body').toggleClass('active');
+    $('.crearCuenta').show();
+});
+$('.close').on('click', function () {
+    $('body').removeClass('active');
+    $('.crearCuenta').hide();
 });
     
 
-$(".benefits-section").mouseenter(function(){
-    var icon = $(this).find("i")[0];
-    $(icon).css("background-color", "#fff");
-    $(icon).css("color", "#00c4cc");
+// Login and signup data for Firebase
+//Get elements
+const txtEmail = document.getElementById('txtEmail');
+const txtPassword = document.getElementById('txtPassword');
+const btnLogin = document.getElementById('btnLogin');
+const btnSignUp = document.getElementById('btnSignUp');
+
+//Add login event
+btnLogin.addEventListener('click', e => {
+    e.preventDefault();
+    //Get email and password
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+    //signin
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+    promise.catch(e => console.log(e.message));
 });
 
- $(".benefits-section").mouseleave(function(){
-    var icon = $(this).find("i")[0];
-    $(icon).css("background-color", "#00c4cc");
-    $(icon).css("color", "#fff");
+
+//Add signup event
+btnSignUp.addEventListener('click', e => {
+    e.preventDefault();
+    //Get email and password
+    //TODO: check for real emailz
+    const email = txtEmailSignUp.value;
+    console.log(email);
+    const pass = txtPasswordSignUp.value;
+    const auth = firebase.auth();
+    //signin
+    const promise = auth.createUserWithEmailAndPassword(email, pass);
+    promise
+        .catch(e => console.log(e.message));
 });
+
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut();
+});
+
+//Add real time listener
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) {
+        // cerrar la ventana de signup (si esta abierta)
+        // cerrar la ventana de login (si esta abierta)
+        $('.close').click();
+        // ocultar boton de signup
+        $('.register').hide();
+        // ocultar boton de login
+        $('.log').hide();
+        // mostar text: 'Hola <usuario>'
+        $('.noShow').toggleClass();
+        btnLogout.classList.remove('noShow');
+        console.log('you are now logged in');
+        console.log(firebaseUser);
+    } else {
+        console.log('not logged in');
+        btnLogout.classList.add('noShow');
+        cursosButton.classList.add('noShow');
+        $('.register').show();
+        $('.log').show();
+    }
+});
+
+
+
+
+
+
+
 

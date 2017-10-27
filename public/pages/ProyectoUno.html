@@ -68,18 +68,12 @@
               <a href="https://color.adobe.com/create/color-wheel/?copy=true&base=2&rule=Analogous&selected=1&name=Copy%20of%20Beyonc%C3%A9&mode=hex&rgbvalues=0.5264705882352942,0.23567588439147902,0.13557848699267463,0.7507365296674178,0.48530485986024874,1,0.05870786516853929,0.5294117647058824,0.55,0.5011969245166059,0.5979110824742269,0.3156576583037114,0.5766172680412371,0.5182203970971966,0.4559505488741118&swatchOrder=0,1,2,3,4" target="_blank">Opción de colores HEX y RGB</a>
               <a href="https://www.w3schools.com/colors/colors_rgb.asp">Aprende más sobre colores RGB</a>
               <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">Aprende más sobre colores HEX</a>
-
-
-
-
-
-            </div>  
-            <div class='objetivos noShow'>                              
-              <h1>Objetivos</h1>                                         
-              <p>En este curso te guiaremos paso a paso a través del proceso de creación de una página web. <br>Los objetivos de este curso son los siguientes:</p>                                                         
-              <p>1. Al finalizar el curso serás capaz de construir una página web sencilla</p>                                           <p>2. Podrás explicar la diferencia entre HTML y CSS</p>                                             
-              <p>3. Serás capaz de utilizar iconos y diferentes estilos de fuente a través de Google Fonts</p>                           <p>4. Podrás construir la estructura y estilos del sitio web de una manera ordenada respetando las mejores prácticas</p>   <p>Aquí podras descargar el proyecto completo en el caso de que quieras compararlo con tu trabajo. Sin embargo, te recomendamos que mires los videos y trates de hacer el proyecto paso a paso, sin copiar el resultado final. <a href=\"../descargas/proyecto.zip\" download>Descargar proyecto final</a></p>"                                               
-            </div> 
+          </div>  
+          <div class='objetivos noShow'>                              
+            <h1>Objetivos</h1>                                         
+            <p>En este curso te guiaremos paso a paso a través del proceso de creación de una página web. <br>Los objetivos de este curso son los siguientes:</p>                                                         
+            <p>1. Al finalizar el curso serás capaz de construir una página web sencilla</p>                             <p>2. Podrás explicar la diferencia entre HTML y CSS</p>                                             
+            <p>3. Serás capaz de utilizar iconos y diferentes estilos de fuente a través de Google Fonts</p>             <p>4. Podrás construir la estructura y estilos del sitio web de una manera ordenada respetando las mejores prácticas</p>   <p>Aquí podras descargar el proyecto completo en el caso de que quieras compararlo con tu trabajo. Sin embargo, te recomendamos que mires los videos y trates de hacer el proyecto paso a paso, sin copiar el resultado final. <a href=\"../descargas/proyecto.zip\" download>Descargar proyecto final</a></p>   </div> 
           <div class="lesson">
 
                
@@ -90,6 +84,18 @@
     </div>
   </div>
 
+      <!-- Sign up modal -->
+      <div class="background-modal">
+      <div class="content-modal">
+          <a href="#" class="close">x</a>        
+          <form>
+            <input class="input-style" id="txtEmailSignUp" type="email" placeholder="Email">
+            <input class="input-style" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
+            <button id="btnSignUp" class="signin">Crear cuenta</button>   
+          </form>
+      </div>
+    </div>
+
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
       <script src="../js/vendor/jquery-1.12.0.min.js"></script>
@@ -98,23 +104,31 @@
       <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
       <script type="text/javascript">
 
-
-      dbLoadClass(".instalacionLink", "website", "instalacion");
-      $(".instalacionLink").click();
-      dbLoadClass(".introduccionLink", "website", "introduccion");
-      dbLoadClass(".esqueletoLink", "website", "esqueletoHTML");
-      dbLoadClass(".introHTMLLink", "website", "HTML1");
-      dbLoadClass(".parte2HTMLLink", "website", "HTML2");
-      dbLoadClass(".parte3HTMLLink", "website", "HTML3");
-      dbLoadClass(".parte4HTMLLink", "website", "HTML4");
-      dbLoadClass(".introCSS", "website", "intro-css");
-      dbLoadClass(".estilosBaseLink", "website", "estilosBase");
-      dbLoadClass(".tipografia1Link", "website", "tipografia1");
-      dbLoadClass(".tipografia2Link", "website", "tipografia2");
-      dbLoadClass(".navLink", "website", "nav");
-      dbLoadClass(".encabezadoLink", "website", "encabezado");
-      dbLoadClass(".contenidoLink", "website", "contenido");
-      dbLoadClass(".footerLink", "website", "footer");
+      firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (!firebaseUser) {
+        $(".background-modal").css("display", "block");
+        $(".locked").css("display", "block");
+        $(".faHide").css("display", "none");
+      
+      } else {
+        dbLoadClass(".instalacionLink", "website", "instalacion");
+        $(".instalacionLink").click();
+        dbLoadClass(".introduccionLink", "website", "introduccion");
+        dbLoadClass(".esqueletoLink", "website", "esqueletoHTML");
+        dbLoadClass(".introHTMLLink", "website", "HTML1");
+        dbLoadClass(".parte2HTMLLink", "website", "HTML2");
+        dbLoadClass(".parte3HTMLLink", "website", "HTML3");
+        dbLoadClass(".parte4HTMLLink", "website", "HTML4");
+        dbLoadClass(".introCSS", "website", "intro-css");
+        dbLoadClass(".estilosBaseLink", "website", "estilosBase");
+        dbLoadClass(".tipografia1Link", "website", "tipografia1");
+        dbLoadClass(".tipografia2Link", "website", "tipografia2");
+        dbLoadClass(".navLink", "website", "nav");
+        dbLoadClass(".encabezadoLink", "website", "encabezado");
+        dbLoadClass(".contenidoLink", "website", "contenido");
+        dbLoadClass(".footerLink", "website", "footer");
+      }
+    });
       </script>
 
      <script>

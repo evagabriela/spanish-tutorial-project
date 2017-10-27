@@ -1,363 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Aprendé a programar</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="https://use.fontawesome.com/442a884b4a.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-			<!--Fullstory-->
-			<script>
-			window['_fs_debug'] = false;
-			window['_fs_host'] = 'fullstory.com';
-			window['_fs_org'] = '7SH67';
-			window['_fs_namespace'] = 'FS';
-			(function(m,n,e,t,l,o,g,y){
-    		if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-    		g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    		o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    		y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    		g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    		g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    		g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    		d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    		';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-			})(window,document,window['_fs_namespace'],'script','user');
-			</script>
-
-	</head>
-	<body>
-
-	<!--  First section - HOME -->
-		<header class="vertical-center">
-			<div class="background-video">
-				<video autoplay loop>
-					<source src="https://s3-us-west-1.amazonaws.com/spanishtutorial/675076800.mp4" type="video/mp4">
-					<!-- <source src="movie.ogg" type="video/ogg"> -->
-					Your browser does not support the video tag.
-					</video>
-		    <div class="overlay">
-
-
-					<nav>
-						<div class="to-left">
-							<a class="brand" href="#index">EKU</a>
-						</div>
-						<div class="floating">
-							<a href="#goToCourses">Cursos</a>
-							<a href="#goToContact">Contacto</a>
-							<a href="https://medium.com/@Eku_" target="_blank">Blog</a>
-							<!-- <button class="open" href="#">Subscríbete</button> -->
-							<a class="open" href="#">Subscríbete</a>
-						</div>
-
-
-					</nav>
-
-						<div id="sidebar-box" class="sidebar">
-						<a href="#" class="close">x</a>
-												    <!-- Begin MailChimp Signup Form -->
-						<!-- Begin MailChimp Signup Form -->
-						<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
-						<div id="mc_embed_signup">
-							<form action="https://academy.us16.list-manage.com/subscribe/post?u=3e93631e924f0992ee5887e2e&amp;id=0cb7db1111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div id="mc_embed_signup_scroll">
-							<h2>Subscríbete </h2>
-							<div class="indicates-required"><span class="asterisk">*</span> información requerida</div>
-							<div class="mc-field-group">
-							  <!-- <label for="mce-EMAIL">Email  <span class="asterisk">*</span> -->
-							</label>
-							  <input type="email" placeholder="Email" value="" name="EMAIL" class="input-box required email" id="mce-EMAIL">
-							</div>
-							<div class="mc-field-group">
-							  <!-- <label for="mce-FNAME">Nombre </label> -->
-							  <input type="text" placeholder="Nombre" value="" name="FNAME" class="input-box" id="mce-FNAME">
-							</div>
-							<div class="mc-field-group">
-							  <!-- <label for="mce-LNAME">Apellido </label> -->
-							  <input type="text" placeholder="Apellido" value="" name="LNAME" class="input-box" id="mce-LNAME">
-							</div>
-							<div class="mc-field-group">
-							  <label for="mce-IDENTITY">Con cuál de estas opciones te identificas? </label>
-
-							  <select name="IDENTITY"  class="input-box" id="mce-IDENTITY">
-							  <option value=""></option>
-							<option value="Emprendedor">Emprendedor</option>
-							<option value="Profesional interesada en aprender para complementar tu trabajo actual">Profesional interesada en aprender para complementar tu trabajo actual</option>
-							<option value="Estudiante a tiempo completo">Estudiante a tiempo completo</option>
-
-							  </select>
-							</div>
-							<div class="mc-field-group">
-							  <label for="mce-AGE">Cuál es el rango de tu edad? </label>
-							  <select name="AGE" class="input-box" id="mce-AGE">
-							  	<option value=""></option>
-								<option value="15-20">15-20</option>
-								<option value="20's">20's</option>
-								<option value="30's">30's</option>
-								<option value="30's">30's</option>
-								<option value="40's">40's</option>
-								<option value="Other">Other</option>
-							  </select>
-							</div>
-							  <div id="mce-responses" class="clear">
-							    <div class="response" id="mce-error-response" style="display:none"></div>
-							    <div class="response" id="mce-success-response" style="display:none"></div>
-							  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e93631e924f0992ee5887e2e_0cb7db1111" tabindex="-1" value=""></div>
-							    <div class="clear">
-							    	<input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							    </div>
-							    <br><div class="indicates-required">Si tienes preguntas o dudas, <a href="#goToContact">contáctanos</a> </div>
-							</form>
-							
-						</div>
-						<!--End mc_embed_signup-->
-					</div>
-					<div class=circle>
-					</div>
-					<div class="hero-content">
-		        <h1>Construye tu futuro</h1>
-						<div class="subheader">
-							<!-- <h2>Aprende a programar desde lo más<br> básico a través de nuestros cursos online</h2> -->
-							<h2>Aprende habilidades digitales y forma parte <br> de la comunidad generadora de tecnología.</h2>
-						</div>
-					</div>
-						<a class="btn" href="#goToCourses">Empezar</a>
-						<div class="header-icon">
-							<a href="#intro" ><i class="fa fa-angle-double-down fa-4x" aria-hidden="true" style="color: white"></i>
-						</a>
-		    	</div>
+<head>
+	<meta charset="UTF-8">
+	<title>EKU: Cursos online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://use.fontawesome.com/442a884b4a.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">	
+	<!--Fullstory-->
+	<script>
+	window['_fs_debug'] = false;
+	window['_fs_host'] = 'fullstory.com';
+	window['_fs_org'] = '7SH67';
+	window['_fs_namespace'] = 'FS';
+	(function(m,n,e,t,l,o,g,y){
+	if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+	g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+	o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+	y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+	g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+	g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+	g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+	d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+	';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+	})(window,document,window['_fs_namespace'],'script','user');
+	</script>
+</head>
+<body>
+<!--  First section - HOME -->
+	<header class="vertical-center">
+		<nav>
+			<span class="to-left">
+				<a class="brand" href="#index">EKU</a>
+			</span>
+			<div class="floating">
+				<a href="#goToCourses">Cursos</a>
+				<a href="#goToContact">Contacto</a>
+				<a href="https://medium.com/@Eku_" target="_blank">Blog</a>
+				<!-- <a href="#" class="register">Crear cuenta</a>
+				<a href="#" class="log">Iniciar sesión</a>
+				<a href="#" class="noShow" id="btnLogout">Cerrar sesión</a>
+				<a href="#" class="noShow" id="cursosButton">Bienvenido/a</a> -->
 			</div>
-		</header>
-		<!-- <section class="mision">
-			<div class="section-wrap">
-			<h2>Nuestra Mision</h2>
-			<p>Somos una plataforma social con el objetivo de inspirar a más mujeres a adquirir habilidades tecnológicas. La plataforma es abierta a todo público pero nuestro enfoque principal son las mujeres.</p>
-		</div>
-		</section> -->
-
-		<section id="intro">
-			<div class="section-wrap">
-				<span class="intro-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i>
-				</span>
-				<h2>¿Porque es importante aprender habilidades digitales?</h2>
-				<p>Lo digital se está apoderando cada vez más de todas las áreas de nuestras vidas. Tener habilidades digitales
-				no sólo es importante para conseguir buenos trabajos, sino también para desenvolvernos mejor en nuestras actividades diarias. Toda persona independientemente de su profesión necesita tener este tipo de habilidades para poder sobresalir en este mundo cada vez más digitalizado.</p>
-			</div>
-		</section>
-
-
-		<section id="goToCourses">
-			<div class="courses">
-				<div class="courses-title">
-				<span class="courses-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
-					<h1>Nuestros Cursos</h1>
-					<p>Explora nuestro catálogo de cursos y empieza a aprender nuevas habilidades. Más cursos estarán disponibles próximamente.</p>
-				</div>
-				<div class="container-right">
-					<ul class="lessons-color">
-						<li class="box-item">
-							<a href="pages/basicClass.html">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-laptop fa-4x" aria-hidden="true"></i>
-										<h4>HTML & CSS</h4>
-										<h5>Básico</h5>
-									</div>
-									<div class="content-hover">
-										<h5>Requisito: No es necesario tener conocimientos en programación</h5>
-										<h5>Duración: 1 hora aprox.</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="box-item">
-							<a href="pages/intermediateClass.html">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-code fa-4x" aria-hidden="true"></i>
-										<h4>HTML & CSS</h4>
-										<h5>Intermedio</h5>
-									</div>
-
-									<div class="content-hover">
-										<h5>Requisito: Haber terminado la clase de nivel básico de HTML & CSS</h5>
-										<h5>Duración: 1 hora aprox.</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="box-item">
-							<a href="pages/avanzadoClass.html">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-cubes fa-4x" aria-hidden="true"></i>
-										<h4>HTML & CSS</h4>
-										<h5>Avanzado</h5>
-									</div>
-
-									<div class="content-hover">
-										<h5>Requisito: Haber terminado el nivel básico e intermedio de HTML & CSS</h5>
-										<h5>Duración: 1 hora aprox.</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li class="box-item">
-							<a href="pages/ProyectoUno.html">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-puzzle-piece fa-4x" aria-hidden="true"></i>
-										<h4>Proyecto</h4>
-										<h5> Mi Primera Página</h5>
-									</div>
-
-									<div class="content-hover">
-										<h5>Requisito: Haber terminado el nivel básico, intermedio y avanzado de HTML & CSS</h5>
-										<h5>Duración: 1 hora aprox.</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li class="box-item">
-							<a href="#">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
-										<h4>Responsive Design</h4>
-										<!-- <h5>Básico</h5> -->
-									</div>
-
-									<div class="content-hover">
-										<h5>Próximamente</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-
-						<li class="box-item">
-							<a href="#">
-								<div class="lesson-box-style">
-									<div class="lesson-content">
-										<i class="fa fa-tasks fa-4x" aria-hidden="true"></i>
-										<h4>JavaScript</h4>
-										<h5>Básico</h5>
-									</div>
-
-									<div class="content-hover">
-										<h5>Próximamente</h5>
-									</div>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-		</section>
-
-		<section>
-				<div class="section-wrap">
-					<!-- <span class="intro-icon"><i class="fa fa-line-chart" aria-hidden="true"></i> -->
-					<!-- </span> -->
+		</nav>
+		<!-- login -->
+		<div id="ventana-box" class="ventana">
+			<a href="#" class="close">X</a>						    
+			<div>
+				<form>
 					<div>
-						<h2> Beneficios </h2>
-						<!-- <p>Lorem ipsum dolor sit amet, omnesque abhorreant cu vix.</p> -->
+					  <h2>Iniciar sesión</h2>
+					<div>
+					  <input id="txtEmail" type="email" placeholder="Email" value="" name="EMAIL" class="input-box required email">
+					  <input id="txtPassword" type="password" class="input-box required email" placeholder="Contraseña">
 					</div>
-					<div class="space benefits-section">
-						<span class="to-left"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></span>
-						<p>Tener un titulo universitario ya no es suficiente en la era digital. Ahora es necesario adquirir nuevas habilidades constantemente. El aprendizaje continuo te ayudará a enfrentar nuevos desafíos</p>
-					</div>
-					<div class="space benefits-section">
-						<span class="to-left"><i class="fa fa-wifi fa-4x" aria-hidden="true"></i></span>
-						<p>Estamos rodeados de tecnología. No solo es importante entender cómo funciona la tecnología sino que también es fundamental aprender a programar. Esto te permitirá crear tu propia tecnología</p>
-					</div>
-					<div class="space benefits-section">
-						<span class="to-left"><i class="fa fa-rocket fa-4x" aria-hidden="true"></i></span>
-						<p>Tu carrera puede despegar debido a que la programación te abre muchas oportunidades laborales. Además, si te interesa crear una startup, saber programar te ayudará a construir un prototipo de manera más rápida</p>
-					</div>
-				</div>
-		</section>
-
-
-		<section id="logos">
-			<div class="section-wrap-mini">
-				<h4 class="sponsor">
-					<span class="sponsor-text">Confían en nosotros</span>
-				</h4>
-
+					   <button id="btnLogin" class="signin">Iniciar</button>
+					 </div>
+				</form>			
 			</div>
-				<!-- <div class="logo-row-label">Confían en nosotras</div> -->
-				<div class="logo-row">
-					<div class="logo-row-item">
-						<img id="koga-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/koga-logo+(1).png">
-					</div>
-					<div class="logo-row-item">
-						<img id="gdi-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/girldevelopit.jpeg" alt="12minute-athlete">
-					</div>
-					<div class="logo-row-item">
-						<img id="devlabs-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/devlabs.png">
-					</div>
-					<div class="logo-row-item">
-						<img id="techtonica-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/BlueTechtonicaWord.png">
-					</div>
-				</div>
-			
-		</section>
+		</div>
+		<!-- signup -->
+		<div id="ventana-box" class="crearCuenta">
+			<a href="#" class="close">X</a>									    
+			<div>
+				<form>
+			      <div>
+				    <h2>Crear cuenta</h2>
+				    <input class="input-box" id="txtEmailSignUp" type="email" placeholder="Email">
+				    <input class="input-box" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
+				    <button id="btnSignUp" class="signin">Crear cuenta</button>
+				  </div>
+				</form>
+			</div>
+		</div>
+		<!-- Hero content -->
+        <div class="hero-content">
+        	<h1>Construye tu futuro</h1>
+			<div class="subheader">
+				<h2>Cursos de tecnología, diseño, marketing y negocios <br> enseñados por profesionales de la industria</h2>
+			</div>
+			<a class="btn" href="#goToCourses">Empezar</a>
+			<div class="header-icon">
+				<a href="#intro" ><i class="fa fa-angle-double-down fa-2x" aria-hidden="true" style="color: white"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+    <!-- Banner -->
+	<section>
+		<div class="sugerencia">
+			<h2><span class="to-left"><i class="fa fa-refresh" aria-hidden="true"></i></span> Aportamos 15% de nuestros ingresos netos a programas educativos que enseñan habilidades digitales a niñas y mujeres</h2>
+		</div>
+	</section>
+	<!-- Intro -->
+	<section id="intro">
+		<div class="section-wrap">
+			<span class="intro-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+			</span>
+			<h2>¿Qué quieres aprender hoy?</h2>
+			<p>Aprende nuevas habilidades de una manera interactiva y flexible a través de videos, ejercicios y proyectos. Forma parte de la comunidad de personas que se desafía continuamente, y que sigue aprendiendo y mejorando constantemente.</p>
+		</div>
+	</section>
+	<!-- Courses -->
+	<section id="goToCourses">
+		<div class="coursesCards">
+			<div class="courses-title">
+			<span class="courses-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+				<h1>Nuestros Cursos</h1>
+				<p>Explora nuestro catálogo de cursos y empieza a aprender nuevas habilidades. Más cursos estarán disponibles próximamente.</p>
+			</div>
 
-			<!-- Contact section  -->
+			<div class="todo">
+<div class="flex_prueba">
+	<div class="wrapper">
+    <div class="product-img geo">
+      <!-- <img src="images/geo.png" height="380" width="280"> -->
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Diseño UX</h1>
+        <h2>Curso creado por Geo Esber <br><small><span style="color:red">Próximamente</span></small></h2>
+        <p>Crea el prototipo de una app
+			siguiendo las mejores prácticas del
+			diseño </p>
+      </div>
+      <div class="product-price-btn">
+        <!-- <p><span class="dolars">78</span>$</p> -->
+        <a href="#"><button type="button">Ir al curso</button></a>
+        <!-- pages/basicClass.html -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex_prueba">
+	<div class="wrapper">
+    <div class="product-img gaby">
+      <!-- <img src="images/geo.png" height="380" width="280"> -->
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>HTML & CSS básico</h1>
+        <h2>Curso creado por Gaby Zamudio<br><small><span style="color:red">Próximamente</span></small></h2>
+        <p>Crea una página web simple y aprende HTML y CSS, componentes fundamentales de toda página web</p>
+      </div>
+      <div class="product-price-btn">
+        <!-- <p><span class="dolars">78</span>$</p> -->
+        <a href="#"><button type="button">Ir al curso</button></a>
+        <!-- "pages/ProyectoUno.html" -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex_prueba">
+	<div class="wrapper">
+    <div class="product-img patty">
+      <!-- <img src="images/geo.png" height="380" width="280"> -->
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>JavaScript</h1>
+        <h2>Curso creado por Gaby Zamudio<br><small><span style="color:red">Próximamente</span></small></h2>
+        <p>Aprende sobre Javascript y programa tu primera aplicacion</p>
+      </div>
+      <div class="product-price-btn">
+        <!-- <p><span class="dolars">78</span>$</p> -->
+        <a href="#"><button type="button">Ir al curso</button></a>
+        <!-- pages/intermediateClass.html -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex_prueba">
+	<div class="wrapper">
+    <div class="product-img koga">
+      <!-- <img src="images/geo.png" height="380" width="280"> -->
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Comunicación de marca</h1>
+        <h2>Curso creado por Koga Impact Lab<br><small><span style="color:red">Próximamente</span></small></h2>
+        <p>Aprende a comunicar tu marca y crea tu estrategia de marca</p>
+      </div>
+      <div class="product-price-btn">
+        <!-- <p><span class="dolars">78</span>$</p> -->
+        <button type="button">Ir al curso</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+		<!-- <div class="cardsDisplay">
+			<div class="card_container">
+				<div class="card_info">
+					<a href=""pages/basicClass.html"">
+						<div class="card_header">
+						</div>
+						<div class="card_title">
+							<h4>Diseño UX<br>
+								<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
+							</h4>
+						</div>
+						<div class="card_description">
+							<p>Crea el prototipo de una app<br>
+								siguiendo las mejores prácticas del<br>
+								diseño</p>
+						</div>
+						<div class="card_button">
+							<a href="#" class="buttonCard">Ir al curso</a>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="card_container">
+		<div class="card_info">
+			<a href="pages/intermediateClass.html">
+				<div class="card_header foto">
+				</div>
+				<div class="card_title">
+					<h4>Diseño UX<br>
+						<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
+					</h4>
+				</div>
+				<div class="card_description">
+					<p>Crea el prototipo de una app<br>
+						siguiendo las mejores prácticas del<br>
+						diseño</p>
+				</div>
+				<div class="card_button">
+					<a href="#" class="buttonCard">Ir al curso</a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="card_container">
+		<div class="card_info">
+			<a href="pages/ProyectoUno.html">
+				<div class="card_header">
+				</div>
+				<div class="card_title">
+					<h4>Diseño UX<br>
+						<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
+					</h4>
+				</div>
+				<div class="card_description">
+					<p>Crea el prototipo de una app<br>
+						siguiendo las mejores prácticas del<br>
+						diseño</p>
+				</div>
+				<div class="card_button">
+					<a href="#" class="buttonCard">Ir al curso</a>
+				</div>
+			</a>
+		</div>
+	</div> -->
+
+
+</div>
+
+
+		</div>
+	</section>
+	<!-- Beneficios -->
+	<section class="benefits-blank">
+		<div class="benefits-title">
+			<h2>¿Por qué aprender en EKU?</h2>
+		</div>
+		<div class="columns animated fadeInUp">
+			<div class="space benefits-section">
+				<i class="fa fa-wrench" aria-hidden="true"></i>
+				<h3>Aprende haciendo</h3> 
+				<p>Nuestros cursos incluyen varios proyectos que te ayudaran a practicar tus nuevas habilidades</p>
+			</div>
+			<div class="space benefits-section">
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<h3>Enseñado por expertos</h3>
+				<p>Nuestros cursos están dirigidos por profesionales, expertos en la industria</p>
+			</div>
+			<div class="space benefits-section">
+				<i class="fa fa-rocket fa-4x" aria-hidden="true"></i>
+				<h3>Impacto social</h3>
+				<p>Aportamos el 15% de nuestros ingresos netos a programas educativos en comunidades vulnerables</p>
+			</div>
+		</div>
+	</section>
+	<!-- Call to action --> 
+	<section class="extraSection">
+		<div>
+			<h2>Imagina un mundo donde toda persona pueda...</h2>
+		</div>
+		<div class="flex-columns">
+			<article>
+				<i class="fa fa-diamond" aria-hidden="true"></i>
+				<h3>Alcanzar su máximo potencial</h3>
+			</article>
+			<article>
+				<i class="fa fa-heart-o" aria-hidden="true"></i>
+				<h3>Encontrar su trabajo ideal</h3>
+			</article>
+			<article>
+				<i class="fa fa-line-chart" aria-hidden="true"></i>
+				<h3>Mejorar sus habilidades y <br>avanzar profesionalmente</h3>
+			</article>
+			<article>
+				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+				<h3>Empezar el negocio que tanto<br> soñaba</h3>
+			</article>
+		</div>
+		<div>
+			<h2>Juntos estamos creando ese mundo</h2>
+			<a class="btn btn-transparent" href="#goToCourses">Empezar</a>
+		</div>
+	</section>
+	<!-- Logos -->
+	<section id="logos">
+		<div class="section-wrap-mini">
+			<h4 class="sponsor">
+				<span class="sponsor-text">Confían en nosotros</span>
+			</h4>
+		</div>
+		<div class="logo-row">
+			<div class="logo-row-item">
+				<img id="koga-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/koga-logo+(1).png">
+			</div>
+			<div class="logo-row-item">
+				<img id="gdi-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/girldevelopit.jpeg" alt="12minute-athlete">
+			</div>
+			<!-- <div class="logo-row-item">
+				<img id="devlabs-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/devlabs.png">
+			</div> -->
+			<div class="logo-row-item">
+				<img id="techtonica-logo" src="https://s3-us-west-1.amazonaws.com/spanishtutorial/BlueTechtonicaWord.png">
+			</div>
+		</div>
+	</section>
+	<!-- Contact section  -->
 	<div class="contact" id='goToContact'>
-			<div class="container">
-				<div class="contact-content">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<h2>Contáctanos</h2>
-					<p>Si te interesa colaborar con EKU, o tienes alguna sugerencia acerca de cómo mejorar las clases, o que clases te gustaria que incluyeramos, entonces no dudes en enviarnos un mensaje a contacto@eku.academy</p>
-					<a href="mailto:contacto@eku.academy?Subject=Hola%20Eku" target="_top">Enviar email</a>
-				</div>
+		<div class="container">
+			<div class="contact-content">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<h2>Contáctanos</h2>
+				<p>Si te interesa colaborar con EKU, o tienes alguna sugerencia acerca de cómo mejorar las clases, o que clases te gustaria que incluyeramos, entonces no dudes en enviarnos un mensaje a contacto@eku.academy</p>
+				<a href="mailto:contacto@eku.academy?Subject=Hola%20Eku" target="_top">Enviar email</a>
 			</div>
 		</div>
-
-			<!-- Last section - Footer  -->
-		<footer>
-				<h6>@EKU. Copyright 2017. All rights reserved.</h6>
-		</footer>
-
-<!-- Responsive modal  -->
-		<div class="modal-background">
-			<div class="modal-content">
-				<i class="fa fa-laptop fa-4x" aria-hidden="true" style="color:#69D1C5"></i>
-				<p>Hola, estamos trabajando en la versión móbil pero por el momento nuestra plataforma funciona mejor en pantallas más grandes que la del teléfono. Por favor, prueba nuestros cursos en una laptop o desktop.</p>
-				<p>Gracias por tu comprensión</p>
-				<button id="cerrar">Cerrar</button>
-			</div>
+	</div>
+	<!--Footer-->
+	<footer>
+		<h6>@EKU. Copyright 2017. All rights reserved.</h6>
+	</footer>
+	<!-- Responsive mobile modal  -->
+	<div class="modal-background">
+		<div class="modal-content">
+			<i class="fa fa-laptop fa-4x" aria-hidden="true" style="color:#69D1C5"></i>
+			<p>Hola, estamos trabajando en la versión móbil pero por el momento nuestra plataforma funciona mejor en pantallas más grandes que la del teléfono. Por favor, prueba nuestros cursos en una laptop o desktop.</p>
+			<p>Gracias por tu comprensión</p>
+			<button id="cerrar" class="signin">Cerrar</button>
 		</div>
+	</div>
+	<!-- Login modal -->
+	<div class="modal-login">
+		<div class="data-login">
+			<input class="form" id="txtName" type="text" placeholder="Nombre y Apellido">
+			<input class="form" id="txtEmail" type="email" placeholder="Email">
+			<input class="form" id="txtPassword" type="password" placeholder="Contraseña">
+			<button class="form" id="inicio">Iniciar sesión</button>
+		</div>
+	</div>
 
-		<script src="js/vendor/jquery-1.12.0.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-		<script src="js/main.js"></script>
-		<!-- <script src="js/vendor/messageData.js"></script> -->
-
-		<script>
+	<script src="js/vendor/jquery-1.12.0.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Google analytics -->
+	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-101994624-1', 'auto');
   ga('send', 'pageview');
-
-</script>
-<script type='text/javascript' src='js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='IDENTITY';ftypes[4]='dropdown';fnames[5]='AGE';ftypes[5]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+	</script>
+	<script type='text/javascript' src='js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='IDENTITY';ftypes[4]='dropdown';fnames[5]='AGE';ftypes[5]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 	</body>
 </html>

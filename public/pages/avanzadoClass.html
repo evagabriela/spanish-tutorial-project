@@ -51,6 +51,18 @@
           </div>
         </div>
       </div>
+
+      <!-- Sign up modal -->
+      <div class="background-modal">
+      <div class="content-modal">
+          <a href="#" class="close">x</a>        
+          <form>
+            <input class="input-style" id="txtEmailSignUp" type="email" placeholder="Email">
+            <input class="input-style" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
+            <button id="btnSignUp" class="signin">Crear cuenta</button>   
+          </form>
+      </div>
+    </div>
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script>
@@ -61,17 +73,26 @@
       <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
     <script type="text/javascript">
 
-    dbLoadClass(".pseudoClassLink", "avanzado-html", "pseudo-class");
-    $(".pseudoClassLink").click();
-    dbLoadClass(".pseudoClassLink2", "avanzado-html", "pseudo-class2");
-    dbLoadClass(".ejercicioPseudoClassLink", "avanzado-html", "ejercicio-pseudo-class");
-    dbLoadClass(".transicionesLink", "avanzado-html", "transiciones");
-    dbLoadClass(".ejercicioTransicionesLink", "avanzado-html", "ejercicio-transiciones");
-    // dbLoadClass(".bonusLink", "avanzado-html", "bonus");
-    // dbLoadClass(".animacionesLink", "avanzado-html", "animaciones");
-    // dbLoadClass(".ejercicioAnimacionesLink", "avanzado-html", "ejercicio-animaciones");
-    dbLoadClass(".test3Link", "avanzado-html", "test3", prepareTest);
-    dbLoadClass(".ejercicioLink3", "avanzado-html", "editor3");
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (!firebaseUser) {
+        $(".background-modal").css("display", "block");
+        $(".locked").css("display", "block");
+        $(".faHide").css("display", "none");
+      
+      } else {
+        dbLoadClass(".pseudoClassLink", "avanzado-html", "pseudo-class");
+        $(".pseudoClassLink").click();
+        dbLoadClass(".pseudoClassLink2", "avanzado-html", "pseudo-class2");
+        dbLoadClass(".ejercicioPseudoClassLink", "avanzado-html", "ejercicio-pseudo-class");
+        dbLoadClass(".transicionesLink", "avanzado-html", "transiciones");
+        dbLoadClass(".ejercicioTransicionesLink", "avanzado-html", "ejercicio-transiciones");
+        // dbLoadClass(".bonusLink", "avanzado-html", "bonus");
+        // dbLoadClass(".animacionesLink", "avanzado-html", "animaciones");
+        // dbLoadClass(".ejercicioAnimacionesLink", "avanzado-html", "ejercicio-animaciones");
+        dbLoadClass(".test3Link", "avanzado-html", "test3", prepareTest);
+        dbLoadClass(".ejercicioLink3", "avanzado-html", "editor3");
+      }
+    });
     </script>
 
 
