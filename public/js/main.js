@@ -7,7 +7,9 @@ var config = {
   messagingSenderId: "192283074344"
 };
 
-firebase.initializeApp(config);
+if (firebase.apps.length === 0) {
+  firebase.initializeApp(config);
+}
 
 // Modal mobile 
 if (screen.width <= 480) {
@@ -40,7 +42,27 @@ $('.close').on('click', function () {
     $('body').removeClass('active');
     $('.crearCuenta').hide();
 });
+
+$('.gotoSignup').on('click', function () {
+    $('body').toggleClass('active');
+    $('.ventana').hide();
+    $('.crearCuenta').show();
+});
+$('.close').on('click', function () {
+    $('body').removeClass('active');
+    $('.crearCuenta').hide();
+});
     
+    // Logout classroom 
+$(".trigger").on("click", function(){
+    $(".logout_class").css("display", "block");
+});
+
+$(".close_class").on("click", function(){
+    $(".logout_class").css("display", "none");
+});
+
+
 
 // Login and signup data for Firebase
 //Get elements
@@ -48,6 +70,7 @@ const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
+const btnLogout = document.getElementById('btnLogout');
 
 //Add login event
 btnLogin.addEventListener('click', e => {
@@ -71,15 +94,33 @@ btnSignUp.addEventListener('click', e => {
     console.log(email);
     const pass = txtPasswordSignUp.value;
     const auth = firebase.auth();
+    var user = firebase.auth().currentUser;
     //signin
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise
         .catch(e => console.log(e.message));
-});
 
-btnLogout.addEventListener('click', e => {
-    firebase.auth().signOut();
-});
+
+    // create user and sign in
+    var promise = auth.createUserWithEmailAndPassword(email, pass);
+    promise.then(function(user) {
+    user.sendEmailVerification().then(function() {
+     // Email sent.
+    }, function(error) {
+     // An error happened.
+    });
+    }); 
+
+}); // end sign up button event listener
+
+
+
+
+if (btnLogout != null) {
+    btnLogout.addEventListener('click', e => {
+        firebase.auth().signOut();
+    });
+}
 
 //Add real time listener
 firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -98,7 +139,9 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         console.log(firebaseUser);
     } else {
         console.log('not logged in');
-        btnLogout.classList.add('noShow');
+        if (btnLogout != null) {
+            btnLogout.classList.add('noShow');
+        }
         cursosButton.classList.add('noShow');
         $('.register').show();
         $('.log').show();

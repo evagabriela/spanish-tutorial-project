@@ -7,7 +7,9 @@ var config = {
   messagingSenderId: "192283074344"
 };
 
-firebase.initializeApp(config);
+if (firebase.apps.length === 0) {
+  firebase.initializeApp(config);
+}
 
 var makeCallback = function(classKey, lessonKey, onReadyCb) {
   var cb = function() {
@@ -56,9 +58,48 @@ var makeCallback = function(classKey, lessonKey, onReadyCb) {
   return cb;
 };
 
-var dbLoadClass = function(linkClass, classKey, lessonKey, onReadyCb) {
-  var cb = makeCallback(classKey, lessonKey, onReadyCb);
-  $(linkClass).on("click", cb);
+var dbLoadClass = function(linkClass, classKey, lessonKey, onReadyCb, noLogin) {
+  var load_cb = makeCallback(classKey, lessonKey, onReadyCb);
+  var check_login = function(e) {
+    //e.preventDefault();
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (firebaseUser || noLogin) {
+        //cerrar ventana de login
+        $(".login-box").css("display", "none");
+        $(".signup-box").css("display", "none"); 
+
+        //quitar candados
+        if (firebaseUser) {
+          $(".faHide").show();
+          $(".locked").hide();
+        }
+
+        load_cb();
+        return;
+      }
+
+      // you are not logged in
+      $('.lesson').html("");
+      $(".login-box").css("display", "block");
+      $(".gotoSignup").on("click", function(){
+        $(".login-box").css("display", "none");
+        $(".signup-box").css("display", "block");       
+      });
+      $(".close").on("click", function(){
+        $(".login-box").css("display", "none");
+        $(".signup-box").css("display", "none");       
+      });
+    });
+  };
+  
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (!firebaseUser && !noLogin) { 
+      $(".faHide").hide();
+      $(".locked").show();
+    }
+  });
+  
+  $(linkClass).on("click", check_login);
 };
 
 $(document).ready(function() {

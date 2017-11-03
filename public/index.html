@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://use.fontawesome.com/442a884b4a.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">	
 	<!--Fullstory-->
 	<script>
@@ -29,53 +30,85 @@
 	</script>
 </head>
 <body>
-<!--  First section - HOME -->
+<!-- Banner -->
+	<div class="superior">
+		<!-- <a href="#" class="register">Registrate gratis</a> -->
+	</div>
+<!-- Navegacion -->
+	<nav>
+		<a class="brand" href="#index">EKU</a>
+		<ul class="ul_left">
+			<li><a href="#goToCourses">Cursos</a></li>
+			<li><a href="#goToContact">Contacto</a></li>
+			<li><a href="https://medium.com/@Eku_" target="_blank">Blog</a></li>
+			<!-- <li><a href="#" class="register">Crear cuenta</a></li>
+			<li><a href="#" class="log">Iniciar sesión</a></li>
+			<li><a href="#" class="noShow" id="btnLogout">Cerrar sesión</a></li>
+			<li><a href="#" class="noShow" id="cursosButton">Bienvenido/a</a></li> -->
+		</ul>
+	</nav>
+<!-- Header -->
 	<header class="vertical-center">
-		<nav>
-			<span class="to-left">
-				<a class="brand" href="#index">EKU</a>
-			</span>
-			<div class="floating">
-				<a href="#goToCourses">Cursos</a>
-				<a href="#goToContact">Contacto</a>
-				<a href="https://medium.com/@Eku_" target="_blank">Blog</a>
-				<!-- <a href="#" class="register">Crear cuenta</a>
-				<a href="#" class="log">Iniciar sesión</a>
-				<a href="#" class="noShow" id="btnLogout">Cerrar sesión</a>
-				<a href="#" class="noShow" id="cursosButton">Bienvenido/a</a> -->
-			</div>
-		</nav>
-		<!-- login -->
+		<!-- login modal-->
 		<div id="ventana-box" class="ventana">
-			<a href="#" class="close">X</a>						    
-			<div>
-				<form>
-					<div>
-					  <h2>Iniciar sesión</h2>
-					<div>
-					  <input id="txtEmail" type="email" placeholder="Email" value="" name="EMAIL" class="input-box required email">
-					  <input id="txtPassword" type="password" class="input-box required email" placeholder="Contraseña">
-					</div>
-					   <button id="btnLogin" class="signin">Iniciar</button>
-					 </div>
-				</form>			
-			</div>
-		</div>
-		<!-- signup -->
-		<div id="ventana-box" class="crearCuenta">
-			<a href="#" class="close">X</a>									    
-			<div>
-				<form>
-			      <div>
-				    <h2>Crear cuenta</h2>
-				    <input class="input-box" id="txtEmailSignUp" type="email" placeholder="Email">
-				    <input class="input-box" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
-				    <button id="btnSignUp" class="signin">Crear cuenta</button>
+			<a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<h3>Iniciar sesión</h3>	
+			<form>				    
+				<div class="form-group">
+				  <div class="input-group">
+				    <div class="input-group-addon">
+				      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+				    </div>
+				    <input class="form-control" placeholder="Correo electrónico" id="txtEmail" name="email" type="email"/>
 				  </div>
-				</form>
+				</div>
+				<div class="form-group">
+				  <div class="input-group">
+				    <div class="input-group-addon">
+				      <i class="fa fa-key" aria-hidden="true"></i>
+				    </div>
+				    <input class="form-control" placeholder="Contraseña" id="txtPassword" name="password" type="password"/>
+				  </div>
+				</div>
+				<button id="btnLogin" class="signin">Iniciar</button>
+			</form>
+			<div class="gotoSignup">
+				<p>¿No tienes cuenta? Crear cuenta</p>
 			</div>
 		</div>
-		<!-- Hero content -->
+		<!-- signup modal-->
+		<div id="ventana-box" class="crearCuenta">
+			<a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<h3>Crear cuenta</h3>
+			<form>	
+				<div class="form-group">
+				  <div class="input-group">
+				    <div class="input-group-addon">
+				      <i class="fa fa-user" aria-hidden="true"></i>
+				    </div>
+				    <input class="form-control" placeholder="Nombre y Apellido" id="txtName" name="email" type="text"/>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <div class="input-group">
+				    <div class="input-group-addon">
+				      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+				    </div>
+				    <input class="form-control" placeholder="Correo electrónico" id="txtEmailSignUp" name="email" type="email"/>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <div class="input-group">
+				    <div class="input-group-addon">
+				      <i class="fa fa-key" aria-hidden="true"></i>
+				    </div>
+				    <input class="form-control" placeholder="Contraseña" id="txtPasswordSignUp" name="password" type="password"/>
+				  </div>
+				</div>
+				<button id="btnSignUp" class="signin">Crear cuenta</button>
+			</form>
+		</div>
+<!-- Hero content -->
         <div class="hero-content">
         	<h1>Construye tu futuro</h1>
 			<div class="subheader">
@@ -88,13 +121,13 @@
 			</div>
 		</div>
 	</header>
-    <!-- Banner -->
+<!-- Banner -->
 	<section>
 		<div class="sugerencia">
-			<h2><span class="to-left"><i class="fa fa-refresh" aria-hidden="true"></i></span> Aportamos 15% de nuestros ingresos netos a programas educativos que enseñan habilidades digitales a niñas y mujeres</h2>
+			<h2><span class="to-left"><i class="fa fa-refresh" aria-hidden="true"></i></span> Aportamos 15% de nuestros ingresos netos a programas educativos que enseñan habilidades digitales en comunidades de escasos recursos.</h2>
 		</div>
 	</section>
-	<!-- Intro -->
+<!-- Intro -->
 	<section id="intro">
 		<div class="section-wrap">
 			<span class="intro-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i>
@@ -103,173 +136,69 @@
 			<p>Aprende nuevas habilidades de una manera interactiva y flexible a través de videos, ejercicios y proyectos. Forma parte de la comunidad de personas que se desafía continuamente, y que sigue aprendiendo y mejorando constantemente.</p>
 		</div>
 	</section>
-	<!-- Courses -->
+<!-- Courses -->
 	<section id="goToCourses">
 		<div class="coursesCards">
 			<div class="courses-title">
-			<span class="courses-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+				<span class="courses-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
 				<h1>Nuestros Cursos</h1>
 				<p>Explora nuestro catálogo de cursos y empieza a aprender nuevas habilidades. Más cursos estarán disponibles próximamente.</p>
 			</div>
-
-			<div class="todo">
-<div class="flex_prueba">
-	<div class="wrapper">
-    <div class="product-img geo">
-      <!-- <img src="images/geo.png" height="380" width="280"> -->
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Diseño UX</h1>
-        <h2>Curso creado por Geo Esber <br><small><span style="color:red">Próximamente</span></small></h2>
-        <p>Crea el prototipo de una app
-			siguiendo las mejores prácticas del
-			diseño </p>
-      </div>
-      <div class="product-price-btn">
-        <!-- <p><span class="dolars">78</span>$</p> -->
-        <a href="#"><button type="button">Ir al curso</button></a>
-        <!-- pages/basicClass.html -->
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex_prueba">
-	<div class="wrapper">
-    <div class="product-img gaby">
-      <!-- <img src="images/geo.png" height="380" width="280"> -->
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>HTML & CSS básico</h1>
-        <h2>Curso creado por Gaby Zamudio<br><small><span style="color:red">Próximamente</span></small></h2>
-        <p>Crea una página web simple y aprende HTML y CSS, componentes fundamentales de toda página web</p>
-      </div>
-      <div class="product-price-btn">
-        <!-- <p><span class="dolars">78</span>$</p> -->
-        <a href="#"><button type="button">Ir al curso</button></a>
-        <!-- "pages/ProyectoUno.html" -->
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex_prueba">
-	<div class="wrapper">
-    <div class="product-img patty">
-      <!-- <img src="images/geo.png" height="380" width="280"> -->
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>JavaScript</h1>
-        <h2>Curso creado por Gaby Zamudio<br><small><span style="color:red">Próximamente</span></small></h2>
-        <p>Aprende sobre Javascript y programa tu primera aplicacion</p>
-      </div>
-      <div class="product-price-btn">
-        <!-- <p><span class="dolars">78</span>$</p> -->
-        <a href="#"><button type="button">Ir al curso</button></a>
-        <!-- pages/intermediateClass.html -->
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex_prueba">
-	<div class="wrapper">
-    <div class="product-img koga">
-      <!-- <img src="images/geo.png" height="380" width="280"> -->
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Comunicación de marca</h1>
-        <h2>Curso creado por Koga Impact Lab<br><small><span style="color:red">Próximamente</span></small></h2>
-        <p>Aprende a comunicar tu marca y crea tu estrategia de marca</p>
-      </div>
-      <div class="product-price-btn">
-        <!-- <p><span class="dolars">78</span>$</p> -->
-        <button type="button">Ir al curso</button>
-      </div>
-    </div>
-  </div>
-</div>
-  
-</div>
-
-		<!-- <div class="cardsDisplay">
-			<div class="card_container">
-				<div class="card_info">
-					<a href=""pages/basicClass.html"">
-						<div class="card_header">
+<!-- Cards -->
+			<div class="main_container">
+				<div class="flex_cards">
+					<div class="geo">
+					<img src="https://dl.dropboxusercontent.com/s/82agatbj1pyj4dc/geo.png" height="200" width="200">
+					</div>
+					<div class="product_info">
+						<div class="product_text">
+							<h1>Diseño UX</h1>
+							<h2>Curso creado por Geo Esber <br><small><span style="color:red">Próximamente</span></small></h2>
+							<p>Crea el prototipo de una app
+							siguiendo las mejores prácticas del
+							diseño </p>
 						</div>
-						<div class="card_title">
-							<h4>Diseño UX<br>
-								<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
-							</h4>
+						<!-- <div class="product_price">
+							<a href="pages/ProyectoUno.html"><button class="btn" type="button">Ir al curso</button></a>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="flex_cards">
+					<div class="geo">
+					<img src="http://www.designandexecute.com/designs/wp-content/uploads/2016/11/brand-7592.jpg" height="200" width="200">
+					</div>
+					<div class="product_info">
+						<div class="product_text">
+							<h1>Brand Canvas</h1>
+							<h2>Curso creado por Koga<br><small><span style="color:red">Próximamente</span></small></h2>
+							<p>Diseña una estrategia para comunicar atractivamente una marca</p>
 						</div>
-						<div class="card_description">
-							<p>Crea el prototipo de una app<br>
-								siguiendo las mejores prácticas del<br>
-								diseño</p>
+						<!-- <div class="product_price">
+							<a href="pages/ProyectoUno.html"><button class="btn" type="button">Ir al curso</button></a>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="flex_cards">
+					<div class="geo">
+					<img src="https://dl.dropboxusercontent.com/s/lk7s7pom2oewz2a/gaby.png" height="200" width="200">
+					</div>
+					<div class="product_info">
+						<div class="product_text">
+							<h1>HTML & CSS Básico</h1>
+							<h2>Curso co-creado por Cristina Del Puerto y Gaby Zamudio<br><small><span style="color:red">Próximamente</span></small></h2>
+							<p>Crea una página web simple con HTML y CSS, componentes fundamentales de toda página web</p>
 						</div>
-						<div class="card_button">
-							<a href="#" class="buttonCard">Ir al curso</a>
-						</div>
-					</a>
+						<!-- <div class="product_price">
+							<a href="pages/ProyectoUno.html"><button class="btn" type="button">Ir al curso</button></a>
+						</div> -->
+					</div>
 				</div>
 			</div>
-
-			<div class="card_container">
-		<div class="card_info">
-			<a href="pages/intermediateClass.html">
-				<div class="card_header foto">
-				</div>
-				<div class="card_title">
-					<h4>Diseño UX<br>
-						<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
-					</h4>
-				</div>
-				<div class="card_description">
-					<p>Crea el prototipo de una app<br>
-						siguiendo las mejores prácticas del<br>
-						diseño</p>
-				</div>
-				<div class="card_button">
-					<a href="#" class="buttonCard">Ir al curso</a>
-				</div>
-			</a>
-		</div>
-	</div>
-
-	<div class="card_container">
-		<div class="card_info">
-			<a href="pages/ProyectoUno.html">
-				<div class="card_header">
-				</div>
-				<div class="card_title">
-					<h4>Diseño UX<br>
-						<small>Curso creado por Geo Esber<br><span style="color:red">Próximamente</span></small>
-					</h4>
-				</div>
-				<div class="card_description">
-					<p>Crea el prototipo de una app<br>
-						siguiendo las mejores prácticas del<br>
-						diseño</p>
-				</div>
-				<div class="card_button">
-					<a href="#" class="buttonCard">Ir al curso</a>
-				</div>
-			</a>
-		</div>
-	</div> -->
-
-
-</div>
-
-
 		</div>
 	</section>
-	<!-- Beneficios -->
+<!-- Beneficios -->
 	<section class="benefits-blank">
 		<div class="benefits-title">
 			<h2>¿Por qué aprender en EKU?</h2>
@@ -292,35 +221,29 @@
 			</div>
 		</div>
 	</section>
-	<!-- Call to action --> 
-	<section class="extraSection">
-		<div>
-			<h2>Imagina un mundo donde toda persona pueda...</h2>
-		</div>
-		<div class="flex-columns">
-			<article>
-				<i class="fa fa-diamond" aria-hidden="true"></i>
-				<h3>Alcanzar su máximo potencial</h3>
-			</article>
-			<article>
-				<i class="fa fa-heart-o" aria-hidden="true"></i>
-				<h3>Encontrar su trabajo ideal</h3>
-			</article>
-			<article>
-				<i class="fa fa-line-chart" aria-hidden="true"></i>
-				<h3>Mejorar sus habilidades y <br>avanzar profesionalmente</h3>
-			</article>
-			<article>
-				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-				<h3>Empezar el negocio que tanto<br> soñaba</h3>
-			</article>
-		</div>
-		<div>
-			<h2>Juntos estamos creando ese mundo</h2>
-			<a class="btn btn-transparent" href="#goToCourses">Empezar</a>
-		</div>
+<!-- Call to action --> 
+	<section class="two_column">
+		<article class="callToAction image_background">
+		</article>
+		<article class="callToAction">
+			<div class="points">
+				<h2>Ventajas</h2>
+				<div>
+					<h3><span class="icon_style"><i class="fa fa-diamond" aria-hidden="true"></i></span>Alcanza tu máximo potencial</h3>
+				</div>
+				<div>
+					<h3><span class="icon_style"><i class="fa fa-heart-o" aria-hidden="true"></i></span>Encuentra tu trabajo ideal</h3>
+				</div>
+				<div>
+					<h3><span class="icon_style"><i class="fa fa-line-chart" aria-hidden="true"></i></span>Avanza en tu carrera profesional</h3>
+				</div>
+				<div>
+					<h3><span class="icon_style"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>Empieza el negocio que tanto soñabas</h3>
+				</div>
+			</div>
+		</article>
 	</section>
-	<!-- Logos -->
+<!-- Logos -->
 	<section id="logos">
 		<div class="section-wrap-mini">
 			<h4 class="sponsor">
@@ -342,7 +265,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Contact section  -->
+<!-- Contact section  -->
 	<div class="contact" id='goToContact'>
 		<div class="container">
 			<div class="contact-content">
@@ -353,11 +276,16 @@
 			</div>
 		</div>
 	</div>
-	<!--Footer-->
+<!--Footer-->
 	<footer>
+		<ul>
+			<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+			<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+		</ul>
 		<h6>@EKU. Copyright 2017. All rights reserved.</h6>
 	</footer>
-	<!-- Responsive mobile modal  -->
+<!-- Responsive mobile modal  -->
 	<div class="modal-background">
 		<div class="modal-content">
 			<i class="fa fa-laptop fa-4x" aria-hidden="true" style="color:#69D1C5"></i>
@@ -366,15 +294,7 @@
 			<button id="cerrar" class="signin">Cerrar</button>
 		</div>
 	</div>
-	<!-- Login modal -->
-	<div class="modal-login">
-		<div class="data-login">
-			<input class="form" id="txtName" type="text" placeholder="Nombre y Apellido">
-			<input class="form" id="txtEmail" type="email" placeholder="Email">
-			<input class="form" id="txtPassword" type="password" placeholder="Contraseña">
-			<button class="form" id="inicio">Iniciar sesión</button>
-		</div>
-	</div>
+
 
 	<script src="js/vendor/jquery-1.12.0.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>

@@ -62,40 +62,108 @@ ol {
 	margin-bottom: 25px;
 }
 
+.class_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  height: auto;
+  box-shadow: 0 1.5px 6px -1px rgba(0,0,0,.2);
+  border-top: 6px solid #66cc99;
+}
+
+.class_nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.class_nav li:last-child {
+  margin-right: 70px;
+}
+
+.class_nav a {
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  padding: 0px 15px;
+  display: inline-block;
+  border-bottom: none;
+  color: #66cc99;
+  line-height: 2px;
+}
+
+.class_nav .fa {
+	font-size: 25px;
+}
+
+.class_nav a:link {
+  color: #66cc99;
+}
+
+.class_nav a:visited {
+  color: #66cc99;
+}
+
+.class_nav a:hover {
+  color: #58aa81;
+}
+
+.class_nav ul li {
+  margin: 12px 0 0;
+  line-height: 1.6;
+}
+
+
+.logout_class {
+	background-color: #fff;
+	box-shadow: 0 2px 10px -1px rgba(0,0,0,.2);
+	width: 140px;
+	height: 70px;
+	position: fixed;
+	top: 45px;
+	right: 7px;
+	z-index: 2000;
+	display: none;
+}
+
+.logout_classContent p {
+	color: #4f071a;
+	padding: 5px;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.close_class .fa {
+	color: #3a3a3a;
+	padding-top: 5px; 
+}
+
 
 /* ----------------------------------------
 	Sidebar
 ------------------------------------------- */
 #sidebar-container {
 	overflow: scroll;
-	background-color: #082736;
-	background-color: #FAFAFA;
-	color: rgb(60, 72, 88);
 	display: block;
 	position: fixed;
     left: 0;
-    top: 0;
+    top: 60px;
     width: 290px;
-    height: 100vh;
-    z-index: 1200;
+    height: 100%;
     font-size: 100%;
-    background-color: #292c44;
+    background-color: #d4dae1;
 }
 
 #sidebar-container li {
-	text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
-    padding: 25px 20px;
+    padding: 8px 0px;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    color: rgba(221,221,221,.65);
-    color: #d9dcdd;
+    color: #1d2126;
 }
 
 .sidebar-nav h4 {
-	color: rgb(60, 72, 88);
-	color: rgba(221,221,221,.65);
 	color: #d9dcdd;
 }
 
@@ -103,10 +171,17 @@ ol {
 	padding: 0;
 	list-style: none;
 	height: 100%;
+	text-align: left;
+}
+
+.sidebar-nav .fa {
+	font-size: 17px;
+	margin-right: 9px;
+	color: #53aa7e;
+	margin-left: 28px;
 }
 
 .sidebar-nav li{
-	text-indent: 20px;
 	line-height: 40px;
 	cursor: pointer;
 }
@@ -116,16 +191,17 @@ ol {
 }
 
 .sidebar-nav li:hover {
-	background-color: #AFDEDC;
-	background-color: rgb(64, 69, 104);
-	background-color: rgb(80, 86, 127);
+	background-color: #b8bcc1;
 }
 
 .sidebar-nav li.active {
-	background-color: #AFDEDC;
-	background-color: rgb(64, 69, 104);
-	background-color: rgb(80, 86, 127);
+	background-color: #b8bcc1;
 }
+
+
+/*.locked {
+	display: none;
+}*/
 
 /*.active {
 	background-color: #AFDEDC;
@@ -141,6 +217,13 @@ ol {
 	left: 0;
 	right: 0;
 	z-index: 1000;
+}
+
+.login-box {
+	display: none;
+}
+
+.signup-box {
 	display: none;
 }
 
@@ -152,9 +235,14 @@ ol {
 .content-modal {
 	padding: 40px 20px;
 	color: #444;
-	background-color: #fff;
-	width: 60%;
+	background-color: #fafafa;
+	width: 400px;
+  	height: auto;
 	margin: 0 auto;
+	border-radius: 2px;
+	position: absolute;
+	top: 15%;
+	left: 40%;
 }
 
 .content-modal input {
@@ -166,8 +254,12 @@ ol {
   margin: 15px 0;
 }
 
+.button-align {
+	margin: 0 30px;
+}
+
 .content-modal button {
-  background-color: #00c4cc;
+  background-color: #66cc99;
   color: #fff;
   border-style: none;
   border-radius: 5px;
@@ -191,106 +283,31 @@ ol {
     width: 80%;
 }
 
-input {
-    font-family: 'AvenirLT-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    border: 1px solid #fff;
-    height: 32px;
-    padding-top: 7px;
-}
-
-.input-box{
-  -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-color: #fff;
-    font-family: inherit;
-    border: 1px solid #ccc;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    color: rgba(0,0,0,0.75);
-    display: block;
-    font-size: 0.875em;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 0.5em;
-    height: 2.3125em;
-    width: 80%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: -webkit-box-shadow 0.45s,border-color 0.45s ease-in-out;
-    -moz-transition: -moz-box-shadow 0.45s,border-color 0.45s ease-in-out;
-    transition: box-shadow 0.45s,border-color 0.45s ease-in-out;
-}
-
 /* ----------------------------------------
 	Main lesson
 ------------------------------------------- */
-.page-content-container {
+/*.page-content-container {
 	position: absolute;
 	top: 70px;
 	left: 354px;
 	max-width: 70em;
-	text-align: justify;
     text-justify: auto;
 	transition: all .4s ease-in-out;
 	background-color: #fff;
 	padding-bottom: 60px;
-}
-
-pre {
-	font-style:'Source Code Pro', monospace;
-	width: 100%;
-	height: auto;
-	tab-size: 2;
-	background-color: transparent;
-	border-style: none;
-	border: none;
-	font-size: 16px;
-	margin-bottom: 30px;
-	padding: 0px;
-	border-top: 10px solid #69D1C5;
-}
-
-
-/*.highlight {
-	height: 10px;
-	background-color: 
+	background-color: yellow;
 }*/
 
-
-/*.highlight p {
-	color: #fff;
-	padding: 30px;
-	margin-bottom: 22px;
-	color: #4c4c4c;
-	
-}*/
-
-.highlight {
-	border-left: 7px solid #69D1C5;
-	padding-left: 5px;
-}
-
-.pop {
-	color: #0EAD69;
-	color: #938f8f;
-}
-
-
-.transition-box {
-	border: 2px solid gray;
-	padding: 10px;
-	margin-bottom: 15px;
+.lesson {
+	position: absolute;
+	top: 70px;
+	left: 354px;
+	max-width: 70em;
+	/*text-align: justify;*/
+    text-justify: auto;
+	transition: all .4s ease-in-out;
+	background-color: #fff;
+	padding-bottom: 60px;
 }
 
 /* ----------------------------------------
@@ -301,9 +318,6 @@ pre {
 	color: #e33343;
 }
 
-.home-icon {
-	margin: 20px 40px;
-}
 
 /* ----------------------------------------
 	Images & GIFs

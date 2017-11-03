@@ -9,109 +9,135 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <script src="https://use.fontawesome.com/442a884b4a.js"></script>
+      <link rel="stylesheet" href="../css/main.css">
       <link rel="stylesheet" href="../css/class.css">
       <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
   </head>
   <body>
+      <div class="class_nav">
+        <a class="brand class_brand" href="../index.html">EKU</a>
+        <ul class="ul_left">
+          <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i></a></li>
+          <li class="trigger"><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
 
       <!-- sidebar -->
       <div id="sidebar-container">
-      <div class="home-icon">
-        <a class="fa fa-home fa-5x" aria-hidden="true" style="color: rgba(221,221,221,.65)" href="../index.html"></a>
-      </div>
         <ul class="sidebar-nav">
           <h4>Mi Primera Página Web</h4>
-          <!-- <li class="objetivosLink active"><i class="fa fa-file-text-o fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Objetivos</li> -->
-          <li class="instalacionLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Instalar editor</li>
-          <li class="introduccionLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Introducción</li>
-            <li class="esqueletoLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Esqueleto del HTML</li>
-            <li class="introHTMLLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp; HTML - Parte 1</li>
-            <li class="parte2HTMLLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp; HTML - Parte 2</li>
-            <li class="parte3HTMLLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp; HTML - Parte 3</li>
-            <li class="parte4HTMLLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp; HTML - Parte 4</li>
-            <li class="introCSS"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;Intro a CSS</li>
-            <li class="estilosBaseLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Estilos Base</li>
-            <li class="tipografia1Link"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Google Fonts</li>
-            <li class="tipografia2Link"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Tipografía</li>
-            <li class="navLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Navegación</li>
-            <li class="encabezadoLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Encabezado</li>
-            <li class="contenidoLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Contenido</li>
-            <li class="footerLink"><i class="fa fa-play-circle fa-2x" aria-hidden="true" style="color: #d9dcdd"></i>&nbsp; &nbsp;CSS: Pie(footer)</li>
+          <li class="instalacionLink active"><i class="fa fa-play-circle" aria-hidden="true"></i>Instalar editor</li>
+          <li class="introduccionLink"><i class="fa fa-play-circle fa-2x faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>Introducción</li>
+            <li class="esqueletoLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>Esqueleto del HTML</li>
+            <li class="introHTMLLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>HTML - Parte 1</li>
+            <li class="parte2HTMLLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>HTML - Parte 2</li>
+            <li class="parte3HTMLLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>HTML - Parte 3</li>
+            <li class="parte4HTMLLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>HTML - Parte 4</li>
+            <li class="introCSS"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>Intro a CSS</li>
+            <li class="estilosBaseLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Estilos Base</li>
+            <li class="tipografia1Link"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Google Fonts</li>
+            <li class="tipografia2Link"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Tipografía</li>
+            <li class="navLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Navegación</li>
+            <li class="encabezadoLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Encabezado</li>
+            <li class="contenidoLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Contenido</li>
+            <li class="footerLink"><i class="fa fa-play-circle faHide" aria-hidden="true"></i><i class="fa fa-lock fa-2x locked" aria-hidden="true"></i>CSS: Pie(footer)</li>
         </ul>
       </div>
 
       <!-- page-content -->
-    <div class="page-content-container">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="additional">
-              <ul>
-                <li><a href="#" class="clicked addVideo disabled">Video</a>&nbsp; &nbsp;&nbsp;/</li>
-                <li><a href="#" class="addResource disabled">Recursos</a>&nbsp; &nbsp;&nbsp;/</li>
-                <li><a href="#" class="addObjetivos disabled">Objetivos</a></li>
-              </ul>
-            </div>
-         
-          <div class='recursos noShow'> 
-              <p>Estos son algunos links que contienen recursos adicionales:</p> 
-              <a href="https://www.sublimetext.com/" target="_blank">Editor Sublime Text</a>                            
-              <a href="https://drive.google.com/file/d/0B__8TfD8fDoHUGRRdjBjT2VvNDg/view?usp=sharing" target="_blank">Esqueleto y secciones en HTML</a>
-              <a href="https://drive.google.com/file/d/0B__8TfD8fDoHREZzcmV0YlpYUzQ/view?usp=sharing" target="_blank">Ayuda memoria HTML y CSS básico</a>
-              <a href="https://drive.google.com/file/d/0B__8TfD8fDoHWUxVcG1GVEQtWUk/view?usp=sharing" target="_blank">Ayuda memoria HTML y CSS intermedio</a>
-              <a href="http://fontawesome.io/get-started/" target="_blank">Página de íconos, Font Awesome</a>
-              <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
-              <a href="https://drive.google.com/file/d/0B__8TfD8fDoHUXZmVmt5Q0ZLNGM/view?usp=sharing" target="_blank">Estilos CSS utilizados en los videos</a>
-              <a href="https://unsplash.com/" target="_blank">Opción de fotos gratuitas para descargar y usar en tu página web</a>
-              <a href="https://color.adobe.com/create/color-wheel/?copy=true&base=2&rule=Analogous&selected=1&name=Copy%20of%20Beyonc%C3%A9&mode=hex&rgbvalues=0.5264705882352942,0.23567588439147902,0.13557848699267463,0.7507365296674178,0.48530485986024874,1,0.05870786516853929,0.5294117647058824,0.55,0.5011969245166059,0.5979110824742269,0.3156576583037114,0.5766172680412371,0.5182203970971966,0.4559505488741118&swatchOrder=0,1,2,3,4" target="_blank">Opción de colores HEX y RGB</a>
-              <a href="https://www.w3schools.com/colors/colors_rgb.asp">Aprende más sobre colores RGB</a>
-              <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">Aprende más sobre colores HEX</a>
-          </div>  
-          <div class='objetivos noShow'>                              
-            <h1>Objetivos</h1>                                         
-            <p>En este curso te guiaremos paso a paso a través del proceso de creación de una página web. <br>Los objetivos de este curso son los siguientes:</p>                                                         
-            <p>1. Al finalizar el curso serás capaz de construir una página web sencilla</p>                             <p>2. Podrás explicar la diferencia entre HTML y CSS</p>                                             
-            <p>3. Serás capaz de utilizar iconos y diferentes estilos de fuente a través de Google Fonts</p>             <p>4. Podrás construir la estructura y estilos del sitio web de una manera ordenada respetando las mejores prácticas</p>   <p>Aquí podras descargar el proyecto completo en el caso de que quieras compararlo con tu trabajo. Sin embargo, te recomendamos que mires los videos y trates de hacer el proyecto paso a paso, sin copiar el resultado final. <a href=\"../descargas/proyecto.zip\" download>Descargar proyecto final</a></p>   </div> 
+    <div class="page-content-container">       
           <div class="lesson">
 
                
               
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
       <!-- Sign up modal -->
-      <div class="background-modal">
+      <div class="background-modal login-box">
       <div class="content-modal">
-          <a href="#" class="close">x</a>        
+          <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+          <h3>Iniciar sesión</h3>        
           <form>
-            <input class="input-style" id="txtEmailSignUp" type="email" placeholder="Email">
-            <input class="input-style" id="txtPasswordSignUp" type="password" placeholder="Contraseña">
-            <button id="btnSignUp" class="signin">Crear cuenta</button>   
+            <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            <input class="form-control" placeholder="Correo electrónico" id="txtEmail" name="email" type="email"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <input class="form-control" placeholder="Contraseña" id="txtPassword" name="password" type="password"/>
+          </div>
+        </div>
+        <button id="btnLogin" class="signin button-align">Iniciar</button>   
+          </form>
+          <div class="gotoSignup">
+        <p>¿No tienes cuenta? Crear cuenta</p>
+      </div>
+      </div>
+    </div>
+   
+
+   <div class="background-modal signup-box">
+      <div class="content-modal">
+          <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+          <h3>Crear cuenta</h3>        
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <input class="form-control" placeholder="Nombre y Apellido" id="txtName" name="email" type="text"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <input class="form-control" placeholder="Correo electrónico" id="txtEmailSignUp" name="email" type="email"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <input class="form-control" placeholder="Contraseña" id="txtPasswordSignUp" name="password" type="password"/>
+              </div>
+            </div>
+            <button id="btnSignUp" class="signin button-align">Crear cuenta</button>   
           </form>
       </div>
     </div>
 
+<!-- logout modal  -->
+    <div class="logout_class">
+    <div class="logout_classContent">
+      <a href="#" class="close_class"><i class="fa fa-times" aria-hidden="true"></i></a>
+      <p id="btnLogout">Cerrar sesión</p>
+    </div>
+  </div>
+    
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
       <script src="../js/vendor/jquery-1.12.0.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script type="text/javascript" src="../js/main.js"></script>
       <script type="text/javascript" src="../js/vendor/dbhelper.js"></script>
       <script type="text/javascript">
 
-      firebase.auth().onAuthStateChanged(firebaseUser => {
-      if (!firebaseUser) {
-        $(".background-modal").css("display", "block");
-        $(".locked").css("display", "block");
-        $(".faHide").css("display", "none");
-      
-      } else {
-        dbLoadClass(".instalacionLink", "website", "instalacion");
+        dbLoadClass(".instalacionLink", "website", "instalacion", null, true);
         $(".instalacionLink").click();
         dbLoadClass(".introduccionLink", "website", "introduccion");
         dbLoadClass(".esqueletoLink", "website", "esqueletoHTML");
@@ -127,8 +153,7 @@
         dbLoadClass(".encabezadoLink", "website", "encabezado");
         dbLoadClass(".contenidoLink", "website", "contenido");
         dbLoadClass(".footerLink", "website", "footer");
-      }
-    });
+      
       </script>
 
      <script>
